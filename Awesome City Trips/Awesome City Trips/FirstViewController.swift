@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
-//  FinalProject
+//  FirstViewController.swift
+//  Awesome City Trips
 //
-//  Created by Rigoberto Sáenz Imbacuán on 8/16/18.
-//  Copyright © 2018 Rigoberto Saenz Imbacuan. All rights reserved.
+//  Created by Rigoberto Saenz on 8/21/18.
+//  Copyright © 2018 Awesome City Team. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
