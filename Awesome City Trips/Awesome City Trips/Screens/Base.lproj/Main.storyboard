@@ -33,7 +33,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gastronomy" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isl-D8-L2D">
-                                                    <rect key="frame" x="254" y="8" width="112.5" height="25"/>
+                                                    <rect key="frame" x="0.0" y="8" width="366.5" height="25"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -44,6 +44,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="u2a-fQ-bSn" secondAttribute="trailing" id="5am-NS-LX4"/>
                                                 <constraint firstItem="Isl-D8-L2D" firstAttribute="top" secondItem="BIy-Hi-uaN" secondAttribute="top" constant="8" id="96a-Gb-lAE"/>
+                                                <constraint firstItem="Isl-D8-L2D" firstAttribute="leading" secondItem="BIy-Hi-uaN" secondAttribute="leading" id="CmT-th-NBv"/>
                                                 <constraint firstItem="u2a-fQ-bSn" firstAttribute="top" secondItem="BIy-Hi-uaN" secondAttribute="top" id="XEn-EQ-aks"/>
                                                 <constraint firstAttribute="trailing" secondItem="Isl-D8-L2D" secondAttribute="trailing" constant="8" id="XZl-r2-F6V"/>
                                                 <constraint firstAttribute="bottom" secondItem="u2a-fQ-bSn" secondAttribute="bottom" id="rax-Xw-cMF"/>

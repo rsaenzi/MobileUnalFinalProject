@@ -33,4 +33,3 @@ class HomeViewScreen: UIViewController, UITableViewDelegate, UITableViewDataSour
         print("View did appear")
     }
 }
-
