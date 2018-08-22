@@ -31,6 +31,11 @@
 		67F342DE212E109D008621BD /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342DD212E109D008621BD /* BuildConfiguration.swift */; };
 		67F342E0212E1171008621BD /* DateFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342DF212E1171008621BD /* DateFormats.swift */; };
 		67F342E2212E132E008621BD /* LanguageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342E1212E132E008621BD /* LanguageKey.swift */; };
+		67F342E4212E1539008621BD /* MyPlansScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342E3212E1539008621BD /* MyPlansScreen.swift */; };
+		67F342E6212E1547008621BD /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342E5212E1547008621BD /* ProfileScreen.swift */; };
+		67F342E8212E1551008621BD /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342E7212E1551008621BD /* MapScreen.swift */; };
+		67F342EA212E15FB008621BD /* MyPlansCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342E9212E15FB008621BD /* MyPlansCell.swift */; };
+		67F342EC212E1607008621BD /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342EB212E1607008621BD /* ProfileCell.swift */; };
 		81F5BB117BDC1E8FCA8AB116 /* Pods_Awesome_City_TripsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF06706D0A202C069B6A4783 /* Pods_Awesome_City_TripsUITests.framework */; };
 		AAE72A6896092C9D1E90736D /* Pods_Awesome_City_Trips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C0D3EFFC1EB3AA928B0967A /* Pods_Awesome_City_Trips.framework */; };
 		D562D08604EFDD2C1F0049E8 /* Pods_Awesome_City_TripsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7208C5DEB4946BCB6C1AC271 /* Pods_Awesome_City_TripsTests.framework */; };
@@ -90,6 +95,11 @@
 		67F342DD212E109D008621BD /* BuildConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfiguration.swift; sourceTree = "<group>"; };
 		67F342DF212E1171008621BD /* DateFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormats.swift; sourceTree = "<group>"; };
 		67F342E1212E132E008621BD /* LanguageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageKey.swift; sourceTree = "<group>"; };
+		67F342E3212E1539008621BD /* MyPlansScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlansScreen.swift; sourceTree = "<group>"; };
+		67F342E5212E1547008621BD /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		67F342E7212E1551008621BD /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		67F342E9212E15FB008621BD /* MyPlansCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlansCell.swift; sourceTree = "<group>"; };
+		67F342EB212E1607008621BD /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		6C0D3EFFC1EB3AA928B0967A /* Pods_Awesome_City_Trips.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Awesome_City_Trips.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7208C5DEB4946BCB6C1AC271 /* Pods_Awesome_City_TripsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Awesome_City_TripsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED5A3921ED0EB9FC99E3191 /* Pods-Awesome City TripsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome City TripsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome City TripsTests/Pods-Awesome City TripsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +196,9 @@
 			children = (
 				679D0810212C476C00824386 /* Main.storyboard */,
 				679D083B212C4C6700824386 /* CategoriesScreen.swift */,
+				67F342E7212E1551008621BD /* MapScreen.swift */,
+				67F342E3212E1539008621BD /* MyPlansScreen.swift */,
+				67F342E5212E1547008621BD /* ProfileScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -207,6 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				679D0845212C4FA400824386 /* CategoryCell.swift */,
+				67F342E9212E15FB008621BD /* MyPlansCell.swift */,
+				67F342EB212E1607008621BD /* ProfileCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -224,9 +239,9 @@
 			isa = PBXGroup;
 			children = (
 				67F342D9212E1008008621BD /* Language.swift */,
+				67F342E1212E132E008621BD /* LanguageKey.swift */,
 				67F342C8212E0EEE008621BD /* Localizable.strings */,
 				67F342DB212E103B008621BD /* Language+UIKit.swift */,
-				67F342E1212E132E008621BD /* LanguageKey.swift */,
 			);
 			path = Language;
 			sourceTree = "<group>";
@@ -515,12 +530,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F342E4212E1539008621BD /* MyPlansScreen.swift in Sources */,
 				67F342E0212E1171008621BD /* DateFormats.swift in Sources */,
 				679D0843212C4F6F00824386 /* UITableView+Load.swift in Sources */,
+				67F342EC212E1607008621BD /* ProfileCell.swift in Sources */,
+				67F342E8212E1551008621BD /* MapScreen.swift in Sources */,
 				67F342CF212E0F73008621BD /* Colors.swift in Sources */,
 				67F342D2212E0F8E008621BD /* Log.swift in Sources */,
 				67F342DC212E103B008621BD /* Language+UIKit.swift in Sources */,
 				67F342CD212E0F48008621BD /* UIApplication+TopController.swift in Sources */,
+				67F342EA212E15FB008621BD /* MyPlansCell.swift in Sources */,
 				679D083C212C4C6700824386 /* CategoriesScreen.swift in Sources */,
 				67F342DE212E109D008621BD /* BuildConfiguration.swift in Sources */,
 				67F342DA212E1008008621BD /* Language.swift in Sources */,
@@ -533,6 +552,7 @@
 				67F342CB212E0F2E008621BD /* UINavigationController+Root.swift in Sources */,
 				67F342D8212E0FF0008621BD /* UIViewController+Alert.swift in Sources */,
 				67F342E2212E132E008621BD /* LanguageKey.swift in Sources */,
+				67F342E6212E1547008621BD /* ProfileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
