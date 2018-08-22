@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MEC-Mn-30u">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AvailablePlansScreen-->
+        <scene sceneID="lwc-8s-IgM">
+            <objects>
+                <viewController storyboardIdentifier="AvailablePlansScreen" title="AvailablePlansScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MEC-Mn-30u" customClass="AvailablePlansScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e0T-8e-Fsf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nPr-jv-smm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Available Plans" id="LwC-4u-gLN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMD-fR-zFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="213"/>
+        </scene>
+    </scenes>
+</document>
