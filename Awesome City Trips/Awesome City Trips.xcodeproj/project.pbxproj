@@ -16,6 +16,11 @@
 		679D0841212C4F3B00824386 /* UIViewController+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679D0840212C4F3B00824386 /* UIViewController+Load.swift */; };
 		679D0843212C4F6F00824386 /* UITableView+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679D0842212C4F6F00824386 /* UITableView+Load.swift */; };
 		679D0846212C4FA400824386 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679D0845212C4FA400824386 /* CategoryCell.swift */; };
+		67BF9140212F26CC006E9F32 /* PlanDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF913F212F26CC006E9F32 /* PlanDetailsScreen.swift */; };
+		67BF9142212F26F3006E9F32 /* PlanDetailsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67BF9141212F26F3006E9F32 /* PlanDetailsScreen.storyboard */; };
+		67BF9145212F3868006E9F32 /* CreditCardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF9144212F3868006E9F32 /* CreditCardsScreen.swift */; };
+		67BF9147212F3871006E9F32 /* CreditCardsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67BF9146212F3871006E9F32 /* CreditCardsScreen.storyboard */; };
+		67BF9149212F397C006E9F32 /* CreditCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF9148212F397C006E9F32 /* CreditCardsCell.swift */; };
 		67CBFA7B212E04D100E3B286 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBFA7A212E04D100E3B286 /* CategoryType.swift */; };
 		67CBFA7D212E054400E3B286 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBFA7C212E054400E3B286 /* Category.swift */; };
 		67F342C2212E0B05008621BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F342C1212E0B05008621BD /* Assets.xcassets */; };
@@ -82,6 +87,11 @@
 		679D0840212C4F3B00824386 /* UIViewController+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Load.swift"; sourceTree = "<group>"; };
 		679D0842212C4F6F00824386 /* UITableView+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Load.swift"; sourceTree = "<group>"; };
 		679D0845212C4FA400824386 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		67BF913F212F26CC006E9F32 /* PlanDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailsScreen.swift; sourceTree = "<group>"; };
+		67BF9141212F26F3006E9F32 /* PlanDetailsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlanDetailsScreen.storyboard; sourceTree = "<group>"; };
+		67BF9144212F3868006E9F32 /* CreditCardsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardsScreen.swift; sourceTree = "<group>"; };
+		67BF9146212F3871006E9F32 /* CreditCardsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreditCardsScreen.storyboard; sourceTree = "<group>"; };
+		67BF9148212F397C006E9F32 /* CreditCardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardsCell.swift; sourceTree = "<group>"; };
 		67CBFA7A212E04D100E3B286 /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
 		67CBFA7C212E054400E3B286 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		67F342C1212E0B05008621BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -200,6 +210,8 @@
 		679D083A212C4C5200824386 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				67BF9143212F3854006E9F32 /* CreditCards */,
+				67BF913E212F26B3006E9F32 /* PlanDetails */,
 				67F342EE212E1824008621BD /* AvailablePlans */,
 				67F342ED212E1813008621BD /* Main */,
 			);
@@ -226,8 +238,27 @@
 				67F342E9212E15FB008621BD /* MyPlansCell.swift */,
 				67F342EB212E1607008621BD /* ProfileCell.swift */,
 				B127DCFA212E791F00FC0856 /* AvailablePlansCell.swift */,
+				67BF9148212F397C006E9F32 /* CreditCardsCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		67BF913E212F26B3006E9F32 /* PlanDetails */ = {
+			isa = PBXGroup;
+			children = (
+				67BF913F212F26CC006E9F32 /* PlanDetailsScreen.swift */,
+				67BF9141212F26F3006E9F32 /* PlanDetailsScreen.storyboard */,
+			);
+			path = PlanDetails;
+			sourceTree = "<group>";
+		};
+		67BF9143212F3854006E9F32 /* CreditCards */ = {
+			isa = PBXGroup;
+			children = (
+				67BF9144212F3868006E9F32 /* CreditCardsScreen.swift */,
+				67BF9146212F3871006E9F32 /* CreditCardsScreen.storyboard */,
+			);
+			path = CreditCards;
 			sourceTree = "<group>";
 		};
 		67CBFA79212E04C000E3B286 /* Models */ = {
@@ -414,11 +445,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67BF9142212F26F3006E9F32 /* PlanDetailsScreen.storyboard in Resources */,
 				679D0817212C476D00824386 /* LaunchScreen.storyboard in Resources */,
 				67F342F2212E183C008621BD /* AvailablePlansScreen.storyboard in Resources */,
 				67F342C6212E0EEE008621BD /* Localizable.strings in Resources */,
 				67F342C2212E0B05008621BD /* Assets.xcassets in Resources */,
 				679D0812212C476C00824386 /* Main.storyboard in Resources */,
+				67BF9147212F3871006E9F32 /* CreditCardsScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +592,7 @@
 				67F342E4212E1539008621BD /* MyPlansScreen.swift in Sources */,
 				67F342E0212E1171008621BD /* DateFormats.swift in Sources */,
 				679D0843212C4F6F00824386 /* UITableView+Load.swift in Sources */,
+				67BF9140212F26CC006E9F32 /* PlanDetailsScreen.swift in Sources */,
 				67F342EC212E1607008621BD /* ProfileCell.swift in Sources */,
 				67F342E8212E1551008621BD /* MapScreen.swift in Sources */,
 				67F342CF212E0F73008621BD /* Colors.swift in Sources */,
@@ -568,6 +602,7 @@
 				67F342EA212E15FB008621BD /* MyPlansCell.swift in Sources */,
 				679D083C212C4C6700824386 /* CategoriesScreen.swift in Sources */,
 				B127DCFB212E791F00FC0856 /* AvailablePlansCell.swift in Sources */,
+				67BF9145212F3868006E9F32 /* CreditCardsScreen.swift in Sources */,
 				67F342DE212E109D008621BD /* BuildConfiguration.swift in Sources */,
 				67F342DA212E1008008621BD /* Language.swift in Sources */,
 				679D080B212C476C00824386 /* AppDelegate.swift in Sources */,
@@ -578,6 +613,7 @@
 				679D0841212C4F3B00824386 /* UIViewController+Load.swift in Sources */,
 				67F342CB212E0F2E008621BD /* UINavigationController+Root.swift in Sources */,
 				67F342F0212E1832008621BD /* AvailablePlansScreen.swift in Sources */,
+				67BF9149212F397C006E9F32 /* CreditCardsCell.swift in Sources */,
 				67F342D8212E0FF0008621BD /* UIViewController+Alert.swift in Sources */,
 				67F342E2212E132E008621BD /* LanguageKey.swift in Sources */,
 				67F342E6212E1547008621BD /* ProfileScreen.swift in Sources */,

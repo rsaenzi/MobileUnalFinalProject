@@ -1,18 +1,18 @@
 //
-//  AvailablePlansScreen.swift
+//  CreditCardsScreen.swift
 //  Awesome City Trips
 //
-//  Created by Rigoberto Saenz on 8/22/18.
+//  Created by Rigoberto Saenz on 8/23/18.
 //  Copyright © 2018 Awesome City Team. All rights reserved.
 //
 
 import UIKit
 
-class AvailablePlansScreen: UIViewController {
+class CreditCardsScreen: UIViewController {
     
 }
 
-extension AvailablePlansScreen: UITableViewDelegate, UITableViewDataSource {
+extension CreditCardsScreen: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
@@ -22,20 +22,20 @@ extension AvailablePlansScreen: UITableViewDelegate, UITableViewDataSource {
         
         //        let category = allCategories[indexPath.row]
         
-        let cell: AvailablePlansCell = tableView.dequeue(indexPath)
+        let cell: CreditCardsCell = tableView.dequeue(indexPath)
         //        cell.categoryName.text = category.type.getName()
         //        cell.categoryImage.image = category.type.getIcon()
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 70
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let screen: PlanDetailsScreen = loadViewController()
-        navigationController?.pushViewController(screen, animated: true)
+//        let screen: PlanDetailsScreen = loadViewController()
+//        navigationController?.pushViewController(screen, animated: true)
     }
 }
