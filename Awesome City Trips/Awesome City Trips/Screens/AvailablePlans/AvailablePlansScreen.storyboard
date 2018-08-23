@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,14 +18,99 @@
                     <view key="view" contentMode="scaleToFill" id="e0T-8e-Fsf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="028-3Q-Bxv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AvailablePlansCell" rowHeight="100" id="zbq-9K-eEs" customClass="AvailablePlansCell" customModule="Awesome_City_Trips" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zbq-9K-eEs" id="kax-1u-8qU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="0LI-YN-vBF">
+                                                    <rect key="frame" x="4" y="4" width="91.5" height="91.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="0LI-YN-vBF" secondAttribute="height" id="Itu-kv-3JK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDu-HW-3Y9">
+                                                    <rect key="frame" x="103.5" y="8" width="263.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZe-Jz-bDg">
+                                                    <rect key="frame" x="103.5" y="33" width="263.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Km-yN-ag3">
+                                                    <rect key="frame" x="103" y="58" width="264" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CR-cS-RGE">
+                                                    <rect key="frame" x="318" y="58" width="49" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eua-OU-hI2">
+                                                    <rect key="frame" x="328" y="33" width="39" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="8CR-cS-RGE" secondAttribute="trailing" constant="8" id="0sa-5Q-HpC"/>
+                                                <constraint firstItem="4Km-yN-ag3" firstAttribute="top" secondItem="bZe-Jz-bDg" secondAttribute="bottom" constant="4" id="4fc-S8-qqY"/>
+                                                <constraint firstItem="bZe-Jz-bDg" firstAttribute="leading" secondItem="0LI-YN-vBF" secondAttribute="trailing" constant="8" id="8OY-Pa-3jv"/>
+                                                <constraint firstItem="0LI-YN-vBF" firstAttribute="top" secondItem="kax-1u-8qU" secondAttribute="top" constant="4" id="L87-6c-pa7"/>
+                                                <constraint firstAttribute="trailing" secondItem="bZe-Jz-bDg" secondAttribute="trailing" constant="8" id="LDE-aR-S4M"/>
+                                                <constraint firstItem="4Km-yN-ag3" firstAttribute="leading" secondItem="0LI-YN-vBF" secondAttribute="trailing" constant="8" id="MNa-ZA-MeK"/>
+                                                <constraint firstAttribute="bottom" secondItem="0LI-YN-vBF" secondAttribute="bottom" constant="4" id="Mnc-gq-wYy"/>
+                                                <constraint firstItem="bZe-Jz-bDg" firstAttribute="top" secondItem="vDu-HW-3Y9" secondAttribute="bottom" constant="4" id="aNB-Mm-Bkh"/>
+                                                <constraint firstAttribute="trailing" secondItem="vDu-HW-3Y9" secondAttribute="trailing" constant="8" id="cZd-mS-Qq7"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Km-yN-ag3" secondAttribute="trailing" constant="8" id="gFm-Sc-3jd"/>
+                                                <constraint firstItem="vDu-HW-3Y9" firstAttribute="leading" secondItem="0LI-YN-vBF" secondAttribute="trailing" constant="8" id="le3-HM-SDJ"/>
+                                                <constraint firstItem="8CR-cS-RGE" firstAttribute="centerY" secondItem="4Km-yN-ag3" secondAttribute="centerY" id="n8N-xg-bVu"/>
+                                                <constraint firstAttribute="trailing" secondItem="eua-OU-hI2" secondAttribute="trailing" constant="8" id="ocn-vx-1Io"/>
+                                                <constraint firstItem="vDu-HW-3Y9" firstAttribute="top" secondItem="kax-1u-8qU" secondAttribute="top" constant="8" id="qWl-97-MT4"/>
+                                                <constraint firstItem="eua-OU-hI2" firstAttribute="centerY" secondItem="bZe-Jz-bDg" secondAttribute="centerY" id="tCU-oZ-Q4i"/>
+                                                <constraint firstItem="0LI-YN-vBF" firstAttribute="leading" secondItem="kax-1u-8qU" secondAttribute="leading" constant="4" id="tDs-Xw-bbn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="MEC-Mn-30u" id="nDI-64-8vQ"/>
+                                    <outlet property="delegate" destination="MEC-Mn-30u" id="mEl-xc-eiE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="028-3Q-Bxv" firstAttribute="top" secondItem="nPr-jv-smm" secondAttribute="top" id="GEF-Eb-2gd"/>
+                            <constraint firstItem="028-3Q-Bxv" firstAttribute="leading" secondItem="nPr-jv-smm" secondAttribute="leading" id="L1K-mv-ncy"/>
+                            <constraint firstItem="nPr-jv-smm" firstAttribute="bottom" secondItem="028-3Q-Bxv" secondAttribute="bottom" id="mx8-ho-3Iv"/>
+                            <constraint firstItem="nPr-jv-smm" firstAttribute="trailing" secondItem="028-3Q-Bxv" secondAttribute="trailing" id="ndK-Pz-am6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nPr-jv-smm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Available Plans" id="LwC-4u-gLN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMD-fR-zFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="194" y="213"/>
+            <point key="canvasLocation" x="192.80000000000001" y="212.74362818590706"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppLogo" width="512" height="512"/>
+    </resources>
 </document>
