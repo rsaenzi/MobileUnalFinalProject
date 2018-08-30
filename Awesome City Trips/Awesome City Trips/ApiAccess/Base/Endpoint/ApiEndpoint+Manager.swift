@@ -42,7 +42,7 @@ extension ApiEndpoint: TargetType {
         case .getUserInfo(let userId):
             return "/getUserInfo/\(userId)"
             
-        case .getUserID(let username, let password):
+        case .getUserId(let username, let password):
             return "/getUserID/\(username), \(password)"
         }
     }

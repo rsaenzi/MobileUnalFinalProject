@@ -18,6 +18,25 @@
 		67291635213828E50047A515 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67291634213828E50047A515 /* ApiUtils.swift */; };
 		6729163921382AA60047A515 /* RequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729163821382AA60047A515 /* RequestApi.swift */; };
 		6729163B21382AAD0047A515 /* ResponseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729163A21382AAD0047A515 /* ResponseApi.swift */; };
+		67934605213840A500B96BAA /* GetCategoriesResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934604213840A500B96BAA /* GetCategoriesResponse.json */; };
+		67934607213840FB00B96BAA /* RequestGetCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67934606213840FB00B96BAA /* RequestGetCategories.swift */; };
+		679346092138410900B96BAA /* ResponseGetCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679346082138410900B96BAA /* ResponseGetCategories.swift */; };
+		6793460B213842B400B96BAA /* RequestGetEventsFromCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6793460A213842B400B96BAA /* RequestGetEventsFromCategory.swift */; };
+		6793460D213842BB00B96BAA /* ResponseGetEventsFromCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6793460C213842BB00B96BAA /* ResponseGetEventsFromCategory.swift */; };
+		6793460F213842C400B96BAA /* RequestGetEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6793460E213842C400B96BAA /* RequestGetEvent.swift */; };
+		67934611213842CA00B96BAA /* ResponseGetEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67934610213842CA00B96BAA /* ResponseGetEvent.swift */; };
+		67934613213842D300B96BAA /* RequestGetCreditCardsFromUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67934612213842D300B96BAA /* RequestGetCreditCardsFromUser.swift */; };
+		67934615213842DA00B96BAA /* ResponseGetCreditCardsFromUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67934614213842DA00B96BAA /* ResponseGetCreditCardsFromUser.swift */; };
+		67934617213842E500B96BAA /* RequestBuyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67934616213842E500B96BAA /* RequestBuyEvent.swift */; };
+		67934619213842EC00B96BAA /* ResponseBuyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67934618213842EC00B96BAA /* ResponseBuyEvent.swift */; };
+		6793461B213842F600B96BAA /* RequestGetEventFromLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6793461A213842F600B96BAA /* RequestGetEventFromLocation.swift */; };
+		6793461D213842FC00B96BAA /* ResponseGetEventFromLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6793461C213842FC00B96BAA /* ResponseGetEventFromLocation.swift */; };
+		6793461F2138430600B96BAA /* RequestGetEventsBuyedByUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6793461E2138430600B96BAA /* RequestGetEventsBuyedByUser.swift */; };
+		679346212138430B00B96BAA /* ResponseGetEventsBuyedByUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679346202138430B00B96BAA /* ResponseGetEventsBuyedByUser.swift */; };
+		679346232138431600B96BAA /* RequestGetUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679346222138431600B96BAA /* RequestGetUserInfo.swift */; };
+		679346252138431D00B96BAA /* ResponseGetUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679346242138431D00B96BAA /* ResponseGetUserInfo.swift */; };
+		679346272138432C00B96BAA /* RequestGetUserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679346262138432C00B96BAA /* RequestGetUserId.swift */; };
+		679346292138433400B96BAA /* ResponseGetUserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679346282138433400B96BAA /* ResponseGetUserId.swift */; };
 		679D080B212C476C00824386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679D080A212C476C00824386 /* AppDelegate.swift */; };
 		679D0812212C476C00824386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679D0810212C476C00824386 /* Main.storyboard */; };
 		679D0817212C476D00824386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679D0815212C476D00824386 /* LaunchScreen.storyboard */; };
@@ -92,6 +111,25 @@
 		67291634213828E50047A515 /* ApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		6729163821382AA60047A515 /* RequestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestApi.swift; sourceTree = "<group>"; };
 		6729163A21382AAD0047A515 /* ResponseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseApi.swift; sourceTree = "<group>"; };
+		67934604213840A500B96BAA /* GetCategoriesResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GetCategoriesResponse.json; sourceTree = "<group>"; };
+		67934606213840FB00B96BAA /* RequestGetCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetCategories.swift; sourceTree = "<group>"; };
+		679346082138410900B96BAA /* ResponseGetCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetCategories.swift; sourceTree = "<group>"; };
+		6793460A213842B400B96BAA /* RequestGetEventsFromCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetEventsFromCategory.swift; sourceTree = "<group>"; };
+		6793460C213842BB00B96BAA /* ResponseGetEventsFromCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetEventsFromCategory.swift; sourceTree = "<group>"; };
+		6793460E213842C400B96BAA /* RequestGetEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetEvent.swift; sourceTree = "<group>"; };
+		67934610213842CA00B96BAA /* ResponseGetEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetEvent.swift; sourceTree = "<group>"; };
+		67934612213842D300B96BAA /* RequestGetCreditCardsFromUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetCreditCardsFromUser.swift; sourceTree = "<group>"; };
+		67934614213842DA00B96BAA /* ResponseGetCreditCardsFromUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetCreditCardsFromUser.swift; sourceTree = "<group>"; };
+		67934616213842E500B96BAA /* RequestBuyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuyEvent.swift; sourceTree = "<group>"; };
+		67934618213842EC00B96BAA /* ResponseBuyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBuyEvent.swift; sourceTree = "<group>"; };
+		6793461A213842F600B96BAA /* RequestGetEventFromLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetEventFromLocation.swift; sourceTree = "<group>"; };
+		6793461C213842FC00B96BAA /* ResponseGetEventFromLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetEventFromLocation.swift; sourceTree = "<group>"; };
+		6793461E2138430600B96BAA /* RequestGetEventsBuyedByUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetEventsBuyedByUser.swift; sourceTree = "<group>"; };
+		679346202138430B00B96BAA /* ResponseGetEventsBuyedByUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetEventsBuyedByUser.swift; sourceTree = "<group>"; };
+		679346222138431600B96BAA /* RequestGetUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetUserInfo.swift; sourceTree = "<group>"; };
+		679346242138431D00B96BAA /* ResponseGetUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetUserInfo.swift; sourceTree = "<group>"; };
+		679346262138432C00B96BAA /* RequestGetUserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetUserId.swift; sourceTree = "<group>"; };
+		679346282138433400B96BAA /* ResponseGetUserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetUserId.swift; sourceTree = "<group>"; };
 		679D0807212C476B00824386 /* Awesome City Trips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome City Trips.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		679D080A212C476C00824386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		679D0811212C476C00824386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -172,6 +210,15 @@
 			isa = PBXGroup;
 			children = (
 				6729162F2138223E0047A515 /* Base */,
+				679345FB21383E6600B96BAA /* GetCategories */,
+				679345FC21383E7000B96BAA /* GetEventsFromCategory */,
+				679345FD21383E7600B96BAA /* GetEvent */,
+				679345FE21383E7C00B96BAA /* GetCreditCardsFromUser */,
+				679345FF21383E8400B96BAA /* BuyEvent */,
+				6793460021383E8B00B96BAA /* GetEventFromLocation */,
+				6793460121383E9200B96BAA /* GetEventsBuyedByUser */,
+				6793460221383E9800B96BAA /* GetUserInfo */,
+				6793460321383EA000B96BAA /* GetUserId */,
 			);
 			path = ApiAccess;
 			sourceTree = "<group>";
@@ -202,6 +249,88 @@
 				6729163A21382AAD0047A515 /* ResponseApi.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		679345FB21383E6600B96BAA /* GetCategories */ = {
+			isa = PBXGroup;
+			children = (
+				67934604213840A500B96BAA /* GetCategoriesResponse.json */,
+				67934606213840FB00B96BAA /* RequestGetCategories.swift */,
+				679346082138410900B96BAA /* ResponseGetCategories.swift */,
+			);
+			path = GetCategories;
+			sourceTree = "<group>";
+		};
+		679345FC21383E7000B96BAA /* GetEventsFromCategory */ = {
+			isa = PBXGroup;
+			children = (
+				6793460A213842B400B96BAA /* RequestGetEventsFromCategory.swift */,
+				6793460C213842BB00B96BAA /* ResponseGetEventsFromCategory.swift */,
+			);
+			path = GetEventsFromCategory;
+			sourceTree = "<group>";
+		};
+		679345FD21383E7600B96BAA /* GetEvent */ = {
+			isa = PBXGroup;
+			children = (
+				6793460E213842C400B96BAA /* RequestGetEvent.swift */,
+				67934610213842CA00B96BAA /* ResponseGetEvent.swift */,
+			);
+			path = GetEvent;
+			sourceTree = "<group>";
+		};
+		679345FE21383E7C00B96BAA /* GetCreditCardsFromUser */ = {
+			isa = PBXGroup;
+			children = (
+				67934612213842D300B96BAA /* RequestGetCreditCardsFromUser.swift */,
+				67934614213842DA00B96BAA /* ResponseGetCreditCardsFromUser.swift */,
+			);
+			path = GetCreditCardsFromUser;
+			sourceTree = "<group>";
+		};
+		679345FF21383E8400B96BAA /* BuyEvent */ = {
+			isa = PBXGroup;
+			children = (
+				67934616213842E500B96BAA /* RequestBuyEvent.swift */,
+				67934618213842EC00B96BAA /* ResponseBuyEvent.swift */,
+			);
+			path = BuyEvent;
+			sourceTree = "<group>";
+		};
+		6793460021383E8B00B96BAA /* GetEventFromLocation */ = {
+			isa = PBXGroup;
+			children = (
+				6793461A213842F600B96BAA /* RequestGetEventFromLocation.swift */,
+				6793461C213842FC00B96BAA /* ResponseGetEventFromLocation.swift */,
+			);
+			path = GetEventFromLocation;
+			sourceTree = "<group>";
+		};
+		6793460121383E9200B96BAA /* GetEventsBuyedByUser */ = {
+			isa = PBXGroup;
+			children = (
+				6793461E2138430600B96BAA /* RequestGetEventsBuyedByUser.swift */,
+				679346202138430B00B96BAA /* ResponseGetEventsBuyedByUser.swift */,
+			);
+			path = GetEventsBuyedByUser;
+			sourceTree = "<group>";
+		};
+		6793460221383E9800B96BAA /* GetUserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				679346222138431600B96BAA /* RequestGetUserInfo.swift */,
+				679346242138431D00B96BAA /* ResponseGetUserInfo.swift */,
+			);
+			path = GetUserInfo;
+			sourceTree = "<group>";
+		};
+		6793460321383EA000B96BAA /* GetUserId */ = {
+			isa = PBXGroup;
+			children = (
+				679346262138432C00B96BAA /* RequestGetUserId.swift */,
+				679346282138433400B96BAA /* ResponseGetUserId.swift */,
+			);
+			path = GetUserId;
 			sourceTree = "<group>";
 		};
 		679D07FE212C476B00824386 = {
@@ -511,6 +640,7 @@
 				67F342C2212E0B05008621BD /* Assets.xcassets in Resources */,
 				679D0812212C476C00824386 /* Main.storyboard in Resources */,
 				67BF9147212F3871006E9F32 /* CreditCardsScreen.storyboard in Resources */,
+				67934605213840A500B96BAA /* GetCategoriesResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +779,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F342E4212E1539008621BD /* MyPlansScreen.swift in Sources */,
+				6793460B213842B400B96BAA /* RequestGetEventsFromCategory.swift in Sources */,
+				679346292138433400B96BAA /* ResponseGetUserId.swift in Sources */,
+				67934613213842D300B96BAA /* RequestGetCreditCardsFromUser.swift in Sources */,
 				67F342E0212E1171008621BD /* DateFormats.swift in Sources */,
 				679D0843212C4F6F00824386 /* UITableView+Load.swift in Sources */,
 				67291635213828E50047A515 /* ApiUtils.swift in Sources */,
@@ -658,6 +791,8 @@
 				6729162521381EB10047A515 /* CreditCard.swift in Sources */,
 				6729162921381FE60047A515 /* Coordinates.swift in Sources */,
 				67F342CF212E0F73008621BD /* Colors.swift in Sources */,
+				6793461B213842F600B96BAA /* RequestGetEventFromLocation.swift in Sources */,
+				679346092138410900B96BAA /* ResponseGetCategories.swift in Sources */,
 				67F342D2212E0F8E008621BD /* Log.swift in Sources */,
 				6729162321381E0E0047A515 /* User.swift in Sources */,
 				67F342DC212E103B008621BD /* Language+UIKit.swift in Sources */,
@@ -665,25 +800,38 @@
 				67F342CD212E0F48008621BD /* UIApplication+TopController.swift in Sources */,
 				67F342EA212E15FB008621BD /* MyPlansCell.swift in Sources */,
 				6729162721381F8C0047A515 /* Event.swift in Sources */,
+				67934615213842DA00B96BAA /* ResponseGetCreditCardsFromUser.swift in Sources */,
 				679D083C212C4C6700824386 /* CategoriesScreen.swift in Sources */,
+				67934611213842CA00B96BAA /* ResponseGetEvent.swift in Sources */,
 				B127DCFB212E791F00FC0856 /* AvailablePlansCell.swift in Sources */,
 				67BF9145212F3868006E9F32 /* CreditCardsScreen.swift in Sources */,
 				67F342DE212E109D008621BD /* BuildConfiguration.swift in Sources */,
 				67F342DA212E1008008621BD /* Language.swift in Sources */,
+				67934617213842E500B96BAA /* RequestBuyEvent.swift in Sources */,
+				6793461F2138430600B96BAA /* RequestGetEventsBuyedByUser.swift in Sources */,
+				6793460D213842BB00B96BAA /* ResponseGetEventsFromCategory.swift in Sources */,
+				67934607213840FB00B96BAA /* RequestGetCategories.swift in Sources */,
 				679D080B212C476C00824386 /* AppDelegate.swift in Sources */,
 				679D0846212C4FA400824386 /* CategoryCell.swift in Sources */,
 				67CBFA7D212E054400E3B286 /* Category.swift in Sources */,
+				679346232138431600B96BAA /* RequestGetUserInfo.swift in Sources */,
 				67291631213822500047A515 /* ApiEndpoint.swift in Sources */,
 				67291633213822ED0047A515 /* ApiEndpoint+Manager.swift in Sources */,
 				6729163921382AA60047A515 /* RequestApi.swift in Sources */,
+				679346252138431D00B96BAA /* ResponseGetUserInfo.swift in Sources */,
 				679D0841212C4F3B00824386 /* UIViewController+Load.swift in Sources */,
 				67F342CB212E0F2E008621BD /* UINavigationController+Root.swift in Sources */,
 				6729162B2138204F0047A515 /* EventDate.swift in Sources */,
+				679346212138430B00B96BAA /* ResponseGetEventsBuyedByUser.swift in Sources */,
+				6793460F213842C400B96BAA /* RequestGetEvent.swift in Sources */,
 				67F342F0212E1832008621BD /* AvailablePlansScreen.swift in Sources */,
+				67934619213842EC00B96BAA /* ResponseBuyEvent.swift in Sources */,
 				67BF9149212F397C006E9F32 /* CreditCardsCell.swift in Sources */,
 				67F342D8212E0FF0008621BD /* UIViewController+Alert.swift in Sources */,
 				67F342E2212E132E008621BD /* LanguageKey.swift in Sources */,
 				67F342E6212E1547008621BD /* ProfileScreen.swift in Sources */,
+				6793461D213842FC00B96BAA /* ResponseGetEventFromLocation.swift in Sources */,
+				679346272138432C00B96BAA /* RequestGetUserId.swift in Sources */,
 				6729162D213820890047A515 /* Organizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

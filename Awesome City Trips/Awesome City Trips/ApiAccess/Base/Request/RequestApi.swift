@@ -56,13 +56,13 @@ class RequestApi {
                 
             case .success(let data):
                 
-                // Success http code or Error not handled properly by server,
-                // in this case, calling Request must detect and process the error
-                guard data.statusCode >= 400, let jsonString = ApiUtils.getJsonString(from: data) else {
-                    callback(.received(result: data))
-                    return
-                }
-                
+//                // Success http code or Error not handled properly by server,
+//                // in this case, calling Request must detect and process the error
+//                guard data.statusCode >= 400, let jsonString = ApiUtils.getJsonString(from: data) else {
+//                    callback(.received(result: data))
+//                    return
+//                }
+//
 //                // Here we are trying to detect if the error was handled by the server
 //                if let errorFull: ServerErrorFull = jsonString.decodeFrom() {
 //                    callback(.error(result: data, error: errorFull.message))

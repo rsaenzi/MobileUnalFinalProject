@@ -17,5 +17,5 @@ enum ApiEndpoint {
     case getEventFromLocation(coordinates: Coordinates, numberofNearEvents: Int)
     case getEventsBuyedByUser(userId: Int64)
     case getUserInfo(userId: Int64)
-    case getUserID(username: Int64, password: Int64) // Oauth?
+    case getUserId(username: Int64, password: Int64) // Oauth?
 }
