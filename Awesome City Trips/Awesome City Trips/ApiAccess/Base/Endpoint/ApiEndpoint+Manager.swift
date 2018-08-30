@@ -11,10 +11,12 @@ import Moya
 extension ApiEndpoint: TargetType {
     
     var baseURL: URL {
-        return URL(string: "http://web.com")!
+        return URL(string: "https://drive.google.com")!
     }
     
     var path: String {
+        
+        return "/uc" // TODO: Temporal
         
         switch self {
         
@@ -59,7 +61,43 @@ extension ApiEndpoint: TargetType {
     }
     
     var task: Task {
-        return .requestPlain
+        
+        // TODO: Temporal
+        var jsonFileId = ""
+        
+        switch self {
+
+        case .getCategories:
+            jsonFileId = "1aVhVbR8CaYvBJ2nbgYO4jobljo67VBg8"
+            
+        case .getEventsFromCategory(let categoryId):
+            jsonFileId = ""
+            
+        case .getEvent(let eventId):
+            jsonFileId = ""
+            
+        case .getCreditCardsFromUser(let userId):
+            jsonFileId = ""
+            
+        case .buyEvent(let userId, let creditCardId, let eventId):
+            jsonFileId = ""
+            
+        case .getEventFromLocation(let coordinates, let numberofNearEvents):
+            jsonFileId = ""
+            
+        case .getEventsBuyedByUser(let userId):
+            jsonFileId = ""
+            
+        case .getUserInfo(let userId):
+            jsonFileId = ""
+            
+        case .getUserId(let username, let password):
+            jsonFileId = ""
+        }
+        
+        return .requestParameters(
+            parameters: ["id": jsonFileId],
+            encoding: URLEncoding.queryString)
     }
     
     var sampleData: Data {
