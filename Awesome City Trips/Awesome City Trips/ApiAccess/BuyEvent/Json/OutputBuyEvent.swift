@@ -1,5 +1,5 @@
 //
-//  EventDate.swift
+//  OutputBuyEvent.swift
 //  Awesome City Trips
 //
 //  Created by Rigoberto Saenz on 8/30/18.
@@ -7,9 +7,3 @@
 //
 
 import Foundation
-
-struct EventDate: Codable {
-    let id: Int64
-    let date: Date
-    let price: Int
-}

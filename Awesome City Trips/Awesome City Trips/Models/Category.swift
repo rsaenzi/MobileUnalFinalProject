@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Category {
+struct Category: Codable {
     let id: Int64
     let name: String
     let bannerUrl: String

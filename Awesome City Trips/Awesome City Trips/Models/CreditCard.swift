@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CreditCard {
+struct CreditCard: Codable {
     let id: Int64
     let token: String
     let firstSixDigit: String

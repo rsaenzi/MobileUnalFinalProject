@@ -9,4 +9,5 @@
 enum LanguageKey: String {
     case appName
     case okUpper
+    case errorOnFetchingData
 }

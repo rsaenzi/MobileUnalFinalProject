@@ -5,3 +5,7 @@
   Created by Rigoberto Saenz on 8/22/18.
   Copyright © 2018 Awesome City Team. All rights reserved.
 */
+
+"appName" = "Awesome City Trips";
+"okUpper" = "OK";
+"errorOnFetchingData" = "Error al intentar obtener datos del servidor, porfavor intente más tarde...";

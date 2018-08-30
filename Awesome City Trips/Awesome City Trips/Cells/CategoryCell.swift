@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CategoryCell: UITableViewCell {
+    
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryName: UILabel!
+    
+    func fill(using category: Category) {
+        categoryName.text = category.name
+//        categoryImage.image = category.type.getIcon()
+    }
 }

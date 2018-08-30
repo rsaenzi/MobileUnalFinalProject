@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Event {
+struct Event: Codable {
     let id: Int64
     let name: String
     let iconUrl: String

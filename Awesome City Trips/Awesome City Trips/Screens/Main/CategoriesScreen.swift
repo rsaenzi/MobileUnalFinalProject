@@ -7,20 +7,36 @@
 //
 
 import UIKit
+import KVNProgress
 
 class CategoriesScreen: UIViewController {
+    
+    @IBOutlet private weak var table: UITableView!
     
     private var allCategories: [Category] = []
     
     override func viewDidLoad() {
         
-        allCategories = [
-            Category(id: 0, name: "hola", bannerUrl: "http", description: "Desc", events: []),
-            Category(id: 0, name: "hola", bannerUrl: "http", description: "Desc", events: []),
-            Category(id: 0, name: "hola", bannerUrl: "http", description: "Desc", events: []),
-            Category(id: 0, name: "hola", bannerUrl: "http", description: "Desc", events: []),
-            Category(id: 0, name: "hola", bannerUrl: "http", description: "Desc", events: []),
+        KVNProgress.show()
+        
+        RequestGetCategories.request { [weak self] response in
             
+            KVNProgress.dismiss()
+            
+            guard let `self` = self else { return }
+            
+            switch response {
+            case .success(let output):
+                self.allCategories = output.categories
+                
+            default:
+                self.allCategories = []
+                self.showSimpleAlert(message: .errorOnFetchingData)
+            }
+            
+            self.table.reloadData()
+        }
+        
 //            Category(type: .business),
 //            Category(type: .gastronomy),
 //            Category(type: .history),
@@ -28,7 +44,6 @@ class CategoriesScreen: UIViewController {
 //            Category(type: .party),
 //            Category(type: .study),
 //            Category(type: .surgery),
-        ]
     }
 }
 
@@ -44,8 +59,7 @@ extension CategoriesScreen: UITableViewDelegate, UITableViewDataSource {
         let category = allCategories[indexPath.row]
         
         let cell: CategoryCell = tableView.dequeue(indexPath)
-//        cell.categoryName.text = category.type.getName()
-//        cell.categoryImage.image = category.type.getIcon()
+        cell.fill(using: category)
         return cell
     }
     

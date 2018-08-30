@@ -74,6 +74,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" title="Categories" id="bRv-Ez-0g3"/>
+                    <connections>
+                        <outlet property="table" destination="jYr-Bg-kcy" id="TIS-Tm-4W3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>

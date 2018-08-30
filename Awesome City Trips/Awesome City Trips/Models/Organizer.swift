@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Organizer {
+struct Organizer: Codable {
     let id: Int64
     let name: String
 }

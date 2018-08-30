@@ -60,6 +60,15 @@
 		67BF9147212F3871006E9F32 /* CreditCardsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67BF9146212F3871006E9F32 /* CreditCardsScreen.storyboard */; };
 		67BF9149212F397C006E9F32 /* CreditCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF9148212F397C006E9F32 /* CreditCardsCell.swift */; };
 		67CBFA7D212E054400E3B286 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBFA7C212E054400E3B286 /* Category.swift */; };
+		67D32AED213845D500DCE5C7 /* OutputGetCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AEC213845D500DCE5C7 /* OutputGetCategories.swift */; };
+		67D32AEF213845F000DCE5C7 /* OutputGetEventsFromCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AEE213845F000DCE5C7 /* OutputGetEventsFromCategory.swift */; };
+		67D32AF1213845FF00DCE5C7 /* OutputGetEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AF0213845FF00DCE5C7 /* OutputGetEvent.swift */; };
+		67D32AF32138460A00DCE5C7 /* OutputGetCreditCardsFromUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AF22138460A00DCE5C7 /* OutputGetCreditCardsFromUser.swift */; };
+		67D32AF52138461900DCE5C7 /* OutputBuyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AF42138461900DCE5C7 /* OutputBuyEvent.swift */; };
+		67D32AF72138462200DCE5C7 /* OutputGetEventFromLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AF62138462200DCE5C7 /* OutputGetEventFromLocation.swift */; };
+		67D32AF92138462D00DCE5C7 /* OutputGetEventsBuyedByUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AF82138462D00DCE5C7 /* OutputGetEventsBuyedByUser.swift */; };
+		67D32AFB2138463600DCE5C7 /* OutputGetUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AFA2138463600DCE5C7 /* OutputGetUserInfo.swift */; };
+		67D32AFF2138465100DCE5C7 /* OutputGetUserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AFE2138465100DCE5C7 /* OutputGetUserId.swift */; };
 		67F342C2212E0B05008621BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F342C1212E0B05008621BD /* Assets.xcassets */; };
 		67F342C6212E0EEE008621BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67F342C8212E0EEE008621BD /* Localizable.strings */; };
 		67F342CB212E0F2E008621BD /* UINavigationController+Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342CA212E0F2E008621BD /* UINavigationController+Root.swift */; };
@@ -167,6 +176,15 @@
 		67BF9146212F3871006E9F32 /* CreditCardsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreditCardsScreen.storyboard; sourceTree = "<group>"; };
 		67BF9148212F397C006E9F32 /* CreditCardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardsCell.swift; sourceTree = "<group>"; };
 		67CBFA7C212E054400E3B286 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		67D32AEC213845D500DCE5C7 /* OutputGetCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetCategories.swift; sourceTree = "<group>"; };
+		67D32AEE213845F000DCE5C7 /* OutputGetEventsFromCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetEventsFromCategory.swift; sourceTree = "<group>"; };
+		67D32AF0213845FF00DCE5C7 /* OutputGetEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetEvent.swift; sourceTree = "<group>"; };
+		67D32AF22138460A00DCE5C7 /* OutputGetCreditCardsFromUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetCreditCardsFromUser.swift; sourceTree = "<group>"; };
+		67D32AF42138461900DCE5C7 /* OutputBuyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputBuyEvent.swift; sourceTree = "<group>"; };
+		67D32AF62138462200DCE5C7 /* OutputGetEventFromLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetEventFromLocation.swift; sourceTree = "<group>"; };
+		67D32AF82138462D00DCE5C7 /* OutputGetEventsBuyedByUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetEventsBuyedByUser.swift; sourceTree = "<group>"; };
+		67D32AFA2138463600DCE5C7 /* OutputGetUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetUserInfo.swift; sourceTree = "<group>"; };
+		67D32AFE2138465100DCE5C7 /* OutputGetUserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetUserId.swift; sourceTree = "<group>"; };
 		67F342C1212E0B05008621BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67F342C7212E0EEE008621BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		67F342C9212E0F05008621BD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -361,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				67934604213840A500B96BAA /* Response.json */,
+				67D32AEC213845D500DCE5C7 /* OutputGetCategories.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -369,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				6793462C213843AE00B96BAA /* Response.json */,
+				67D32AEE213845F000DCE5C7 /* OutputGetEventsFromCategory.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -377,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				6793462E213843C100B96BAA /* Response.json */,
+				67D32AF0213845FF00DCE5C7 /* OutputGetEvent.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -385,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				67934630213843C800B96BAA /* Response.json */,
+				67D32AF22138460A00DCE5C7 /* OutputGetCreditCardsFromUser.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -393,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				67934632213843CE00B96BAA /* Response.json */,
+				67D32AF42138461900DCE5C7 /* OutputBuyEvent.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -401,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				67934634213843D300B96BAA /* Response.json */,
+				67D32AF62138462200DCE5C7 /* OutputGetEventFromLocation.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -409,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				67934636213843D800B96BAA /* Response.json */,
+				67D32AF82138462D00DCE5C7 /* OutputGetEventsBuyedByUser.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -417,6 +442,7 @@
 			isa = PBXGroup;
 			children = (
 				67934638213843DD00B96BAA /* Response.json */,
+				67D32AFA2138463600DCE5C7 /* OutputGetUserInfo.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -425,6 +451,7 @@
 			isa = PBXGroup;
 			children = (
 				6793463A213843E300B96BAA /* Response.json */,
+				67D32AFE2138465100DCE5C7 /* OutputGetUserId.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -887,7 +914,9 @@
 				679346292138433400B96BAA /* ResponseGetUserId.swift in Sources */,
 				67934613213842D300B96BAA /* RequestGetCreditCardsFromUser.swift in Sources */,
 				67F342E0212E1171008621BD /* DateFormats.swift in Sources */,
+				67D32AFB2138463600DCE5C7 /* OutputGetUserInfo.swift in Sources */,
 				679D0843212C4F6F00824386 /* UITableView+Load.swift in Sources */,
+				67D32AF1213845FF00DCE5C7 /* OutputGetEvent.swift in Sources */,
 				67291635213828E50047A515 /* ApiUtils.swift in Sources */,
 				67BF9140212F26CC006E9F32 /* PlanDetailsScreen.swift in Sources */,
 				67F342EC212E1607008621BD /* ProfileCell.swift in Sources */,
@@ -901,6 +930,7 @@
 				6729162321381E0E0047A515 /* User.swift in Sources */,
 				67F342DC212E103B008621BD /* Language+UIKit.swift in Sources */,
 				6729163B21382AAD0047A515 /* ResponseApi.swift in Sources */,
+				67D32AED213845D500DCE5C7 /* OutputGetCategories.swift in Sources */,
 				67F342CD212E0F48008621BD /* UIApplication+TopController.swift in Sources */,
 				67F342EA212E15FB008621BD /* MyPlansCell.swift in Sources */,
 				6729162721381F8C0047A515 /* Event.swift in Sources */,
@@ -909,7 +939,9 @@
 				67934611213842CA00B96BAA /* ResponseGetEvent.swift in Sources */,
 				B127DCFB212E791F00FC0856 /* AvailablePlansCell.swift in Sources */,
 				67BF9145212F3868006E9F32 /* CreditCardsScreen.swift in Sources */,
+				67D32AF72138462200DCE5C7 /* OutputGetEventFromLocation.swift in Sources */,
 				67F342DE212E109D008621BD /* BuildConfiguration.swift in Sources */,
+				67D32AF52138461900DCE5C7 /* OutputBuyEvent.swift in Sources */,
 				67F342DA212E1008008621BD /* Language.swift in Sources */,
 				67934617213842E500B96BAA /* RequestBuyEvent.swift in Sources */,
 				6793461F2138430600B96BAA /* RequestGetEventsBuyedByUser.swift in Sources */,
@@ -917,21 +949,25 @@
 				67934607213840FB00B96BAA /* RequestGetCategories.swift in Sources */,
 				679D080B212C476C00824386 /* AppDelegate.swift in Sources */,
 				679D0846212C4FA400824386 /* CategoryCell.swift in Sources */,
+				67D32AEF213845F000DCE5C7 /* OutputGetEventsFromCategory.swift in Sources */,
 				67CBFA7D212E054400E3B286 /* Category.swift in Sources */,
 				679346232138431600B96BAA /* RequestGetUserInfo.swift in Sources */,
 				67291631213822500047A515 /* ApiEndpoint.swift in Sources */,
 				67291633213822ED0047A515 /* ApiEndpoint+Manager.swift in Sources */,
+				67D32AFF2138465100DCE5C7 /* OutputGetUserId.swift in Sources */,
 				6729163921382AA60047A515 /* RequestApi.swift in Sources */,
 				679346252138431D00B96BAA /* ResponseGetUserInfo.swift in Sources */,
 				679D0841212C4F3B00824386 /* UIViewController+Load.swift in Sources */,
 				67F342CB212E0F2E008621BD /* UINavigationController+Root.swift in Sources */,
 				6729162B2138204F0047A515 /* EventDate.swift in Sources */,
+				67D32AF32138460A00DCE5C7 /* OutputGetCreditCardsFromUser.swift in Sources */,
 				679346212138430B00B96BAA /* ResponseGetEventsBuyedByUser.swift in Sources */,
 				6793460F213842C400B96BAA /* RequestGetEvent.swift in Sources */,
 				67F342F0212E1832008621BD /* AvailablePlansScreen.swift in Sources */,
 				67934619213842EC00B96BAA /* ResponseBuyEvent.swift in Sources */,
 				67BF9149212F397C006E9F32 /* CreditCardsCell.swift in Sources */,
 				67F342D8212E0FF0008621BD /* UIViewController+Alert.swift in Sources */,
+				67D32AF92138462D00DCE5C7 /* OutputGetEventsBuyedByUser.swift in Sources */,
 				67F342E2212E132E008621BD /* LanguageKey.swift in Sources */,
 				67F342E6212E1547008621BD /* ProfileScreen.swift in Sources */,
 				6793461D213842FC00B96BAA /* ResponseGetEventFromLocation.swift in Sources */,
