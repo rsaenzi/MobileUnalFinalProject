@@ -144,6 +144,7 @@ enum LogSystem: String {
 
 // swiftlint:disable line_length
 enum LogMessage: String {
+    case noConnection = "No WiFi or Cellular connection available"
     case fetchKeychainError = "Can not fetch token from Keychain to authenticate the request"
     case noteNewVsExistingUsers = "At this point is ok if 'user' is not present in the json string, that is used to differentiate between new and existing users"
 }
