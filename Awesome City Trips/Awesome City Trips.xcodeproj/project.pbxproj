@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6729162321381E0E0047A515 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729162221381E0E0047A515 /* User.swift */; };
+		6729162521381EB10047A515 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729162421381EB10047A515 /* CreditCard.swift */; };
+		6729162721381F8C0047A515 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729162621381F8C0047A515 /* Event.swift */; };
+		6729162921381FE60047A515 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729162821381FE60047A515 /* Coordinates.swift */; };
+		6729162B2138204F0047A515 /* EventDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729162A2138204F0047A515 /* EventDate.swift */; };
+		6729162D213820890047A515 /* Organizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729162C213820890047A515 /* Organizer.swift */; };
+		67291631213822500047A515 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67291630213822500047A515 /* ApiEndpoint.swift */; };
+		67291633213822ED0047A515 /* ApiEndpoint+Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67291632213822ED0047A515 /* ApiEndpoint+Manager.swift */; };
+		67291635213828E50047A515 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67291634213828E50047A515 /* ApiUtils.swift */; };
 		679D080B212C476C00824386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679D080A212C476C00824386 /* AppDelegate.swift */; };
 		679D0812212C476C00824386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679D0810212C476C00824386 /* Main.storyboard */; };
 		679D0817212C476D00824386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679D0815212C476D00824386 /* LaunchScreen.storyboard */; };
@@ -21,7 +30,6 @@
 		67BF9145212F3868006E9F32 /* CreditCardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF9144212F3868006E9F32 /* CreditCardsScreen.swift */; };
 		67BF9147212F3871006E9F32 /* CreditCardsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67BF9146212F3871006E9F32 /* CreditCardsScreen.storyboard */; };
 		67BF9149212F397C006E9F32 /* CreditCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF9148212F397C006E9F32 /* CreditCardsCell.swift */; };
-		67CBFA7B212E04D100E3B286 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBFA7A212E04D100E3B286 /* CategoryType.swift */; };
 		67CBFA7D212E054400E3B286 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBFA7C212E054400E3B286 /* Category.swift */; };
 		67F342C2212E0B05008621BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F342C1212E0B05008621BD /* Assets.xcassets */; };
 		67F342C6212E0EEE008621BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67F342C8212E0EEE008621BD /* Localizable.strings */; };
@@ -29,7 +37,6 @@
 		67F342CD212E0F48008621BD /* UIApplication+TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342CC212E0F48008621BD /* UIApplication+TopController.swift */; };
 		67F342CF212E0F73008621BD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342CE212E0F73008621BD /* Colors.swift */; };
 		67F342D2212E0F8E008621BD /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342D1212E0F8E008621BD /* Log.swift */; };
-		67F342D6212E0FDA008621BD /* ApiUtilsMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342D5212E0FDA008621BD /* ApiUtilsMoya.swift */; };
 		67F342D8212E0FF0008621BD /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342D7212E0FF0008621BD /* UIViewController+Alert.swift */; };
 		67F342DA212E1008008621BD /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342D9212E1008008621BD /* Language.swift */; };
 		67F342DC212E103B008621BD /* Language+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342DB212E103B008621BD /* Language+UIKit.swift */; };
@@ -72,6 +79,15 @@
 		257840067083EE29B9EC6BB0 /* Pods-Awesome City TripsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome City TripsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome City TripsUITests/Pods-Awesome City TripsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4311B7BF0326D912CAD8F081 /* Pods-Awesome City Trips.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome City Trips.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome City Trips/Pods-Awesome City Trips.debug.xcconfig"; sourceTree = "<group>"; };
 		4C080B7CF5F2824DC950CE1B /* Pods-Awesome City TripsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome City TripsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome City TripsUITests/Pods-Awesome City TripsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6729162221381E0E0047A515 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6729162421381EB10047A515 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		6729162621381F8C0047A515 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		6729162821381FE60047A515 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		6729162A2138204F0047A515 /* EventDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDate.swift; sourceTree = "<group>"; };
+		6729162C213820890047A515 /* Organizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organizer.swift; sourceTree = "<group>"; };
+		67291630213822500047A515 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		67291632213822ED0047A515 /* ApiEndpoint+Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiEndpoint+Manager.swift"; sourceTree = "<group>"; };
+		67291634213828E50047A515 /* ApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		679D0807212C476B00824386 /* Awesome City Trips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome City Trips.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		679D080A212C476C00824386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		679D0811212C476C00824386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,7 +108,6 @@
 		67BF9144212F3868006E9F32 /* CreditCardsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardsScreen.swift; sourceTree = "<group>"; };
 		67BF9146212F3871006E9F32 /* CreditCardsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreditCardsScreen.storyboard; sourceTree = "<group>"; };
 		67BF9148212F397C006E9F32 /* CreditCardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardsCell.swift; sourceTree = "<group>"; };
-		67CBFA7A212E04D100E3B286 /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
 		67CBFA7C212E054400E3B286 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		67F342C1212E0B05008621BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67F342C7212E0EEE008621BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -101,7 +116,6 @@
 		67F342CC212E0F48008621BD /* UIApplication+TopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopController.swift"; sourceTree = "<group>"; };
 		67F342CE212E0F73008621BD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		67F342D1212E0F8E008621BD /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		67F342D5212E0FDA008621BD /* ApiUtilsMoya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtilsMoya.swift; sourceTree = "<group>"; };
 		67F342D7212E0FF0008621BD /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		67F342D9212E1008008621BD /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		67F342DB212E103B008621BD /* Language+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Language+UIKit.swift"; sourceTree = "<group>"; };
@@ -150,6 +164,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6729162E213822350047A515 /* ApiAccess */ = {
+			isa = PBXGroup;
+			children = (
+				6729162F2138223E0047A515 /* Base */,
+			);
+			path = ApiAccess;
+			sourceTree = "<group>";
+		};
+		6729162F2138223E0047A515 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				67291630213822500047A515 /* ApiEndpoint.swift */,
+				67291632213822ED0047A515 /* ApiEndpoint+Manager.swift */,
+				67291634213828E50047A515 /* ApiUtils.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		679D07FE212C476B00824386 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +207,7 @@
 		679D0809212C476B00824386 /* Awesome City Trips */ = {
 			isa = PBXGroup;
 			children = (
+				6729162E213822350047A515 /* ApiAccess */,
 				67F342D0212E0F84008621BD /* Util */,
 				67F342C3212E0EBF008621BD /* Language */,
 				67CBFA79212E04C000E3B286 /* Models */,
@@ -225,7 +258,6 @@
 				679D0840212C4F3B00824386 /* UIViewController+Load.swift */,
 				67F342CA212E0F2E008621BD /* UINavigationController+Root.swift */,
 				67F342CC212E0F48008621BD /* UIApplication+TopController.swift */,
-				67F342D5212E0FDA008621BD /* ApiUtilsMoya.swift */,
 				67F342D7212E0FF0008621BD /* UIViewController+Alert.swift */,
 			);
 			path = Extensions;
@@ -264,8 +296,13 @@
 		67CBFA79212E04C000E3B286 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				67CBFA7A212E04D100E3B286 /* CategoryType.swift */,
+				6729162221381E0E0047A515 /* User.swift */,
 				67CBFA7C212E054400E3B286 /* Category.swift */,
+				6729162421381EB10047A515 /* CreditCard.swift */,
+				6729162621381F8C0047A515 /* Event.swift */,
+				6729162821381FE60047A515 /* Coordinates.swift */,
+				6729162A2138204F0047A515 /* EventDate.swift */,
+				6729162C213820890047A515 /* Organizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -592,14 +629,19 @@
 				67F342E4212E1539008621BD /* MyPlansScreen.swift in Sources */,
 				67F342E0212E1171008621BD /* DateFormats.swift in Sources */,
 				679D0843212C4F6F00824386 /* UITableView+Load.swift in Sources */,
+				67291635213828E50047A515 /* ApiUtils.swift in Sources */,
 				67BF9140212F26CC006E9F32 /* PlanDetailsScreen.swift in Sources */,
 				67F342EC212E1607008621BD /* ProfileCell.swift in Sources */,
 				67F342E8212E1551008621BD /* MapScreen.swift in Sources */,
+				6729162521381EB10047A515 /* CreditCard.swift in Sources */,
+				6729162921381FE60047A515 /* Coordinates.swift in Sources */,
 				67F342CF212E0F73008621BD /* Colors.swift in Sources */,
 				67F342D2212E0F8E008621BD /* Log.swift in Sources */,
+				6729162321381E0E0047A515 /* User.swift in Sources */,
 				67F342DC212E103B008621BD /* Language+UIKit.swift in Sources */,
 				67F342CD212E0F48008621BD /* UIApplication+TopController.swift in Sources */,
 				67F342EA212E15FB008621BD /* MyPlansCell.swift in Sources */,
+				6729162721381F8C0047A515 /* Event.swift in Sources */,
 				679D083C212C4C6700824386 /* CategoriesScreen.swift in Sources */,
 				B127DCFB212E791F00FC0856 /* AvailablePlansCell.swift in Sources */,
 				67BF9145212F3868006E9F32 /* CreditCardsScreen.swift in Sources */,
@@ -607,16 +649,18 @@
 				67F342DA212E1008008621BD /* Language.swift in Sources */,
 				679D080B212C476C00824386 /* AppDelegate.swift in Sources */,
 				679D0846212C4FA400824386 /* CategoryCell.swift in Sources */,
-				67F342D6212E0FDA008621BD /* ApiUtilsMoya.swift in Sources */,
 				67CBFA7D212E054400E3B286 /* Category.swift in Sources */,
-				67CBFA7B212E04D100E3B286 /* CategoryType.swift in Sources */,
+				67291631213822500047A515 /* ApiEndpoint.swift in Sources */,
+				67291633213822ED0047A515 /* ApiEndpoint+Manager.swift in Sources */,
 				679D0841212C4F3B00824386 /* UIViewController+Load.swift in Sources */,
 				67F342CB212E0F2E008621BD /* UINavigationController+Root.swift in Sources */,
+				6729162B2138204F0047A515 /* EventDate.swift in Sources */,
 				67F342F0212E1832008621BD /* AvailablePlansScreen.swift in Sources */,
 				67BF9149212F397C006E9F32 /* CreditCardsCell.swift in Sources */,
 				67F342D8212E0FF0008621BD /* UIViewController+Alert.swift in Sources */,
 				67F342E2212E132E008621BD /* LanguageKey.swift in Sources */,
 				67F342E6212E1547008621BD /* ProfileScreen.swift in Sources */,
+				6729162D213820890047A515 /* Organizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

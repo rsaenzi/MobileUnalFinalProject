@@ -1,8 +1,9 @@
 //
-//  ApiUtilsMoya.swift
+//  ApiUtils.swift
+//  Awesome City Trips
 //
-//  Created by Rigoberto Sáenz Imbacuán (https://www.linkedin.com/in/rsaenzi/)
-//  Copyright © 2017. All rights reserved.
+//  Created by Rigoberto Saenz on 8/30/18.
+//  Copyright © 2018 Awesome City Team. All rights reserved.
 //
 
 import Foundation
@@ -204,6 +205,26 @@ extension String {
         
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .formatted(DateFormats.server.serverFormatterUTC)
+        
+        guard let jsonData = self.data(using: .utf8) else {
+            return nil
+        }
+        
+        let object: T
+        do {
+            object = try decoder.decode(T.self, from: jsonData)
+        } catch {
+            Log.shared.log(error, level: .error, from: .apiResponse)
+            return nil
+        }
+        
+        return object
+    }
+    
+    func decodeFromWithDateFormatter<T: Decodable>(formatter: DateFormatter) -> T? {
+        
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(formatter)
         
         guard let jsonData = self.data(using: .utf8) else {
             return nil

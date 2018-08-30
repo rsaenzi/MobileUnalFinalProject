@@ -6,8 +6,12 @@
 //  Copyright © 2018 Awesome City Team. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 struct Category {
-    let type: CategoryType
+    let id: Int64
+    let name: String
+    let bannerUrl: String
+    let description: String
+    let events: [Event]
 }

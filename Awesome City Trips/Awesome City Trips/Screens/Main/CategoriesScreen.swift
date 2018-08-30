@@ -15,13 +15,19 @@ class CategoriesScreen: UIViewController {
     override func viewDidLoad() {
         
         allCategories = [
-            Category(type: .business),
-            Category(type: .gastronomy),
-            Category(type: .history),
-            Category(type: .nature),
-            Category(type: .party),
-            Category(type: .study),
-            Category(type: .surgery),
+            Category(id: 0, name: "hola", bannerUrl: "http", description: "Desc", events: []),
+            Category(id: 0, name: "hola", bannerUrl: "http", description: "Desc", events: []),
+            Category(id: 0, name: "hola", bannerUrl: "http", description: "Desc", events: []),
+            Category(id: 0, name: "hola", bannerUrl: "http", description: "Desc", events: []),
+            Category(id: 0, name: "hola", bannerUrl: "http", description: "Desc", events: []),
+            
+//            Category(type: .business),
+//            Category(type: .gastronomy),
+//            Category(type: .history),
+//            Category(type: .nature),
+//            Category(type: .party),
+//            Category(type: .study),
+//            Category(type: .surgery),
         ]
     }
 }
@@ -38,8 +44,8 @@ extension CategoriesScreen: UITableViewDelegate, UITableViewDataSource {
         let category = allCategories[indexPath.row]
         
         let cell: CategoryCell = tableView.dequeue(indexPath)
-        cell.categoryName.text = category.type.getName()
-        cell.categoryImage.image = category.type.getIcon()
+//        cell.categoryName.text = category.type.getName()
+//        cell.categoryImage.image = category.type.getIcon()
         return cell
     }
     
