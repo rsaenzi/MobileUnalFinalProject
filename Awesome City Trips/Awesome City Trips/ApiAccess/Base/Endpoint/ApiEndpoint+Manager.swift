@@ -68,30 +68,31 @@ extension ApiEndpoint: TargetType {
         switch self {
 
         case .getCategories:
-            jsonFileId = "1aVhVbR8CaYvBJ2nbgYO4jobljo67VBg8"
+            //jsonFileId = "1aVhVbR8CaYvBJ2nbgYO4jobljo67VBg8"
+            jsonFileId = "1zagx245iP3d8LjaTz9YwOuKaZZkkRiNS";
             
-        case .getEventsFromCategory(let categoryId):
+        case .getEventsFromCategory:
             jsonFileId = ""
             
-        case .getEvent(let eventId):
+        case .getEvent:
             jsonFileId = ""
             
-        case .getCreditCardsFromUser(let userId):
+        case .getCreditCardsFromUser:
             jsonFileId = ""
             
-        case .buyEvent(let userId, let creditCardId, let eventId):
+        case .buyEvent:
             jsonFileId = ""
             
-        case .getEventFromLocation(let coordinates, let numberofNearEvents):
+        case .getEventFromLocation:
             jsonFileId = ""
             
-        case .getEventsBuyedByUser(let userId):
+        case .getEventsBuyedByUser:
             jsonFileId = ""
             
-        case .getUserInfo(let userId):
+        case .getUserInfo:
             jsonFileId = ""
             
-        case .getUserId(let username, let password):
+        case .getUserId:
             jsonFileId = ""
         }
         

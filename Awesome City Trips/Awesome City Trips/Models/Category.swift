@@ -13,5 +13,4 @@ struct Category: Codable {
     let name: String
     let bannerUrl: String
     let description: String
-    let events: [Event]
 }
