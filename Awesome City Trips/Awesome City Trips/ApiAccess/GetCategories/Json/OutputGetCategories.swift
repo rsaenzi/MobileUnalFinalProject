@@ -9,6 +9,6 @@
 import Foundation
 
 struct OutputGetCategories: Codable {
-    let status: String
+    let status: ApiRequestResult
     let categories: [Category]
 }

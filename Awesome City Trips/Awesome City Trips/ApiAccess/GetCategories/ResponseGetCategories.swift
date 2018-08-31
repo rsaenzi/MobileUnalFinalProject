@@ -26,5 +26,4 @@ enum ResponseGetCategories {
     case jsonDecodingError(jsonString: String)
     case requestFailure(reason: String)
     case noInternet
-    case gotAllResults
 }

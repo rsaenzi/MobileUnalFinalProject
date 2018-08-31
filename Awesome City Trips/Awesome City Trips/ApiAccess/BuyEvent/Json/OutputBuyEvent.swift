@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct OutputBuyEvent: Codable {
+    let status: ApiRequestResult
+    let paymentResult: String
+}

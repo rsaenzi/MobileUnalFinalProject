@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct OutputGetEventsFromCategory: Codable {
+    let status: ApiRequestResult
+    let events: [Event]
+}

@@ -17,6 +17,7 @@ struct Event: Codable {
     let rating: Int
     let gallery: [String]
     let availableSeats: Int
-    let eventDate: [EventDate]
+    let date: Date
+    let price: Double
     let organizer: Organizer
 }

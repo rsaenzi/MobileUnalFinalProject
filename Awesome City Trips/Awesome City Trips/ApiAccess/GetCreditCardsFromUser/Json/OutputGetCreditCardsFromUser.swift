@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct OutputGetCreditCardsFromUser: Codable {
+    let status: ApiRequestResult
+    let creditCards: [CreditCard]
+}

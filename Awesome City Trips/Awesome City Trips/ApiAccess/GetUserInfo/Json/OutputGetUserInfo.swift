@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct OutputGetUserInfo: Codable {
+    let status: ApiRequestResult
+    let user: User
+}
