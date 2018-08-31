@@ -299,7 +299,7 @@
 		679345FB21383E6600B96BAA /* GetCategories */ = {
 			isa = PBXGroup;
 			children = (
-				6793463C213843EA00B96BAA /* Json */,
+				6793463C213843EA00B96BAA /* InputOutput */,
 				67934606213840FB00B96BAA /* RequestGetCategories.swift */,
 				679346082138410900B96BAA /* ResponseGetCategories.swift */,
 			);
@@ -309,7 +309,7 @@
 		679345FC21383E7000B96BAA /* GetEventsFromCategory */ = {
 			isa = PBXGroup;
 			children = (
-				6793463D213843F000B96BAA /* Json */,
+				6793463D213843F000B96BAA /* InputOutput */,
 				6793460A213842B400B96BAA /* RequestGetEventsFromCategory.swift */,
 				6793460C213842BB00B96BAA /* ResponseGetEventsFromCategory.swift */,
 			);
@@ -319,7 +319,7 @@
 		679345FD21383E7600B96BAA /* GetEvent */ = {
 			isa = PBXGroup;
 			children = (
-				6793463E213843F800B96BAA /* Json */,
+				6793463E213843F800B96BAA /* InputOutput */,
 				6793460E213842C400B96BAA /* RequestGetEvent.swift */,
 				67934610213842CA00B96BAA /* ResponseGetEvent.swift */,
 			);
@@ -329,7 +329,7 @@
 		679345FE21383E7C00B96BAA /* GetCreditCardsFromUser */ = {
 			isa = PBXGroup;
 			children = (
-				6793463F213843FC00B96BAA /* Json */,
+				6793463F213843FC00B96BAA /* InputOutput */,
 				67934612213842D300B96BAA /* RequestGetCreditCardsFromUser.swift */,
 				67934614213842DA00B96BAA /* ResponseGetCreditCardsFromUser.swift */,
 			);
@@ -339,7 +339,7 @@
 		679345FF21383E8400B96BAA /* BuyEvent */ = {
 			isa = PBXGroup;
 			children = (
-				67934640213843FF00B96BAA /* Json */,
+				67934640213843FF00B96BAA /* InputOutput */,
 				67934616213842E500B96BAA /* RequestBuyEvent.swift */,
 				67934618213842EC00B96BAA /* ResponseBuyEvent.swift */,
 			);
@@ -349,7 +349,7 @@
 		6793460021383E8B00B96BAA /* GetEventFromLocation */ = {
 			isa = PBXGroup;
 			children = (
-				679346412138441600B96BAA /* Json */,
+				679346412138441600B96BAA /* InputOutput */,
 				6793461A213842F600B96BAA /* RequestGetEventFromLocation.swift */,
 				6793461C213842FC00B96BAA /* ResponseGetEventFromLocation.swift */,
 			);
@@ -359,7 +359,7 @@
 		6793460121383E9200B96BAA /* GetEventsBuyedByUser */ = {
 			isa = PBXGroup;
 			children = (
-				679346422138441A00B96BAA /* Json */,
+				679346422138441A00B96BAA /* InputOutput */,
 				6793461E2138430600B96BAA /* RequestGetEventsBuyedByUser.swift */,
 				679346202138430B00B96BAA /* ResponseGetEventsBuyedByUser.swift */,
 			);
@@ -369,7 +369,7 @@
 		6793460221383E9800B96BAA /* GetUserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				679346432138441D00B96BAA /* Json */,
+				679346432138441D00B96BAA /* InputOutput */,
 				679346222138431600B96BAA /* RequestGetUserInfo.swift */,
 				679346242138431D00B96BAA /* ResponseGetUserInfo.swift */,
 			);
@@ -379,92 +379,92 @@
 		6793460321383EA000B96BAA /* GetUserId */ = {
 			isa = PBXGroup;
 			children = (
-				679346442138442100B96BAA /* Json */,
+				679346442138442100B96BAA /* InputOutput */,
 				679346262138432C00B96BAA /* RequestGetUserId.swift */,
 				679346282138433400B96BAA /* ResponseGetUserId.swift */,
 			);
 			path = GetUserId;
 			sourceTree = "<group>";
 		};
-		6793463C213843EA00B96BAA /* Json */ = {
+		6793463C213843EA00B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
 				67934604213840A500B96BAA /* Response.json */,
 				67D32AEC213845D500DCE5C7 /* OutputGetCategories.swift */,
 			);
-			path = Json;
+			path = InputOutput;
 			sourceTree = "<group>";
 		};
-		6793463D213843F000B96BAA /* Json */ = {
+		6793463D213843F000B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
 				6793462C213843AE00B96BAA /* Response.json */,
 				67D32AEE213845F000DCE5C7 /* OutputGetEventsFromCategory.swift */,
 			);
-			path = Json;
+			path = InputOutput;
 			sourceTree = "<group>";
 		};
-		6793463E213843F800B96BAA /* Json */ = {
+		6793463E213843F800B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
 				6793462E213843C100B96BAA /* Response.json */,
 				67D32AF0213845FF00DCE5C7 /* OutputGetEvent.swift */,
 			);
-			path = Json;
+			path = InputOutput;
 			sourceTree = "<group>";
 		};
-		6793463F213843FC00B96BAA /* Json */ = {
+		6793463F213843FC00B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
 				67934630213843C800B96BAA /* Response.json */,
 				67D32AF22138460A00DCE5C7 /* OutputGetCreditCardsFromUser.swift */,
 			);
-			path = Json;
+			path = InputOutput;
 			sourceTree = "<group>";
 		};
-		67934640213843FF00B96BAA /* Json */ = {
+		67934640213843FF00B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
 				67934632213843CE00B96BAA /* Response.json */,
 				67D32AF42138461900DCE5C7 /* OutputBuyEvent.swift */,
 			);
-			path = Json;
+			path = InputOutput;
 			sourceTree = "<group>";
 		};
-		679346412138441600B96BAA /* Json */ = {
+		679346412138441600B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
 				67934634213843D300B96BAA /* Response.json */,
 				67D32AF62138462200DCE5C7 /* OutputGetEventFromLocation.swift */,
 			);
-			path = Json;
+			path = InputOutput;
 			sourceTree = "<group>";
 		};
-		679346422138441A00B96BAA /* Json */ = {
+		679346422138441A00B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
 				67934636213843D800B96BAA /* Response.json */,
 				67D32AF82138462D00DCE5C7 /* OutputGetEventsBuyedByUser.swift */,
 			);
-			path = Json;
+			path = InputOutput;
 			sourceTree = "<group>";
 		};
-		679346432138441D00B96BAA /* Json */ = {
+		679346432138441D00B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
 				67934638213843DD00B96BAA /* Response.json */,
 				67D32AFA2138463600DCE5C7 /* OutputGetUserInfo.swift */,
 			);
-			path = Json;
+			path = InputOutput;
 			sourceTree = "<group>";
 		};
-		679346442138442100B96BAA /* Json */ = {
+		679346442138442100B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
 				6793463A213843E300B96BAA /* Response.json */,
 				67D32AFE2138465100DCE5C7 /* OutputGetUserId.swift */,
 			);
-			path = Json;
+			path = InputOutput;
 			sourceTree = "<group>";
 		};
 		679D07FE212C476B00824386 = {
