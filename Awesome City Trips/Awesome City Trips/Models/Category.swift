@@ -13,4 +13,12 @@ struct Category: Codable {
     let name: String
     let bannerUrl: String
     let description: String
+    
+    // MARK: Decoding & Encoding to JSON
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case bannerUrl = "banner_url"
+        case description
+    }
 }

@@ -70,6 +70,7 @@
 		67D32AF92138462D00DCE5C7 /* OutputGetEventsBuyedByUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AF82138462D00DCE5C7 /* OutputGetEventsBuyedByUser.swift */; };
 		67D32AFB2138463600DCE5C7 /* OutputGetUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AFA2138463600DCE5C7 /* OutputGetUserInfo.swift */; };
 		67D32AFF2138465100DCE5C7 /* OutputGetUserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D32AFE2138465100DCE5C7 /* OutputGetUserId.swift */; };
+		67D64EC5213B671700E03A4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67D64EC4213B671700E03A4B /* GoogleService-Info.plist */; };
 		67F342C2212E0B05008621BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F342C1212E0B05008621BD /* Assets.xcassets */; };
 		67F342C6212E0EEE008621BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67F342C8212E0EEE008621BD /* Localizable.strings */; };
 		67F342CB212E0F2E008621BD /* UINavigationController+Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F342CA212E0F2E008621BD /* UINavigationController+Root.swift */; };
@@ -187,6 +188,7 @@
 		67D32AF82138462D00DCE5C7 /* OutputGetEventsBuyedByUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetEventsBuyedByUser.swift; sourceTree = "<group>"; };
 		67D32AFA2138463600DCE5C7 /* OutputGetUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetUserInfo.swift; sourceTree = "<group>"; };
 		67D32AFE2138465100DCE5C7 /* OutputGetUserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetUserId.swift; sourceTree = "<group>"; };
+		67D64EC4213B671700E03A4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67F342C1212E0B05008621BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67F342C7212E0EEE008621BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		67F342C9212E0F05008621BD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -502,6 +504,7 @@
 				679D080A212C476C00824386 /* AppDelegate.swift */,
 				679D0815212C476D00824386 /* LaunchScreen.storyboard */,
 				679D0818212C476D00824386 /* Info.plist */,
+				67D64EC4213B671700E03A4B /* GoogleService-Info.plist */,
 				67F342C1212E0B05008621BD /* Assets.xcassets */,
 			);
 			path = "Awesome City Trips";
@@ -779,6 +782,7 @@
 				679D0812212C476C00824386 /* Main.storyboard in Resources */,
 				6793462D213843AE00B96BAA /* Response.json in Resources */,
 				67BF9147212F3871006E9F32 /* CreditCardsScreen.storyboard in Resources */,
+				67D64EC5213B671700E03A4B /* GoogleService-Info.plist in Resources */,
 				67934631213843C800B96BAA /* Response.json in Resources */,
 				67934635213843D400B96BAA /* Response.json in Resources */,
 				67934605213840A500B96BAA /* Response.json in Resources */,
