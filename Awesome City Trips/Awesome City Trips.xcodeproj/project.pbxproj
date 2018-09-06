@@ -1173,6 +1173,7 @@
 			baseConfigurationReference = 4311B7BF0326D912CAD8F081 /* Pods-Awesome City Trips.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58YKL7WW5K;
 				INFOPLIST_FILE = "Awesome City Trips/Info.plist";
@@ -1183,6 +1184,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D BUILD_CONFIG_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AwesomeCityTrips.Awesome-City-Trips";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1193,6 +1195,7 @@
 			baseConfigurationReference = 04136B0C40957909E739E89E /* Pods-Awesome City Trips.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58YKL7WW5K;
 				INFOPLIST_FILE = "Awesome City Trips/Info.plist";
@@ -1203,6 +1206,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D BUILD_CONFIG_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AwesomeCityTrips.Awesome-City-Trips";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

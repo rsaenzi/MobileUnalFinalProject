@@ -1,0 +1,126 @@
+ENDPOINTS (Rest / Json)
+
+getCategories
+	IN:
+
+	OUT:
+		Categories []
+
+getEventsFromCategory
+	IN:
+		- CategoryID
+	OUT:
+		- Events []
+
+getEvent
+	IN:
+		- EventID
+	OUT:
+		- Event
+
+getCreditCardsFromUser
+	IN:
+		- UserID
+	OUT:
+		- Credit Cards []
+
+buyEvent
+	IN:
+		- UserID
+		- CreditCardID
+		- EventID
+
+	OUT:
+		- Status {success, error}
+
+getEventFromLocation
+	IN:
+		- UserCoordinates
+		- NumberOfNearEvents
+	OUT:
+		- Events []
+
+getEventsBuyedByUser
+	IN:
+		- UserID
+	OUT:
+		- Events []
+
+getUserInfo
+	IN:
+		- UserID
+	OUT:
+		- User
+
+getUserID (Auth?)
+	IN:
+		- Username (Auth?)
+		- Password (Auth?)
+	OUT:
+		UserID
+
+------------------
+
+MODELS
+
+user
+- id
+- LastName
+- FirstName
+- Picture
+- Email
+- Birthday
+- Username
+- Password
+- LastAccess
+- {} creditcard
+      - id
+      - Token
+      - FirstSixDigits
+      - LastFourDigits
+
+- {} buyedevent
+      - EventReference       // Referencia a un documento tipo event en la base de datos
+      - EventDateReference   // Referencia a un documento tipo eventdate en la base de datos
+
+category
+- id
+- Name
+- Banner
+- Description
+- {} event
+      - EventReference // Referencia a un documento tipo event en la base de datos
+
+event
+- id
+- Name
+- Description
+- Icon
+- Place
+- Coordinates
+- Rating (0 - 5)
+- {} gallery
+    - MediaType  // Tipo de medio (imagen, sonido, vide, etc..) para saber como procesarlo
+    - Link
+- {} eventdate
+    - id
+    - StartDate
+    - EndDate
+    - Price
+    - TicketsLeft
+    - Organizer
+
+#############################################################
+Elementos a discutir
+#############################################################
+
+# En la subcolección "eventdate" el campo "EndDate" será modificado por "Duration"
+el cual será un string definido por el organizador. Ej:
+
+"2 Horas"
+"3 días"
+
+# Definición de creación de APIs o conexión dorecta desde la APP a Firebase
+  mediante el SDK
+
+# Socializar y revisar el modelo de datos

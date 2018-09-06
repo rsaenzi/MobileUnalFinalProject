@@ -11,12 +11,10 @@ import Moya
 extension ApiEndpoint: TargetType {
     
     var baseURL: URL {
-        return URL(string: "https://drive.google.com")!
+        return URL(string: "https://us-central1-awesomecitytrips.cloudfunctions.net")!
     }
     
     var path: String {
-        
-        return "/uc" // TODO: Temporal
         
         switch self {
         
