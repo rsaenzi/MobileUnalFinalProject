@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0KY-Dg-V1P">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map-->
+        <scene sceneID="jgV-2o-pJO">
+            <objects>
+                <viewController storyboardIdentifier="MapScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0KY-Dg-V1P" customClass="MapScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QH2-Iv-rsh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.15000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="City1Cropped" translatesAutoresizingMaskIntoConstraints="NO" id="5b2-I6-9kB">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="L85-0k-HDv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0KY-Dg-V1P" id="I9t-9N-B83"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L85-0k-HDv" firstAttribute="bottom" secondItem="NdM-vb-6yT" secondAttribute="bottom" id="9P2-sE-7dV"/>
+                            <constraint firstItem="L85-0k-HDv" firstAttribute="top" secondItem="NdM-vb-6yT" secondAttribute="top" id="AMq-6E-2Cr"/>
+                            <constraint firstItem="L85-0k-HDv" firstAttribute="leading" secondItem="NdM-vb-6yT" secondAttribute="leading" id="H1j-yE-Fjz"/>
+                            <constraint firstItem="NdM-vb-6yT" firstAttribute="trailing" secondItem="5b2-I6-9kB" secondAttribute="trailing" id="OcA-rV-Udk"/>
+                            <constraint firstItem="5b2-I6-9kB" firstAttribute="top" secondItem="NdM-vb-6yT" secondAttribute="top" id="QGa-Sj-7tx"/>
+                            <constraint firstItem="5b2-I6-9kB" firstAttribute="leading" secondItem="NdM-vb-6yT" secondAttribute="leading" id="Tc3-wU-U2B"/>
+                            <constraint firstItem="NdM-vb-6yT" firstAttribute="bottom" secondItem="5b2-I6-9kB" secondAttribute="bottom" id="bzg-Yc-tVb"/>
+                            <constraint firstItem="L85-0k-HDv" firstAttribute="trailing" secondItem="NdM-vb-6yT" secondAttribute="trailing" id="gHh-sH-m4U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NdM-vb-6yT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map" id="1sP-Od-xTd">
+                        <barButtonItem key="backBarButtonItem" title="   " id="ULe-BW-0AJ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backButtonKey" value="   "/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Le-0X-fEp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.8000000000000007" y="1630.4347826086957"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="City1Cropped" width="1667" height="1415"/>
+    </resources>
+</document>

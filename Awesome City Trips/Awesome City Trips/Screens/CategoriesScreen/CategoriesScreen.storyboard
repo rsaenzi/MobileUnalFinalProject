@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vB8-8e-ej4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Categories-->
+        <scene sceneID="KdR-WD-NIG">
+            <objects>
+                <viewController storyboardIdentifier="CategoriesScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vB8-8e-ej4" customClass="CategoriesScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m5D-5S-J75">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.15000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="City1Cropped" translatesAutoresizingMaskIntoConstraints="NO" id="y29-rL-Bgp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H4B-if-lQg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoryCell" rowHeight="120" id="i9f-Ws-v9i" customClass="CategoryCell" customModule="Awesome_City_Trips" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i9f-Ws-v9i" id="yM8-Gp-CiL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yq6-5I-xj0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CategoryName" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQ4-Eo-FUj">
+                                                    <rect key="frame" x="0.0" y="8" width="366.5" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Yq6-5I-xj0" firstAttribute="top" secondItem="yM8-Gp-CiL" secondAttribute="top" id="0hy-Dk-zD3"/>
+                                                <constraint firstAttribute="bottom" secondItem="Yq6-5I-xj0" secondAttribute="bottom" id="0jz-mt-Rfb"/>
+                                                <constraint firstAttribute="trailing" secondItem="TQ4-Eo-FUj" secondAttribute="trailing" constant="8" id="4kw-ye-8io"/>
+                                                <constraint firstAttribute="trailing" secondItem="Yq6-5I-xj0" secondAttribute="trailing" id="HZi-v7-xrs"/>
+                                                <constraint firstItem="TQ4-Eo-FUj" firstAttribute="leading" secondItem="yM8-Gp-CiL" secondAttribute="leading" id="axu-rj-n1E"/>
+                                                <constraint firstItem="TQ4-Eo-FUj" firstAttribute="top" secondItem="yM8-Gp-CiL" secondAttribute="top" constant="8" id="ecH-Wb-khA"/>
+                                                <constraint firstItem="Yq6-5I-xj0" firstAttribute="leading" secondItem="yM8-Gp-CiL" secondAttribute="leading" id="pfZ-pb-GhM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="Yq6-5I-xj0" id="V98-cd-p6o"/>
+                                            <outlet property="categoryName" destination="TQ4-Eo-FUj" id="pMF-dg-Irs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vB8-8e-ej4" id="edv-Ik-5Tw"/>
+                                    <outlet property="delegate" destination="vB8-8e-ej4" id="xy1-Ra-aTs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y29-rL-Bgp" firstAttribute="leading" secondItem="WEj-ZP-lWf" secondAttribute="leading" id="F7U-Vv-ZoV"/>
+                            <constraint firstItem="H4B-if-lQg" firstAttribute="leading" secondItem="WEj-ZP-lWf" secondAttribute="leading" id="HQU-kX-0RU"/>
+                            <constraint firstItem="H4B-if-lQg" firstAttribute="top" secondItem="WEj-ZP-lWf" secondAttribute="top" id="Qpe-jM-Yxg"/>
+                            <constraint firstItem="y29-rL-Bgp" firstAttribute="top" secondItem="WEj-ZP-lWf" secondAttribute="top" id="RAM-1m-NJD"/>
+                            <constraint firstItem="H4B-if-lQg" firstAttribute="trailing" secondItem="WEj-ZP-lWf" secondAttribute="trailing" id="X4l-4N-Uun"/>
+                            <constraint firstItem="WEj-ZP-lWf" firstAttribute="bottom" secondItem="y29-rL-Bgp" secondAttribute="bottom" id="aGN-dN-PkT"/>
+                            <constraint firstItem="H4B-if-lQg" firstAttribute="bottom" secondItem="WEj-ZP-lWf" secondAttribute="bottom" id="i3A-1c-69t"/>
+                            <constraint firstItem="WEj-ZP-lWf" firstAttribute="trailing" secondItem="y29-rL-Bgp" secondAttribute="trailing" id="leb-ne-RfE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WEj-ZP-lWf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Categories" id="vdK-6C-Co8">
+                        <barButtonItem key="backBarButtonItem" title="   " id="aWw-21-Lvm">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backButtonKey" value="   "/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="H4B-if-lQg" id="KBj-5Z-oVM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6rt-Ib-iAD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-730.39999999999998" y="1631.3343328335834"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="City1Cropped" width="1667" height="1415"/>
+    </resources>
+</document>

@@ -78,7 +78,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9w2-8C-svG"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Credit Cards" id="5Ib-am-2Jw"/>
+                    <navigationItem key="navigationItem" title="Credit Cards" id="5Ib-am-2Jw">
+                        <barButtonItem key="backBarButtonItem" title="   " id="udJ-2H-NtF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backButtonKey" value="   "/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAw-E4-lFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

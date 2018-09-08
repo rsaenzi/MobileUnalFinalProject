@@ -126,7 +126,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hd8-Uh-fbP"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Plan Details" id="pNa-or-T0f"/>
+                    <navigationItem key="navigationItem" title="Plan Details" id="pNa-or-T0f">
+                        <barButtonItem key="backBarButtonItem" title="   " id="to0-9e-YC1">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backButtonKey" value="   "/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZ6-tD-v3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

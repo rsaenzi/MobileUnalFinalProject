@@ -93,6 +93,10 @@
 		81F5BB117BDC1E8FCA8AB116 /* Pods_Awesome_City_TripsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF06706D0A202C069B6A4783 /* Pods_Awesome_City_TripsUITests.framework */; };
 		AAE72A6896092C9D1E90736D /* Pods_Awesome_City_Trips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C0D3EFFC1EB3AA928B0967A /* Pods_Awesome_City_Trips.framework */; };
 		B127DCFB212E791F00FC0856 /* AvailablePlansCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127DCFA212E791F00FC0856 /* AvailablePlansCell.swift */; };
+		B13528B721434A8700FDF092 /* ProfileScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13528B621434A8700FDF092 /* ProfileScreen.storyboard */; };
+		B13528B921434A8F00FDF092 /* MyPlansScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13528B821434A8F00FDF092 /* MyPlansScreen.storyboard */; };
+		B13528BB21434A9600FDF092 /* MapScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13528BA21434A9600FDF092 /* MapScreen.storyboard */; };
+		B13528BD21434AA000FDF092 /* CategoriesScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13528BC21434AA000FDF092 /* CategoriesScreen.storyboard */; };
 		D562D08604EFDD2C1F0049E8 /* Pods_Awesome_City_TripsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7208C5DEB4946BCB6C1AC271 /* Pods_Awesome_City_TripsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -212,6 +216,10 @@
 		6C0D3EFFC1EB3AA928B0967A /* Pods_Awesome_City_Trips.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Awesome_City_Trips.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7208C5DEB4946BCB6C1AC271 /* Pods_Awesome_City_TripsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Awesome_City_TripsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B127DCFA212E791F00FC0856 /* AvailablePlansCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailablePlansCell.swift; sourceTree = "<group>"; };
+		B13528B621434A8700FDF092 /* ProfileScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreen.storyboard; sourceTree = "<group>"; };
+		B13528B821434A8F00FDF092 /* MyPlansScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPlansScreen.storyboard; sourceTree = "<group>"; };
+		B13528BA21434A9600FDF092 /* MapScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapScreen.storyboard; sourceTree = "<group>"; };
+		B13528BC21434AA000FDF092 /* CategoriesScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoriesScreen.storyboard; sourceTree = "<group>"; };
 		EED5A3921ED0EB9FC99E3191 /* Pods-Awesome City TripsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome City TripsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome City TripsTests/Pods-Awesome City TripsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF06706D0A202C069B6A4783 /* Pods_Awesome_City_TripsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Awesome_City_TripsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -531,8 +539,12 @@
 		679D083A212C4C5200824386 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				67BF9143212F3854006E9F32 /* CreditCards */,
+				B13528B221434A3200FDF092 /* CategoriesScreen */,
+				B13528B321434A4900FDF092 /* MapScreen */,
+				B13528B421434A5200FDF092 /* MyPlansScreen */,
+				B13528B521434A5A00FDF092 /* ProfileScreen */,
 				67BF913E212F26B3006E9F32 /* PlanDetails */,
+				67BF9143212F3854006E9F32 /* CreditCards */,
 				67F342EE212E1824008621BD /* AvailablePlans */,
 				67F342ED212E1813008621BD /* Main */,
 			);
@@ -621,10 +633,6 @@
 			isa = PBXGroup;
 			children = (
 				679D0810212C476C00824386 /* Main.storyboard */,
-				679D083B212C4C6700824386 /* CategoriesScreen.swift */,
-				67F342E7212E1551008621BD /* MapScreen.swift */,
-				67F342E3212E1539008621BD /* MyPlansScreen.swift */,
-				67F342E5212E1547008621BD /* ProfileScreen.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -646,6 +654,42 @@
 				FF06706D0A202C069B6A4783 /* Pods_Awesome_City_TripsUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B13528B221434A3200FDF092 /* CategoriesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				679D083B212C4C6700824386 /* CategoriesScreen.swift */,
+				B13528BC21434AA000FDF092 /* CategoriesScreen.storyboard */,
+			);
+			path = CategoriesScreen;
+			sourceTree = "<group>";
+		};
+		B13528B321434A4900FDF092 /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				67F342E7212E1551008621BD /* MapScreen.swift */,
+				B13528BA21434A9600FDF092 /* MapScreen.storyboard */,
+			);
+			path = MapScreen;
+			sourceTree = "<group>";
+		};
+		B13528B421434A5200FDF092 /* MyPlansScreen */ = {
+			isa = PBXGroup;
+			children = (
+				67F342E3212E1539008621BD /* MyPlansScreen.swift */,
+				B13528B821434A8F00FDF092 /* MyPlansScreen.storyboard */,
+			);
+			path = MyPlansScreen;
+			sourceTree = "<group>";
+		};
+		B13528B521434A5A00FDF092 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				67F342E5212E1547008621BD /* ProfileScreen.swift */,
+				B13528B621434A8700FDF092 /* ProfileScreen.storyboard */,
+			);
+			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
 		CF75BB1573E2A55D14A71E5D /* Pods */ = {
@@ -770,10 +814,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13528B721434A8700FDF092 /* ProfileScreen.storyboard in Resources */,
 				67BF9142212F26F3006E9F32 /* PlanDetailsScreen.storyboard in Resources */,
 				679D0817212C476D00824386 /* LaunchScreen.storyboard in Resources */,
+				B13528BD21434AA000FDF092 /* CategoriesScreen.storyboard in Resources */,
 				67934639213843DD00B96BAA /* Response.json in Resources */,
 				67F342F2212E183C008621BD /* AvailablePlansScreen.storyboard in Resources */,
+				B13528BB21434A9600FDF092 /* MapScreen.storyboard in Resources */,
 				6793462F213843C100B96BAA /* Response.json in Resources */,
 				6793463B213843E300B96BAA /* Response.json in Resources */,
 				67F342C6212E0EEE008621BD /* Localizable.strings in Resources */,
@@ -783,6 +830,7 @@
 				6793462D213843AE00B96BAA /* Response.json in Resources */,
 				67BF9147212F3871006E9F32 /* CreditCardsScreen.storyboard in Resources */,
 				67D64EC5213B671700E03A4B /* GoogleService-Info.plist in Resources */,
+				B13528B921434A8F00FDF092 /* MyPlansScreen.storyboard in Resources */,
 				67934631213843C800B96BAA /* Response.json in Resources */,
 				67934635213843D400B96BAA /* Response.json in Resources */,
 				67934605213840A500B96BAA /* Response.json in Resources */,

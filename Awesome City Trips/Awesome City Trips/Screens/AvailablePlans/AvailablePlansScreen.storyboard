@@ -103,7 +103,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nPr-jv-smm"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Available Plans" id="LwC-4u-gLN"/>
+                    <navigationItem key="navigationItem" title="Available Plans" id="LwC-4u-gLN">
+                        <barButtonItem key="backBarButtonItem" title="    " id="yPG-fI-acb">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backButtonKey" value="   "/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMD-fR-zFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
