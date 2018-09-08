@@ -35,7 +35,7 @@ extension ProfileScreen: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        //        let screen: AvailablePlansScreen = loadViewController()
+        //        let screen: AvailableEventsScreen = loadViewController()
         //        navigationController?.pushViewController(screen, animated: true)
     }
 }

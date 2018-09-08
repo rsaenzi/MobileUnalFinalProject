@@ -17,7 +17,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1Y-rz-1qH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-730" y="1310"/>
+            <point key="canvasLocation" x="-731" y="1351"/>
         </scene>
         <!--ProfileScreen-->
         <scene sceneID="TN5-gI-lnD">
@@ -27,7 +27,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6N2-X9-6Vf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478" y="1310"/>
+            <point key="canvasLocation" x="1478" y="1351"/>
         </scene>
         <!--MapScreen-->
         <scene sceneID="OLF-T6-EVE">
@@ -37,17 +37,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tn7-Qn-xHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="1310"/>
+            <point key="canvasLocation" x="8" y="1351"/>
         </scene>
-        <!--MyPlansScreen-->
+        <!--MyEventsScreen-->
         <scene sceneID="CZ3-iy-S5H">
             <objects>
-                <viewControllerPlaceholder storyboardName="MyPlansScreen" id="JQk-4g-O4F" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MyEventsScreen" id="JQk-4g-O4F" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="fum-yZ-gv4"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fw8-bt-EKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737" y="1310"/>
+            <point key="canvasLocation" x="736" y="1351"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -116,11 +116,11 @@
             </objects>
             <point key="canvasLocation" x="9" y="874"/>
         </scene>
-        <!--My Plans-->
+        <!--My Events-->
         <scene sceneID="B8M-24-GUX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h22-M3-7vX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Plans" image="TabBarMyPlans" selectedImage="TabBarMyPlans" id="Z4V-ba-WIJ"/>
+                    <tabBarItem key="tabBarItem" title="My Events" image="TabBarMyPlans" selectedImage="TabBarMyPlans" id="Z4V-ba-WIJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="7un-Nj-lFa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

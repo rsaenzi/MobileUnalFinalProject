@@ -1,5 +1,5 @@
 //
-//  AvailablePlansScreen.swift
+//  AvailableEventsScreen.swift
 //  Awesome City Trips
 //
 //  Created by Rigoberto Saenz on 8/22/18.
@@ -9,7 +9,7 @@
 import UIKit
 import KVNProgress
 
-class AvailablePlansScreen: UIViewController {
+class AvailableEventsScreen: UIViewController {
     
     @IBOutlet weak private var table: UITableView!
     
@@ -18,10 +18,11 @@ class AvailablePlansScreen: UIViewController {
     
     public func setup(_ category: Category) {
         self.selectedCategory = category
+        self.navigationItem.title = "\(category.name) Events"
     }
 }
 
-extension AvailablePlansScreen {
+extension AvailableEventsScreen {
     
     override func viewDidLoad() {
         
@@ -47,7 +48,7 @@ extension AvailablePlansScreen {
     }
 }
 
-extension AvailablePlansScreen: UITableViewDelegate, UITableViewDataSource {
+extension AvailableEventsScreen: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return allEvents.count
@@ -57,7 +58,7 @@ extension AvailablePlansScreen: UITableViewDelegate, UITableViewDataSource {
         
         let event = allEvents[indexPath.row]
         
-        let cell: AvailablePlansCell = tableView.dequeue(indexPath)
+        let cell: AvailableEventsCell = tableView.dequeue(indexPath)
         cell.fill(using: event)
         return cell
     }
@@ -72,8 +73,8 @@ extension AvailablePlansScreen: UITableViewDelegate, UITableViewDataSource {
         
         let event = allEvents[indexPath.row]
         
-        let screen: PlanDetailsScreen = loadViewController()
-        //screen.setup(event)
+        let screen: EventDetailsScreen = loadViewController()
+        screen.setup(using: event)
         navigationController?.pushViewController(screen, animated: true)
     }
 }

@@ -68,7 +68,7 @@ extension CategoriesScreen: UITableViewDelegate, UITableViewDataSource {
         
         let category = allCategories[indexPath.row]
         
-        let screen: AvailablePlansScreen = loadViewController()
+        let screen: AvailableEventsScreen = loadViewController()
         screen.setup(category)
         navigationController?.pushViewController(screen, animated: true)
     }

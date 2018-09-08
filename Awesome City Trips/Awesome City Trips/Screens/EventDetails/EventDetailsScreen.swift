@@ -1,38 +1,50 @@
 //
-//  AvailablePlansCell.swift
+//  EventDetailsScreen.swift
 //  Awesome City Trips
 //
-//  Created by Rigoberto Sáenz Imbacuán on 8/23/18.
+//  Created by Rigoberto Saenz on 8/23/18.
 //  Copyright © 2018 Awesome City Team. All rights reserved.
 //
 
 import UIKit
+import MapKit
 import Kingfisher
 
-class AvailablePlansCell: UITableViewCell {
+class EventDetailsScreen: UIViewController {
     
-    @IBOutlet weak private var eventIcon: UIImageView!
+    @IBOutlet weak private var eventBanner: UIImageView!
     @IBOutlet weak private var eventName: UILabel!
     @IBOutlet weak private var eventDate: UILabel!
     @IBOutlet weak private var eventPlace: UILabel!
     @IBOutlet weak private var eventPrice: UILabel!
     @IBOutlet weak private var eventRating: UILabel!
+    @IBOutlet weak private var eventMap: MKMapView!
+    @IBOutlet weak private var buttonBuy: UIButton!
     
-    private var dateFormat: DateFormatter?
+    private var selectedEvent: Event?
+}
+
+extension EventDetailsScreen {
     
-    func fill(using event: Event) {
+    func setup(using event: Event) {
+        self.selectedEvent = event
+    }
+    
+    override func viewDidLoad() {
         
-        dateFormat = DateFormatter()
-        dateFormat?.dateFormat = "MMM d, yyyy"
+        guard let event = self.selectedEvent else { return }
+        
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "MMM d, yyyy"
         
         eventName.text = event.name
-        eventDate.text = dateFormat?.string(from: event.date)
+        eventDate.text = dateFormat.string(from: event.date)
         eventPlace.text = event.place.name
         eventPrice.text = "$\(event.price)"
         eventRating.text = "⭐️ x \(event.rating)"
         
         guard let imageUrl: URL = URL(string: event.iconUrl) else {
-            eventIcon.image = nil
+            eventBanner.image = nil
             return
         }
         
@@ -54,12 +66,22 @@ class AvailablePlansCell: UITableViewCell {
         }
         
         let image = ImageResource(downloadURL: imageUrl, cacheKey: "event\(event.id)")
-        eventIcon.kf.indicatorType = .activity
-        eventIcon.kf.setImage(
+        eventBanner.kf.indicatorType = .activity
+        eventBanner.kf.setImage(
             with: image,
             placeholder: nil,
             options: [.transition(.fade(0.2))],
             progressBlock: nil,
             completionHandler: completion)
     }
+    
+    @IBAction func onTapBuy(_ sender: UIButton, forEvent event: UIEvent) {
+        
+        let screen: CreditCardsScreen = loadViewController()
+        navigationController?.pushViewController(screen, animated: true)
+    }
+}
+
+extension EventDetailsScreen: MKMapViewDelegate {
+    
 }

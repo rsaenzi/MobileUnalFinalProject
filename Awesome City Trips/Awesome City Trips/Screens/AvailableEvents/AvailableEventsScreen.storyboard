@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--AvailablePlansScreen-->
+        <!--Available Events-->
         <scene sceneID="lwc-8s-IgM">
             <objects>
-                <viewController storyboardIdentifier="AvailablePlansScreen" title="AvailablePlansScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MEC-Mn-30u" customClass="AvailablePlansScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AvailableEventsScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MEC-Mn-30u" customClass="AvailableEventsScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e0T-8e-Fsf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AvailablePlansCell" rowHeight="100" id="zbq-9K-eEs" customClass="AvailablePlansCell" customModule="Awesome_City_Trips" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AvailableEventsCell" rowHeight="100" id="zbq-9K-eEs" customClass="AvailableEventsCell" customModule="Awesome_City_Trips" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zbq-9K-eEs" id="kax-1u-8qU">
@@ -39,7 +39,7 @@
                                                         <constraint firstAttribute="width" secondItem="0LI-YN-vBF" secondAttribute="height" id="Itu-kv-3JK"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="vDu-HW-3Y9">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="vDu-HW-3Y9">
                                                     <rect key="frame" x="103.5" y="8" width="263.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -118,7 +118,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nPr-jv-smm"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Available Plans" id="LwC-4u-gLN">
+                    <navigationItem key="navigationItem" title="Available Events" id="LwC-4u-gLN">
                         <barButtonItem key="backBarButtonItem" title="    " id="yPG-fI-acb">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>

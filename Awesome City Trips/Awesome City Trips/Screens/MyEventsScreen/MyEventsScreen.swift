@@ -1,5 +1,5 @@
 //
-//  MyPlansScreen.swift
+//  MyEventsScreen.swift
 //  Awesome City Trips
 //
 //  Created by Rigoberto Saenz on 8/22/18.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MyPlansScreen: UIViewController {
+class MyEventsScreen: UIViewController {
     
 }
 
-extension MyPlansScreen: UITableViewDelegate, UITableViewDataSource {
+extension MyEventsScreen: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
@@ -22,7 +22,7 @@ extension MyPlansScreen: UITableViewDelegate, UITableViewDataSource {
         
 //        let category = allCategories[indexPath.row]
         
-        let cell: MyPlansCell = tableView.dequeue(indexPath)
+        let cell: MyEventsCell = tableView.dequeue(indexPath)
 //        cell.categoryName.text = category.type.getName()
 //        cell.categoryImage.image = category.type.getIcon()
         return cell
@@ -35,7 +35,7 @@ extension MyPlansScreen: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-//        let screen: AvailablePlansScreen = loadViewController()
+//        let screen: AvailableEventsScreen = loadViewController()
 //        navigationController?.pushViewController(screen, animated: true)
     }
 }

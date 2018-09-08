@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Plans-->
+        <!--My Events-->
         <scene sceneID="rNt-xi-zHH">
             <objects>
-                <viewController storyboardIdentifier="MyPlansScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oPU-Sa-CJr" customClass="MyPlansScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyEventsScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oPU-Sa-CJr" customClass="MyEventsScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xNY-Qg-EFD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,14 +26,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyPlansCell" rowHeight="88" id="KTx-1c-CDA" customClass="MyPlansCell" customModule="Awesome_City_Trips" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyEventsCell" rowHeight="88" id="KTx-1c-CDA" customClass="MyEventsCell" customModule="Awesome_City_Trips" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KTx-1c-CDA" id="M7B-2w-r2x">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyW-C8-MAU">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyW-C8-MAU">
                                                     <rect key="frame" x="91.5" y="4" width="275.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -75,10 +75,10 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="planDate" destination="I8a-Od-T9B" id="RzH-l9-9AG"/>
-                                            <outlet property="planImage" destination="uah-GO-14O" id="gCV-Y1-WPf"/>
-                                            <outlet property="planName" destination="vyW-C8-MAU" id="qvF-Dd-rPo"/>
-                                            <outlet property="planPlace" destination="tNQ-4V-IXx" id="PZC-DL-VWR"/>
+                                            <outlet property="eventDate" destination="I8a-Od-T9B" id="N0d-zd-pWH"/>
+                                            <outlet property="eventImage" destination="uah-GO-14O" id="tjL-n7-D62"/>
+                                            <outlet property="eventName" destination="vyW-C8-MAU" id="XXr-1P-IKQ"/>
+                                            <outlet property="eventPlace" destination="tNQ-4V-IXx" id="hGr-ne-PZG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -101,7 +101,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O95-sO-YFa"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Plans" id="9Ez-mx-anK">
+                    <navigationItem key="navigationItem" title="My Events" id="9Ez-mx-anK">
                         <barButtonItem key="backBarButtonItem" title="   " id="cyb-bT-iD2">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
