@@ -15,14 +15,14 @@
             <objects>
                 <viewController storyboardIdentifier="CategoriesScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vB8-8e-ej4" customClass="CategoriesScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m5D-5S-J75">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.15000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="City1Cropped" translatesAutoresizingMaskIntoConstraints="NO" id="y29-rL-Bgp">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H4B-if-lQg">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoryCell" rowHeight="120" id="i9f-Ws-v9i" customClass="CategoryCell" customModule="Awesome_City_Trips" customModuleProvider="target">
@@ -87,6 +87,8 @@
                             <userDefinedRuntimeAttribute type="string" keyPath="backButtonKey" value="   "/>
                         </userDefinedRuntimeAttributes>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="table" destination="H4B-if-lQg" id="KBj-5Z-oVM"/>
                     </connections>

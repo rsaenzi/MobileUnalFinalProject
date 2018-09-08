@@ -16,12 +16,15 @@
             <objects>
                 <viewController storyboardIdentifier="CreditCardsScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e5d-3A-Y7P" customClass="CreditCardsScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CdJ-IV-haz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="City1Cropped" translatesAutoresizingMaskIntoConstraints="NO" id="oC3-GT-vfC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fWu-Zs-FZx">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CreditCardsCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CreditCardsCell" rowHeight="82" id="D90-2j-7Hz" customClass="CreditCardsCell" customModule="Awesome_City_Trips" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="82"/>
@@ -49,6 +52,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="2eZ-v6-oNo" firstAttribute="top" secondItem="1by-UI-35R" secondAttribute="top" constant="8" id="3Fu-Wb-xom"/>
                                                 <constraint firstAttribute="trailing" secondItem="u3n-mn-80e" secondAttribute="trailing" constant="8" id="8St-ue-Ikl"/>
@@ -71,7 +75,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="9w2-8C-svG" firstAttribute="bottom" secondItem="oC3-GT-vfC" secondAttribute="bottom" id="3mz-qc-bcB"/>
                             <constraint firstItem="9w2-8C-svG" firstAttribute="trailing" secondItem="fWu-Zs-FZx" secondAttribute="trailing" id="82t-pm-5Ge"/>
+                            <constraint firstItem="oC3-GT-vfC" firstAttribute="top" secondItem="9w2-8C-svG" secondAttribute="top" id="DC3-RJ-wiP"/>
+                            <constraint firstItem="oC3-GT-vfC" firstAttribute="leading" secondItem="9w2-8C-svG" secondAttribute="leading" id="S15-ZA-SOV"/>
+                            <constraint firstItem="9w2-8C-svG" firstAttribute="trailing" secondItem="oC3-GT-vfC" secondAttribute="trailing" id="azX-bN-93i"/>
                             <constraint firstItem="9w2-8C-svG" firstAttribute="bottom" secondItem="fWu-Zs-FZx" secondAttribute="bottom" id="ebC-jd-XaA"/>
                             <constraint firstItem="fWu-Zs-FZx" firstAttribute="leading" secondItem="9w2-8C-svG" secondAttribute="leading" id="pza-Bz-137"/>
                             <constraint firstItem="fWu-Zs-FZx" firstAttribute="top" secondItem="9w2-8C-svG" secondAttribute="top" id="zVS-bE-Z71"/>
@@ -86,6 +94,8 @@
                             <userDefinedRuntimeAttribute type="string" keyPath="backButtonKey" value="   "/>
                         </userDefinedRuntimeAttributes>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAw-E4-lFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,5 +104,6 @@
     </scenes>
     <resources>
         <image name="AppLogo" width="512" height="512"/>
+        <image name="City1Cropped" width="1667" height="1415"/>
     </resources>
 </document>

@@ -16,14 +16,14 @@
             <objects>
                 <viewController storyboardIdentifier="MyPlansScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oPU-Sa-CJr" customClass="MyPlansScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xNY-Qg-EFD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.15000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="City1Cropped" translatesAutoresizingMaskIntoConstraints="NO" id="H2W-HU-jHR">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PRB-5G-Sks">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyPlansCell" rowHeight="88" id="KTx-1c-CDA" customClass="MyPlansCell" customModule="Awesome_City_Trips" customModuleProvider="target">
@@ -109,6 +109,8 @@
                             <userDefinedRuntimeAttribute type="string" keyPath="backButtonKey" value="   "/>
                         </userDefinedRuntimeAttributes>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZe-Cb-vg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

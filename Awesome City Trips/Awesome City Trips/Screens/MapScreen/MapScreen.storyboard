@@ -15,14 +15,14 @@
             <objects>
                 <viewController storyboardIdentifier="MapScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0KY-Dg-V1P" customClass="MapScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QH2-Iv-rsh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.15000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="City1Cropped" translatesAutoresizingMaskIntoConstraints="NO" id="5b2-I6-9kB">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                             </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="L85-0k-HDv">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <connections>
                                     <outlet property="delegate" destination="0KY-Dg-V1P" id="I9t-9N-B83"/>
                                 </connections>
@@ -49,6 +49,8 @@
                             <userDefinedRuntimeAttribute type="string" keyPath="backButtonKey" value="   "/>
                         </userDefinedRuntimeAttributes>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Le-0X-fEp" sceneMemberID="firstResponder"/>
             </objects>
