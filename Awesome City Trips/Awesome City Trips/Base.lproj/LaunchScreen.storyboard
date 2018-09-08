@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,9 +22,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="City1" translatesAutoresizingMaskIntoConstraints="NO" id="ydr-kF-MUO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome City Trips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PeU-Ep-iZt">
+                                <rect key="frame" x="16" y="111.5" width="343" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.53725490200000003" green="0.4039215686" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="-2"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="PeU-Ep-iZt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.41" id="1mG-Pd-lxy"/>
+                            <constraint firstItem="PeU-Ep-iZt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BY5-Th-0Tu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PeU-Ep-iZt" secondAttribute="trailing" constant="16" id="CNU-sv-xPC"/>
+                            <constraint firstItem="PeU-Ep-iZt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LTl-LN-nAL"/>
                             <constraint firstItem="ydr-kF-MUO" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="hPg-9z-o7C"/>
                             <constraint firstItem="ydr-kF-MUO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kvW-Vx-NDn"/>
                             <constraint firstItem="ydr-kF-MUO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qKf-gv-Hms"/>

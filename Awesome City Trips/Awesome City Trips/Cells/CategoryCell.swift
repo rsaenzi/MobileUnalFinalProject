@@ -11,8 +11,8 @@ import Kingfisher
 
 class CategoryCell: UITableViewCell {
     
-    @IBOutlet weak var categoryImage: UIImageView!
-    @IBOutlet weak var categoryName: UILabel!
+    @IBOutlet weak private var categoryImage: UIImageView!
+    @IBOutlet weak private var categoryName: UILabel!
     
     func fill(using category: Category) {
         

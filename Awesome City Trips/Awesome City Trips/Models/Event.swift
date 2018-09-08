@@ -12,10 +12,10 @@ struct Event: Codable {
     let id: Int64
     let categoryId: Int64
     let name: String
+    let description: String
     let iconUrl: String
     let galleryUrls: [String]
-    let placeName: String
-    let placeCoordinates: Coordinates
+    let place: Place
     let totalSeats: Int
     let availableSeats: Int
     let rating: Int
@@ -28,10 +28,10 @@ struct Event: Codable {
         case id
         case categoryId = "category_id"
         case name
+        case description
         case iconUrl = "icon_url"
         case galleryUrls = "gallery_urls"
-        case placeName = "place_name"
-        case placeCoordinates = "place_coordinates"
+        case place
         case totalSeats = "total_seats"
         case availableSeats = "available_seats"
         case rating

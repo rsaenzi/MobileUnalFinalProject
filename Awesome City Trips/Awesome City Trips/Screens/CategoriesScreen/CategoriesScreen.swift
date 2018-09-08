@@ -11,9 +11,12 @@ import KVNProgress
 
 class CategoriesScreen: UIViewController {
     
-    @IBOutlet private weak var table: UITableView!
+    @IBOutlet weak private var table: UITableView!
     
     private var allCategories: [Category] = []
+}
+
+extension CategoriesScreen {
     
     override func viewDidLoad() {
         
@@ -36,20 +39,12 @@ class CategoriesScreen: UIViewController {
             
             self.table.reloadData()
         }
-        
-//            Category(type: .business),
-//            Category(type: .gastronomy),
-//            Category(type: .history),
-//            Category(type: .nature),
-//            Category(type: .party),
-//            Category(type: .study),
-//            Category(type: .surgery),
     }
 }
 
 
 extension CategoriesScreen: UITableViewDelegate, UITableViewDataSource {
- 
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return allCategories.count
     }
@@ -68,9 +63,14 @@ extension CategoriesScreen: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         tableView.deselectRow(at: indexPath, animated: true)
         
+        let category = allCategories[indexPath.row]
+        
         let screen: AvailablePlansScreen = loadViewController()
+        screen.setup(category)
         navigationController?.pushViewController(screen, animated: true)
     }
 }
+

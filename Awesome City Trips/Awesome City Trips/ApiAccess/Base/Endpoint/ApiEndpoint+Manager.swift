@@ -21,29 +21,29 @@ extension ApiEndpoint: TargetType {
         case .getCategories:
             return "/getCategories"
             
-        case .getEventsFromCategory(let categoryId):
-            return "/getEventsFromCategory/\(categoryId)"
+        case .getEventsFromCategory:
+            return "/getEventsFromCategory"
             
-        case .getEvent(let eventId):
-            return "/getEvent/\(eventId)"
+        case .getEvent:
+            return "/getEvent"
             
-        case .getCreditCardsFromUser(let userId):
-            return "/getCreditCardsFromUser/\(userId)"
+        case .getCreditCardsFromUser:
+            return "/getCreditCardsFromUser"
             
-        case .buyEvent(let userId, let creditCardId, let eventId):
-            return "/buyEvent/\(userId), \(creditCardId), \(eventId)"
+        case .buyEvent:
+            return "/buyEvent"
             
-        case .getEventFromLocation(let coordinates, let numberofNearEvents):
-            return "/getEventFromLocation/\(coordinates), \(numberofNearEvents)"
+        case .getEventFromLocation:
+            return "/getEventFromLocation"
             
-        case .getEventsBuyedByUser(let userId):
-            return "/getEventsBuyedByUser/\(userId)"
+        case .getEventsBuyedByUser:
+            return "/getEventsBuyedByUser"
             
-        case .getUserInfo(let userId):
-            return "/getUserInfo/\(userId)"
+        case .getUserInfo:
+            return "/getUserInfo"
             
-        case .getUserId(let username, let password):
-            return "/getUserID/\(username), \(password)"
+        case .getUserId:
+            return "/getUserId"
         }
     }
     
@@ -60,43 +60,55 @@ extension ApiEndpoint: TargetType {
     
     var task: Task {
         
-        // TODO: Temporal
-        var jsonFileId = ""
-        
         switch self {
-
-        case .getCategories:
-            //jsonFileId = "1aVhVbR8CaYvBJ2nbgYO4jobljo67VBg8"
-            jsonFileId = "1zagx245iP3d8LjaTz9YwOuKaZZkkRiNS";
-            
-        case .getEventsFromCategory:
-            jsonFileId = ""
-            
-        case .getEvent:
-            jsonFileId = ""
-            
-        case .getCreditCardsFromUser:
-            jsonFileId = ""
-            
-        case .buyEvent:
-            jsonFileId = ""
-            
-        case .getEventFromLocation:
-            jsonFileId = ""
-            
-        case .getEventsBuyedByUser:
-            jsonFileId = ""
-            
-        case .getUserInfo:
-            jsonFileId = ""
-            
-        case .getUserId:
-            jsonFileId = ""
-        }
         
-        return .requestParameters(
-            parameters: ["id": jsonFileId],
-            encoding: URLEncoding.queryString)
+        case .getCategories:
+            return Task.requestPlain
+            
+        case .getEventsFromCategory(let categoryId):
+            return .requestParameters(
+                parameters: ["categoryId": categoryId],
+                encoding: URLEncoding.queryString)
+            
+        case .getEvent(let eventId):
+            return .requestParameters(
+                parameters: ["eventId": eventId],
+                encoding: URLEncoding.queryString)
+            
+        case .getCreditCardsFromUser(let userId):
+            return .requestParameters(
+                parameters: ["userId": userId],
+                encoding: URLEncoding.queryString)
+            
+        case .buyEvent(let userId, let creditCardId, let eventId):
+            return .requestParameters(
+                parameters: ["userId": userId,
+                             "creditCardId": creditCardId,
+                             "eventId": eventId],
+                encoding: URLEncoding.queryString)
+            
+        case .getEventFromLocation(let coordinates, let numberofNearEvents):
+            return .requestParameters(
+                parameters: ["coordinates": coordinates,
+                             "numberofNearEvents": numberofNearEvents],
+                encoding: URLEncoding.queryString)
+            
+        case .getEventsBuyedByUser(let userId):
+            return .requestParameters(
+                parameters: ["userId": userId],
+                encoding: URLEncoding.queryString)
+            
+        case .getUserInfo(let userId):
+            return .requestParameters(
+                parameters: ["userId": userId],
+                encoding: URLEncoding.queryString)
+            
+        case .getUserId(let username, let password):
+            return .requestParameters(
+                parameters: ["username": username,
+                             "password": password],
+                encoding: URLEncoding.queryString)
+        }
     }
     
     var sampleData: Data {

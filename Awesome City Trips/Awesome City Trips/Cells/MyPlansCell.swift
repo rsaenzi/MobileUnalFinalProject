@@ -9,8 +9,9 @@
 import UIKit
 
 class MyPlansCell: UITableViewCell {
-    @IBOutlet weak var planImage: UIImageView!
-    @IBOutlet weak var planName: UILabel!
-    @IBOutlet weak var planDate: UILabel!
-    @IBOutlet weak var planPlace: UILabel!
+    
+    @IBOutlet weak private var planImage: UIImageView!
+    @IBOutlet weak private var planName: UILabel!
+    @IBOutlet weak private var planDate: UILabel!
+    @IBOutlet weak private var planPlace: UILabel!
 }
