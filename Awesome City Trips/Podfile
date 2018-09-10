@@ -7,6 +7,9 @@ target 'Awesome City Trips' do
 
   # Pods for Awesome City Trips
 
+  # Payments
+  #pod 'Stripe'
+
   # Reactive
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
