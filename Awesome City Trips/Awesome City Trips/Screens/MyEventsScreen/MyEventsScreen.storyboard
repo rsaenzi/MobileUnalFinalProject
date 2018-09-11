@@ -76,7 +76,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="eventDate" destination="I8a-Od-T9B" id="N0d-zd-pWH"/>
-                                            <outlet property="eventImage" destination="uah-GO-14O" id="tjL-n7-D62"/>
+                                            <outlet property="eventIcon" destination="uah-GO-14O" id="L7t-hn-3oB"/>
                                             <outlet property="eventName" destination="vyW-C8-MAU" id="XXr-1P-IKQ"/>
                                             <outlet property="eventPlace" destination="tNQ-4V-IXx" id="hGr-ne-PZG"/>
                                         </connections>
@@ -111,6 +111,9 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="table" destination="PRB-5G-Sks" id="ptl-ms-Skp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZe-Cb-vg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

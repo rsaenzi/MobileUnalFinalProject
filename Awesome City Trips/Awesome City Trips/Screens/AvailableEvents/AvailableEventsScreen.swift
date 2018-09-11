@@ -26,9 +26,14 @@ extension AvailableEventsScreen {
     
     override func viewDidLoad() {
         
+        guard let selectedCategory = selectedCategory else {
+            self.showSimpleAlert(message: .errorNoSelectedCategory)
+            return
+        }
+        
         KVNProgress.show()
         
-        RequestGetEventsFromCategory.request(categoryId: selectedCategory!.id) { [weak self] response in
+        RequestGetEventsFromCategory.request(categoryId: selectedCategory.id) { [weak self] response in
             
             KVNProgress.dismiss()
             

@@ -8,4 +8,8 @@
 
 "appName" = "Awesome City Trips";
 "okUpper" = "OK";
+
+// Error Messages
 "errorOnFetchingData" = "Error al intentar obtener datos del servidor, porfavor intente más tarde...";
+"errorNoCurrentUser" = "No hay un usuario logeado, porfavor intente de nuevo...";
+"errorNoSelectedCategory" = "No fue seleccionada una categoria...";

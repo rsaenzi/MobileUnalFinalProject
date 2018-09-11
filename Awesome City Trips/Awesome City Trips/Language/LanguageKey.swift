@@ -9,5 +9,9 @@
 enum LanguageKey: String {
     case appName
     case okUpper
+    
+    // Error Messages
     case errorOnFetchingData
+    case errorNoCurrentUser
+    case errorNoSelectedCategory
 }
