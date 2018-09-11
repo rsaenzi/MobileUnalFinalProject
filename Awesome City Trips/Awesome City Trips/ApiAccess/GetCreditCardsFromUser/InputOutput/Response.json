@@ -1,3 +1,40 @@
 {
-    "status": "Success"
+  "status": "success",
+  "creditCards": [
+    {
+      "id": 0,
+      "token": "8455dsfv5",
+      "issuer_icon_url": "http://icons-for-free.com/free-icons/png/512/206684.png",
+      "first_six_digits": "854963",
+      "last_four_digits": "9874"
+    },
+    {
+      "id": 1,
+      "token": "jbaeuUYYgois",
+      "issuer_icon_url": "http://icons-for-free.com/free-icons/png/512/206684.png",
+      "first_six_digits": "987456",
+      "last_four_digits": "7458"
+    },
+    {
+      "id": 2,
+      "token": "jbafELIYgAAs",
+      "issuer_icon_url": "http://icons-for-free.com/free-icons/png/512/206684.png",
+      "first_six_digits": "887156",
+      "last_four_digits": "0658"
+    },
+    {
+      "id": 3,
+      "token": "fffeuAAYcccs",
+      "issuer_icon_url": "http://icons-for-free.com/free-icons/png/512/206684.png",
+      "first_six_digits": "123456",
+      "last_four_digits": "7008"
+    },
+    {
+      "id": 4,
+      "token": "afaeuABCgois",
+      "issuer_icon_url": "http://icons-for-free.com/free-icons/png/512/206684.png",
+      "first_six_digits": "444456",
+      "last_four_digits": "2258"
+    }
+  ]
 }

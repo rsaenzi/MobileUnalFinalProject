@@ -40,13 +40,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXX XXXX XXXX 0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3n-mn-80e">
-                                                    <rect key="frame" x="81.5" y="8" width="285.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Card Issuer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0f-zn-ZXQ">
-                                                    <rect key="frame" x="81" y="37" width="286" height="21"/>
+                                                    <rect key="frame" x="81.5" y="30.5" width="285.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -57,14 +51,15 @@
                                                 <constraint firstItem="2eZ-v6-oNo" firstAttribute="top" secondItem="1by-UI-35R" secondAttribute="top" constant="8" id="3Fu-Wb-xom"/>
                                                 <constraint firstAttribute="trailing" secondItem="u3n-mn-80e" secondAttribute="trailing" constant="8" id="8St-ue-Ikl"/>
                                                 <constraint firstAttribute="bottom" secondItem="2eZ-v6-oNo" secondAttribute="bottom" constant="8" id="9fc-3Y-Tad"/>
-                                                <constraint firstItem="u3n-mn-80e" firstAttribute="top" secondItem="1by-UI-35R" secondAttribute="top" constant="8" id="CL7-VX-HW0"/>
                                                 <constraint firstItem="u3n-mn-80e" firstAttribute="leading" secondItem="2eZ-v6-oNo" secondAttribute="trailing" constant="8" id="Dxz-C0-RWp"/>
-                                                <constraint firstItem="S0f-zn-ZXQ" firstAttribute="leading" secondItem="2eZ-v6-oNo" secondAttribute="trailing" constant="8" id="N2V-4x-rDC"/>
                                                 <constraint firstItem="2eZ-v6-oNo" firstAttribute="leading" secondItem="1by-UI-35R" secondAttribute="leading" constant="8" id="NSK-w5-JdP"/>
-                                                <constraint firstAttribute="trailing" secondItem="S0f-zn-ZXQ" secondAttribute="trailing" constant="8" id="V3V-HD-Xkn"/>
-                                                <constraint firstItem="S0f-zn-ZXQ" firstAttribute="top" secondItem="u3n-mn-80e" secondAttribute="bottom" constant="8" id="ljK-YS-hQ9"/>
+                                                <constraint firstItem="u3n-mn-80e" firstAttribute="centerY" secondItem="1by-UI-35R" secondAttribute="centerY" id="UYy-ZR-08N"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cardIcon" destination="2eZ-v6-oNo" id="HiN-u7-69V"/>
+                                            <outlet property="cardNumber" destination="u3n-mn-80e" id="cbe-D2-TGs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -96,6 +91,9 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="table" destination="fWu-Zs-FZx" id="VJQ-tx-Fst"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAw-E4-lFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
