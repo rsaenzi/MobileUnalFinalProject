@@ -13,3 +13,5 @@
 "errorOnFetchingData" = "Error when trying to fetch data from servers, please try again...";
 "errorNoCurrentUser" = "There is no logged user, please log in...";
 "errorNoSelectedCategory" = "There is no a selected category...";
+"errorNoSelectedEvent" = "There is no a selected event...";
+"errorNoLocationPermissionGranted" = "App has no permission for getting user's current location...";

@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import Kingfisher
+import KVNProgress
 
 class EventDetailsScreen: UIViewController {
     
@@ -32,6 +33,43 @@ extension EventDetailsScreen {
     
     override func viewDidLoad() {
         
+        guard let selectedEvent = self.selectedEvent else {
+            self.showSimpleAlert(message: .errorNoSelectedEvent)
+            return
+        }
+        
+        cleanLoadedEvent()
+        
+        KVNProgress.show()
+        
+        RequestGetEvent.request(eventId: selectedEvent.id) { [weak self] response in
+            
+            KVNProgress.dismiss()
+            
+            guard let `self` = self else { return }
+            
+            switch response {
+            case .success(let output):
+                self.selectedEvent = output.event
+                self.loadFetchedEvent()
+                
+            default:
+                self.selectedEvent = nil
+                self.cleanLoadedEvent()
+                
+                self.showSimpleAlert(message: .errorOnFetchingData)
+            }
+        }
+    }
+    
+    @IBAction func onTapBuy(_ sender: UIButton, forEvent event: UIEvent) {
+        
+        let screen: CreditCardsScreen = loadViewController()
+        navigationController?.pushViewController(screen, animated: true)
+    }
+    
+    private func loadFetchedEvent() {
+        
         guard let event = self.selectedEvent else { return }
         
         let dateFormat = DateFormatter()
@@ -42,6 +80,11 @@ extension EventDetailsScreen {
         eventPlace.text = event.place.name
         eventPrice.text = "$\(event.price)"
         eventRating.text = "⭐️ x \(event.rating)"
+        
+        buttonBuy.isEnabled = true
+        buttonBuy.backgroundColor = .red
+        
+        //eventMap
         
         guard let imageUrl: URL = URL(string: event.iconUrl) else {
             eventBanner.image = nil
@@ -75,10 +118,19 @@ extension EventDetailsScreen {
             completionHandler: completion)
     }
     
-    @IBAction func onTapBuy(_ sender: UIButton, forEvent event: UIEvent) {
+    private func cleanLoadedEvent() {
         
-        let screen: CreditCardsScreen = loadViewController()
-        navigationController?.pushViewController(screen, animated: true)
+        eventBanner.image = nil
+        eventName.text = nil
+        eventDate.text = nil
+        eventPlace.text = nil
+        eventPrice.text = nil
+        eventRating.text = nil
+        
+        buttonBuy.isEnabled = false
+        buttonBuy.backgroundColor = .gray
+        
+        //eventMap
     }
 }
 

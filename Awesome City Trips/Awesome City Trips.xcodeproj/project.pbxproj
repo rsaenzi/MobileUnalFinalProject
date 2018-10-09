@@ -19,7 +19,7 @@
 		6729163B21382AAD0047A515 /* ResponseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729163A21382AAD0047A515 /* ResponseApi.swift */; };
 		676C4B9221396C1700EAFE9B /* PaymentResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676C4B9121396C1700EAFE9B /* PaymentResult.swift */; };
 		676C4B9421396C2600EAFE9B /* ApiRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676C4B9321396C2600EAFE9B /* ApiRequestResult.swift */; };
-		67934605213840A500B96BAA /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934604213840A500B96BAA /* Response.json */; };
+		67934605213840A500B96BAA /* ResponseGetCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934604213840A500B96BAA /* ResponseGetCategories.json */; };
 		67934607213840FB00B96BAA /* RequestGetCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67934606213840FB00B96BAA /* RequestGetCategories.swift */; };
 		679346092138410900B96BAA /* ResponseGetCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679346082138410900B96BAA /* ResponseGetCategories.swift */; };
 		6793460B213842B400B96BAA /* RequestGetEventsFromCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6793460A213842B400B96BAA /* RequestGetEventsFromCategory.swift */; };
@@ -38,14 +38,14 @@
 		679346252138431D00B96BAA /* ResponseGetUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679346242138431D00B96BAA /* ResponseGetUserInfo.swift */; };
 		679346272138432C00B96BAA /* RequestGetUserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679346262138432C00B96BAA /* RequestGetUserId.swift */; };
 		679346292138433400B96BAA /* ResponseGetUserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679346282138433400B96BAA /* ResponseGetUserId.swift */; };
-		6793462D213843AE00B96BAA /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 6793462C213843AE00B96BAA /* Response.json */; };
-		6793462F213843C100B96BAA /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 6793462E213843C100B96BAA /* Response.json */; };
-		67934631213843C800B96BAA /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934630213843C800B96BAA /* Response.json */; };
-		67934633213843CE00B96BAA /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934632213843CE00B96BAA /* Response.json */; };
-		67934635213843D400B96BAA /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934634213843D300B96BAA /* Response.json */; };
-		67934637213843D800B96BAA /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934636213843D800B96BAA /* Response.json */; };
-		67934639213843DD00B96BAA /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934638213843DD00B96BAA /* Response.json */; };
-		6793463B213843E300B96BAA /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 6793463A213843E300B96BAA /* Response.json */; };
+		6793462D213843AE00B96BAA /* ResponseGetEventsFromCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 6793462C213843AE00B96BAA /* ResponseGetEventsFromCategory.json */; };
+		6793462F213843C100B96BAA /* ResponseGetEvent.json in Resources */ = {isa = PBXBuildFile; fileRef = 6793462E213843C100B96BAA /* ResponseGetEvent.json */; };
+		67934631213843C800B96BAA /* ResponseGetCreditCardsFromUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934630213843C800B96BAA /* ResponseGetCreditCardsFromUser.json */; };
+		67934633213843CE00B96BAA /* ResponseBuyEvent.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934632213843CE00B96BAA /* ResponseBuyEvent.json */; };
+		67934635213843D400B96BAA /* ResponseGetEventFromLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934634213843D300B96BAA /* ResponseGetEventFromLocation.json */; };
+		67934637213843D800B96BAA /* ResponseGetEventsBuyedByUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934636213843D800B96BAA /* ResponseGetEventsBuyedByUser.json */; };
+		67934639213843DD00B96BAA /* ResponseGetUserInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934638213843DD00B96BAA /* ResponseGetUserInfo.json */; };
+		6793463B213843E300B96BAA /* ResponseGetUserId.json in Resources */ = {isa = PBXBuildFile; fileRef = 6793463A213843E300B96BAA /* ResponseGetUserId.json */; };
 		679D080B212C476C00824386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679D080A212C476C00824386 /* AppDelegate.swift */; };
 		679D0812212C476C00824386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679D0810212C476C00824386 /* Main.storyboard */; };
 		679D0817212C476D00824386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679D0815212C476D00824386 /* LaunchScreen.storyboard */; };
@@ -137,7 +137,7 @@
 		6729163A21382AAD0047A515 /* ResponseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseApi.swift; sourceTree = "<group>"; };
 		676C4B9121396C1700EAFE9B /* PaymentResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResult.swift; sourceTree = "<group>"; };
 		676C4B9321396C2600EAFE9B /* ApiRequestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestResult.swift; sourceTree = "<group>"; };
-		67934604213840A500B96BAA /* Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
+		67934604213840A500B96BAA /* ResponseGetCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseGetCategories.json; sourceTree = "<group>"; };
 		67934606213840FB00B96BAA /* RequestGetCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetCategories.swift; sourceTree = "<group>"; };
 		679346082138410900B96BAA /* ResponseGetCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetCategories.swift; sourceTree = "<group>"; };
 		6793460A213842B400B96BAA /* RequestGetEventsFromCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetEventsFromCategory.swift; sourceTree = "<group>"; };
@@ -156,14 +156,14 @@
 		679346242138431D00B96BAA /* ResponseGetUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetUserInfo.swift; sourceTree = "<group>"; };
 		679346262138432C00B96BAA /* RequestGetUserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetUserId.swift; sourceTree = "<group>"; };
 		679346282138433400B96BAA /* ResponseGetUserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetUserId.swift; sourceTree = "<group>"; };
-		6793462C213843AE00B96BAA /* Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
-		6793462E213843C100B96BAA /* Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
-		67934630213843C800B96BAA /* Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
-		67934632213843CE00B96BAA /* Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
-		67934634213843D300B96BAA /* Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
-		67934636213843D800B96BAA /* Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
-		67934638213843DD00B96BAA /* Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
-		6793463A213843E300B96BAA /* Response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
+		6793462C213843AE00B96BAA /* ResponseGetEventsFromCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseGetEventsFromCategory.json; sourceTree = "<group>"; };
+		6793462E213843C100B96BAA /* ResponseGetEvent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseGetEvent.json; sourceTree = "<group>"; };
+		67934630213843C800B96BAA /* ResponseGetCreditCardsFromUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseGetCreditCardsFromUser.json; sourceTree = "<group>"; };
+		67934632213843CE00B96BAA /* ResponseBuyEvent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseBuyEvent.json; sourceTree = "<group>"; };
+		67934634213843D300B96BAA /* ResponseGetEventFromLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseGetEventFromLocation.json; sourceTree = "<group>"; };
+		67934636213843D800B96BAA /* ResponseGetEventsBuyedByUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseGetEventsBuyedByUser.json; sourceTree = "<group>"; };
+		67934638213843DD00B96BAA /* ResponseGetUserInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseGetUserInfo.json; sourceTree = "<group>"; };
+		6793463A213843E300B96BAA /* ResponseGetUserId.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseGetUserId.json; sourceTree = "<group>"; };
 		679D0807212C476B00824386 /* Awesome City Trips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome City Trips.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		679D080A212C476C00824386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		679D0811212C476C00824386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -403,7 +403,7 @@
 		6793463C213843EA00B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
-				67934604213840A500B96BAA /* Response.json */,
+				67934604213840A500B96BAA /* ResponseGetCategories.json */,
 				67D32AEC213845D500DCE5C7 /* OutputGetCategories.swift */,
 			);
 			path = InputOutput;
@@ -412,7 +412,7 @@
 		6793463D213843F000B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
-				6793462C213843AE00B96BAA /* Response.json */,
+				6793462C213843AE00B96BAA /* ResponseGetEventsFromCategory.json */,
 				67D32AEE213845F000DCE5C7 /* OutputGetEventsFromCategory.swift */,
 			);
 			path = InputOutput;
@@ -421,7 +421,7 @@
 		6793463E213843F800B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
-				6793462E213843C100B96BAA /* Response.json */,
+				6793462E213843C100B96BAA /* ResponseGetEvent.json */,
 				67D32AF0213845FF00DCE5C7 /* OutputGetEvent.swift */,
 			);
 			path = InputOutput;
@@ -430,7 +430,7 @@
 		6793463F213843FC00B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
-				67934630213843C800B96BAA /* Response.json */,
+				67934630213843C800B96BAA /* ResponseGetCreditCardsFromUser.json */,
 				67D32AF22138460A00DCE5C7 /* OutputGetCreditCardsFromUser.swift */,
 			);
 			path = InputOutput;
@@ -439,7 +439,7 @@
 		67934640213843FF00B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
-				67934632213843CE00B96BAA /* Response.json */,
+				67934632213843CE00B96BAA /* ResponseBuyEvent.json */,
 				67D32AF42138461900DCE5C7 /* OutputBuyEvent.swift */,
 			);
 			path = InputOutput;
@@ -448,7 +448,7 @@
 		679346412138441600B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
-				67934634213843D300B96BAA /* Response.json */,
+				67934634213843D300B96BAA /* ResponseGetEventFromLocation.json */,
 				67D32AF62138462200DCE5C7 /* OutputGetEventFromLocation.swift */,
 			);
 			path = InputOutput;
@@ -457,7 +457,7 @@
 		679346422138441A00B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
-				67934636213843D800B96BAA /* Response.json */,
+				67934636213843D800B96BAA /* ResponseGetEventsBuyedByUser.json */,
 				67D32AF82138462D00DCE5C7 /* OutputGetEventsBuyedByUser.swift */,
 			);
 			path = InputOutput;
@@ -466,7 +466,7 @@
 		679346432138441D00B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
-				67934638213843DD00B96BAA /* Response.json */,
+				67934638213843DD00B96BAA /* ResponseGetUserInfo.json */,
 				67D32AFA2138463600DCE5C7 /* OutputGetUserInfo.swift */,
 			);
 			path = InputOutput;
@@ -475,7 +475,7 @@
 		679346442138442100B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
-				6793463A213843E300B96BAA /* Response.json */,
+				6793463A213843E300B96BAA /* ResponseGetUserId.json */,
 				67D32AFE2138465100DCE5C7 /* OutputGetUserId.swift */,
 			);
 			path = InputOutput;
@@ -832,23 +832,23 @@
 				67BF9142212F26F3006E9F32 /* EventDetailsScreen.storyboard in Resources */,
 				679D0817212C476D00824386 /* LaunchScreen.storyboard in Resources */,
 				B13528BD21434AA000FDF092 /* CategoriesScreen.storyboard in Resources */,
-				67934639213843DD00B96BAA /* Response.json in Resources */,
+				67934639213843DD00B96BAA /* ResponseGetUserInfo.json in Resources */,
 				67F342F2212E183C008621BD /* AvailableEventsScreen.storyboard in Resources */,
 				B13528BB21434A9600FDF092 /* MapScreen.storyboard in Resources */,
-				6793462F213843C100B96BAA /* Response.json in Resources */,
-				6793463B213843E300B96BAA /* Response.json in Resources */,
+				6793462F213843C100B96BAA /* ResponseGetEvent.json in Resources */,
+				6793463B213843E300B96BAA /* ResponseGetUserId.json in Resources */,
 				67F342C6212E0EEE008621BD /* Localizable.strings in Resources */,
-				67934633213843CE00B96BAA /* Response.json in Resources */,
+				67934633213843CE00B96BAA /* ResponseBuyEvent.json in Resources */,
 				67F342C2212E0B05008621BD /* Assets.xcassets in Resources */,
 				679D0812212C476C00824386 /* Main.storyboard in Resources */,
-				6793462D213843AE00B96BAA /* Response.json in Resources */,
+				6793462D213843AE00B96BAA /* ResponseGetEventsFromCategory.json in Resources */,
 				67BF9147212F3871006E9F32 /* CreditCardsScreen.storyboard in Resources */,
 				67D64EC5213B671700E03A4B /* GoogleService-Info.plist in Resources */,
 				B13528B921434A8F00FDF092 /* MyEventsScreen.storyboard in Resources */,
-				67934631213843C800B96BAA /* Response.json in Resources */,
-				67934635213843D400B96BAA /* Response.json in Resources */,
-				67934605213840A500B96BAA /* Response.json in Resources */,
-				67934637213843D800B96BAA /* Response.json in Resources */,
+				67934631213843C800B96BAA /* ResponseGetCreditCardsFromUser.json in Resources */,
+				67934635213843D400B96BAA /* ResponseGetEventFromLocation.json in Resources */,
+				67934605213840A500B96BAA /* ResponseGetCategories.json in Resources */,
+				67934637213843D800B96BAA /* ResponseGetEventsBuyedByUser.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

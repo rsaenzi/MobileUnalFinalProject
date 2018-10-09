@@ -13,3 +13,5 @@
 "errorOnFetchingData" = "Error al intentar obtener datos del servidor, porfavor intente más tarde...";
 "errorNoCurrentUser" = "No hay un usuario logeado, porfavor intente de nuevo...";
 "errorNoSelectedCategory" = "No fue seleccionada una categoria...";
+"errorNoSelectedEvent" = "No fue seleccionada en evento...";
+"errorNoLocationPermissionGranted" = "El app no tiene los permisos para obtener la ubicacion del usuario...";

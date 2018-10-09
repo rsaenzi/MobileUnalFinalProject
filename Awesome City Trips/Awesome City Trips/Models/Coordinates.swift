@@ -11,4 +11,9 @@ import Foundation
 struct Coordinates: Codable {
     let longitude: Double
     let latitude: Double
+    
+    init(longitude: Double, latitude: Double) {
+        self.longitude = longitude
+        self.latitude = latitude
+    }
 }

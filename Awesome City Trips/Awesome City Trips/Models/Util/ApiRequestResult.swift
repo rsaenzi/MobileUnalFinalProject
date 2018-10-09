@@ -10,5 +10,5 @@ import Foundation
 
 enum ApiRequestResult: String, Codable {
     case success
-    case failure
+    case failed
 }

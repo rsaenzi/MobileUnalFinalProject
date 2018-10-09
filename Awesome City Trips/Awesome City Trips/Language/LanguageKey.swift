@@ -14,4 +14,6 @@ enum LanguageKey: String {
     case errorOnFetchingData
     case errorNoCurrentUser
     case errorNoSelectedCategory
+    case errorNoSelectedEvent
+    case errorNoLocationPermissionGranted
 }

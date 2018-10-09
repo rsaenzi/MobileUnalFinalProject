@@ -21,20 +21,20 @@ extension ApiEndpoint: TargetType {
         case .getCategories:
             return "/getCategories"
             
-        case .getEventsFromCategory:
-            return "/getEventsFromCategory"
+        case .getEventsFromCategory(let categoryId):
+            return "/getEventsFromCategory/\(categoryId)"
             
-        case .getEvent:
-            return "/getEvent"
+        case .getEvent(let eventId):
+            return "/getEvent/\(eventId)"
             
-        case .getCreditCardsFromUser:
-            return "/getCreditCardsFromUser"
+        case .getCreditCardsFromUser(let userId):
+            return "/getCreditCardsFromUser/\(userId)"
             
         case .buyEvent:
             return "/buyEvent"
             
-        case .getEventFromLocation:
-            return "/getEventFromLocation"
+        case .getEventFromLocation(let coordinates, let numberofNearEvents):
+            return "/getEventFromLocation/\(coordinates.longitude)/\(coordinates.latitude)/\(numberofNearEvents)"
             
         case .getEventsBuyedByUser:
             return "/getEventsBuyedByUser"
@@ -65,20 +65,14 @@ extension ApiEndpoint: TargetType {
         case .getCategories:
             return Task.requestPlain
             
-        case .getEventsFromCategory(let categoryId):
-            return .requestParameters(
-                parameters: ["categoryId": categoryId],
-                encoding: URLEncoding.queryString)
+        case .getEventsFromCategory:
+            return .requestPlain
             
-        case .getEvent(let eventId):
-            return .requestParameters(
-                parameters: ["eventId": eventId],
-                encoding: URLEncoding.queryString)
+        case .getEvent:
+            return .requestPlain
             
-        case .getCreditCardsFromUser(let userId):
-            return .requestParameters(
-                parameters: ["userId": userId],
-                encoding: URLEncoding.queryString)
+        case .getCreditCardsFromUser:
+            return .requestPlain
             
         case .buyEvent(let userId, let creditCardId, let eventId):
             return .requestParameters(
@@ -87,11 +81,8 @@ extension ApiEndpoint: TargetType {
                              "eventId": eventId],
                 encoding: URLEncoding.queryString)
             
-        case .getEventFromLocation(let coordinates, let numberofNearEvents):
-            return .requestParameters(
-                parameters: ["coordinates": coordinates,
-                             "numberofNearEvents": numberofNearEvents],
-                encoding: URLEncoding.queryString)
+        case .getEventFromLocation:
+            return .requestPlain
             
         case .getEventsBuyedByUser(let userId):
             return .requestParameters(
