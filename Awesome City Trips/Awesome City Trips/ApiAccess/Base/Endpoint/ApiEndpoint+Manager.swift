@@ -34,10 +34,10 @@ extension ApiEndpoint: TargetType {
             return "/buyEvent"
             
         case .getEventFromLocation(let coordinates, let numberofNearEvents):
-            return "/getEventFromLocation/\(coordinates.longitude)/\(coordinates.latitude)/\(numberofNearEvents)"
+            return "/getEventFromLocation/\(coordinates.latitude)/\(coordinates.longitude)/\(numberofNearEvents)"
             
-        case .getEventsBuyedByUser:
-            return "/getEventsBuyedByUser"
+        case .getEventsBuyedByUser(let userId):
+            return "/getEventsBuyedByUser/\(userId)"
             
         case .getUserInfo:
             return "/getUserInfo"
@@ -84,10 +84,8 @@ extension ApiEndpoint: TargetType {
         case .getEventFromLocation:
             return .requestPlain
             
-        case .getEventsBuyedByUser(let userId):
-            return .requestParameters(
-                parameters: ["userId": userId],
-                encoding: URLEncoding.queryString)
+        case .getEventsBuyedByUser:
+            return .requestPlain
             
         case .getUserInfo(let userId):
             return .requestParameters(

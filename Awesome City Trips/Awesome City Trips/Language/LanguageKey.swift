@@ -16,4 +16,5 @@ enum LanguageKey: String {
     case errorNoSelectedCategory
     case errorNoSelectedEvent
     case errorNoLocationPermissionGranted
+    case errorLocationError
 }

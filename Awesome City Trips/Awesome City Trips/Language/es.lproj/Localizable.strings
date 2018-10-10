@@ -15,3 +15,4 @@
 "errorNoSelectedCategory" = "No fue seleccionada una categoria...";
 "errorNoSelectedEvent" = "No fue seleccionada en evento...";
 "errorNoLocationPermissionGranted" = "El app no tiene los permisos para obtener la ubicacion del usuario...";
+"errorLocationError" = "Error al procesar la ubicacion...";

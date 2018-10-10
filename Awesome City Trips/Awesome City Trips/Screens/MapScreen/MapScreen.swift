@@ -18,6 +18,7 @@ class MapScreen: UIViewController {
     private var permissionStatus: CLAuthorizationStatus!
     private let regionRadius: CLLocationDistance = 2000
     private var eventsForLocationRequested = false
+    private var firstAuthChangeDone = false
     private var allEvents: [Event] = []
 }
 
@@ -31,11 +32,6 @@ extension MapScreen {
         manager.delegate = self
         manager.requestWhenInUseAuthorization()
     }
-    
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
-        eventsMap.setRegion(coordinateRegion, animated: true)
-    }
 }
 
 extension MapScreen: CLLocationManagerDelegate {
@@ -45,37 +41,53 @@ extension MapScreen: CLLocationManagerDelegate {
         
         self.permissionStatus = status
         
+        // This prevent the first time to display the errorNoLocationPermissionGranted error by mistake
+//        if firstAuthChangeDone == false {
+//            firstAuthChangeDone = true
+//            return
+//        }
+        
         guard self.permissionStatus == .authorizedAlways || self.permissionStatus == .authorizedWhenInUse else {
-            self.showSimpleAlert(message: .errorNoLocationPermissionGranted)
+            KVNProgress.dismiss()
+            //self.showSimpleAlert(message: .errorNoLocationPermissionGranted)
             return
         }
         
-        if CLLocationManager.locationServicesEnabled() {
-            manager.startUpdatingLocation()
+        KVNProgress.show()
+        
+        guard CLLocationManager.locationServicesEnabled() else {
+            KVNProgress.dismiss()
+            self.showSimpleAlert(message: .errorLocationError)
+            return
         }
+        
+        manager.startUpdatingLocation()
     }
     
-    // Called when
+    // Called when user moves and iOS updates its location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        guard let userLocation: CLLocation = locations.first else { return }
-        centerMapOnLocation(location: userLocation)
+        guard let userLocation: CLLocation = locations.first else {
+            KVNProgress.dismiss()
+            self.showSimpleAlert(message: .errorLocationError)
+            return
+        }
         
-        print("user latitude = \(userLocation.coordinate.latitude)")
-        print("user longitude = \(userLocation.coordinate.longitude)")
+        print("Location Long: \(userLocation.coordinate.longitude) - Lat: \(userLocation.coordinate.latitude)")
         
         // We request the points for current location only once
         if(!eventsForLocationRequested) {
             eventsForLocationRequested = true
             
-            let point = MapPoint(coordinate: userLocation.coordinate)
-            eventsMap.addAnnotation(point)
+            // Zoom to user location
+            centerMapOnLocation(location: userLocation)
             
-            KVNProgress.show()
+            let pointUserLocation = MapPoint(coordinate: userLocation.coordinate)
+            eventsMap.addAnnotation(pointUserLocation)
+        
+            let coordsUserLocation = Coordinates(longitude: userLocation.coordinate.longitude, latitude: userLocation.coordinate.latitude)
             
-            let coords = Coordinates(longitude: userLocation.coordinate.longitude, latitude: userLocation.coordinate.latitude)
-            
-            RequestGetEventFromLocation.request(coordinates: coords, numberofNearEvents: 10) { [weak self] response in
+            RequestGetEventFromLocation.request(coordinates: coordsUserLocation, numberofNearEvents: 10) { [weak self] response in
                 
                 KVNProgress.dismiss()
                 
@@ -84,8 +96,8 @@ extension MapScreen: CLLocationManagerDelegate {
                 switch response {
                 case .success(let output):
                     
-                    if let events = output.events {
-                        self.allEvents = events
+                    if let fetchedEvents = output.event {
+                        self.allEvents = fetchedEvents
                         self.addEventsToMap()
                     }
                     
@@ -106,6 +118,11 @@ extension MapScreen: CLLocationManagerDelegate {
         
         eventsMap.addAnnotations(points)
     }
+    
+    private func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
+        eventsMap.setRegion(coordinateRegion, animated: true)
+    }
 }
 
 
@@ -114,6 +131,21 @@ extension MapScreen: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         print("Map Point Selected")
     }
+    
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//
+//        let identifier = "Annotation"
+//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+//
+//        if annotationView == nil {
+//            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+//            annotationView!.canShowCallout = true
+//        } else {
+//            annotationView!.annotation = annotation
+//        }
+//
+//        return annotationView
+//    }
 }
 
 

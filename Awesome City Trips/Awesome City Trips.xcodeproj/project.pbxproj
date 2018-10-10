@@ -98,6 +98,7 @@
 		B13528BB21434A9600FDF092 /* MapScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13528BA21434A9600FDF092 /* MapScreen.storyboard */; };
 		B13528BD21434AA000FDF092 /* CategoriesScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13528BC21434AA000FDF092 /* CategoriesScreen.storyboard */; };
 		B13528BF21435ABF00FDF092 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13528BE21435ABF00FDF092 /* Place.swift */; };
+		B1A220CA216CDF4F0091EF1B /* Bogota.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B1A220C9216CDF4F0091EF1B /* Bogota.gpx */; };
 		B1D3BD832147F88800C2D10B /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3BD822147F88800C2D10B /* Workspace.swift */; };
 		D562D08604EFDD2C1F0049E8 /* Pods_Awesome_City_TripsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7208C5DEB4946BCB6C1AC271 /* Pods_Awesome_City_TripsTests.framework */; };
 /* End PBXBuildFile section */
@@ -223,6 +224,7 @@
 		B13528BA21434A9600FDF092 /* MapScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapScreen.storyboard; sourceTree = "<group>"; };
 		B13528BC21434AA000FDF092 /* CategoriesScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoriesScreen.storyboard; sourceTree = "<group>"; };
 		B13528BE21435ABF00FDF092 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		B1A220C9216CDF4F0091EF1B /* Bogota.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Bogota.gpx; sourceTree = "<group>"; };
 		B1D3BD822147F88800C2D10B /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
 		EED5A3921ED0EB9FC99E3191 /* Pods-Awesome City TripsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome City TripsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome City TripsTests/Pods-Awesome City TripsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF06706D0A202C069B6A4783 /* Pods_Awesome_City_TripsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Awesome_City_TripsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -506,6 +508,7 @@
 		679D0809212C476B00824386 /* Awesome City Trips */ = {
 			isa = PBXGroup;
 			children = (
+				B1A220C8216CDF430091EF1B /* Locations */,
 				6729162E213822350047A515 /* ApiAccess */,
 				67F342D0212E0F84008621BD /* Util */,
 				67F342C3212E0EBF008621BD /* Language */,
@@ -698,6 +701,14 @@
 			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
+		B1A220C8216CDF430091EF1B /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				B1A220C9216CDF4F0091EF1B /* Bogota.gpx */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
 		B1D3BD812147F85C00C2D10B /* Workspace */ = {
 			isa = PBXGroup;
 			children = (
@@ -837,6 +848,7 @@
 				B13528BB21434A9600FDF092 /* MapScreen.storyboard in Resources */,
 				6793462F213843C100B96BAA /* ResponseGetEvent.json in Resources */,
 				6793463B213843E300B96BAA /* ResponseGetUserId.json in Resources */,
+				B1A220CA216CDF4F0091EF1B /* Bogota.gpx in Resources */,
 				67F342C6212E0EEE008621BD /* Localizable.strings in Resources */,
 				67934633213843CE00B96BAA /* ResponseBuyEvent.json in Resources */,
 				67F342C2212E0B05008621BD /* Assets.xcassets in Resources */,
