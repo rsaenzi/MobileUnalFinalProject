@@ -176,7 +176,7 @@ SPEC CHECKSUMS:
   FirebaseAuth: 657a25e4be044d2d333663ebf515a861c5a59cd7
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: cb9ee75e0894def766167c95a4d5a14b1c138269
-  FirebaseCrash: fd373fbf5f9d1e235a984f2c7e446a5f26b968e8
+  FirebaseCrash: 011365f2c0dfac64315109103ed350bacfcdc03f
   FirebaseDatabase: 27be5ac5bc75e0b17537b2bbfada8258addcc8cd
   FirebaseDynamicLinks: eb41fb20677b0a6e944b47f45cbe59f388e9e5cc
   FirebaseInstanceID: ea5af6920d0a4a29b40459d055bebe4a6c1333c4

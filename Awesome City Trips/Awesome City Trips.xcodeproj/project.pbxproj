@@ -100,6 +100,10 @@
 		B13528BF21435ABF00FDF092 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13528BE21435ABF00FDF092 /* Place.swift */; };
 		B1A220CA216CDF4F0091EF1B /* Bogota.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B1A220C9216CDF4F0091EF1B /* Bogota.gpx */; };
 		B1D3BD832147F88800C2D10B /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3BD822147F88800C2D10B /* Workspace.swift */; };
+		B1EA9AA421A26703007270AC /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1EA9AA321A26703007270AC /* LoginScreen.storyboard */; };
+		B1EA9AA621A26717007270AC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EA9AA521A26717007270AC /* LoginScreen.swift */; };
+		B1EA9AA921A2677D007270AC /* SignUpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1EA9AA821A2677D007270AC /* SignUpScreen.storyboard */; };
+		B1EA9AAB21A26785007270AC /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EA9AAA21A26785007270AC /* SignUpScreen.swift */; };
 		D562D08604EFDD2C1F0049E8 /* Pods_Awesome_City_TripsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7208C5DEB4946BCB6C1AC271 /* Pods_Awesome_City_TripsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -226,6 +230,10 @@
 		B13528BE21435ABF00FDF092 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		B1A220C9216CDF4F0091EF1B /* Bogota.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Bogota.gpx; sourceTree = "<group>"; };
 		B1D3BD822147F88800C2D10B /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
+		B1EA9AA321A26703007270AC /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		B1EA9AA521A26717007270AC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		B1EA9AA821A2677D007270AC /* SignUpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpScreen.storyboard; sourceTree = "<group>"; };
+		B1EA9AAA21A26785007270AC /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		EED5A3921ED0EB9FC99E3191 /* Pods-Awesome City TripsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome City TripsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Awesome City TripsTests/Pods-Awesome City TripsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF06706D0A202C069B6A4783 /* Pods_Awesome_City_TripsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Awesome_City_TripsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -518,7 +526,6 @@
 				679D0844212C4F9A00824386 /* Cells */,
 				679D083A212C4C5200824386 /* Screens */,
 				679D080A212C476C00824386 /* AppDelegate.swift */,
-				679D0815212C476D00824386 /* LaunchScreen.storyboard */,
 				679D0818212C476D00824386 /* Info.plist */,
 				67D64EC4213B671700E03A4B /* GoogleService-Info.plist */,
 				67F342C1212E0B05008621BD /* Assets.xcassets */,
@@ -547,6 +554,9 @@
 		679D083A212C4C5200824386 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B1EA9AAC21A26DB4007270AC /* Launch */,
+				B1EA9AA021A26194007270AC /* Login */,
+				B1EA9AA721A2675D007270AC /* SignUp */,
 				67F342ED212E1813008621BD /* Main */,
 				B13528B221434A3200FDF092 /* CategoriesScreen */,
 				B13528B321434A4900FDF092 /* MapScreen */,
@@ -717,6 +727,32 @@
 			path = Workspace;
 			sourceTree = "<group>";
 		};
+		B1EA9AA021A26194007270AC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B1EA9AA321A26703007270AC /* LoginScreen.storyboard */,
+				B1EA9AA521A26717007270AC /* LoginScreen.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B1EA9AA721A2675D007270AC /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B1EA9AA821A2677D007270AC /* SignUpScreen.storyboard */,
+				B1EA9AAA21A26785007270AC /* SignUpScreen.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		B1EA9AAC21A26DB4007270AC /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				679D0815212C476D00824386 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		CF75BB1573E2A55D14A71E5D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -840,6 +876,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B13528B721434A8700FDF092 /* ProfileScreen.storyboard in Resources */,
+				B1EA9AA421A26703007270AC /* LoginScreen.storyboard in Resources */,
 				67BF9142212F26F3006E9F32 /* EventDetailsScreen.storyboard in Resources */,
 				679D0817212C476D00824386 /* LaunchScreen.storyboard in Resources */,
 				B13528BD21434AA000FDF092 /* CategoriesScreen.storyboard in Resources */,
@@ -850,6 +887,7 @@
 				6793463B213843E300B96BAA /* ResponseGetUserId.json in Resources */,
 				B1A220CA216CDF4F0091EF1B /* Bogota.gpx in Resources */,
 				67F342C6212E0EEE008621BD /* Localizable.strings in Resources */,
+				B1EA9AA921A2677D007270AC /* SignUpScreen.storyboard in Resources */,
 				67934633213843CE00B96BAA /* ResponseBuyEvent.json in Resources */,
 				67F342C2212E0B05008621BD /* Assets.xcassets in Resources */,
 				679D0812212C476C00824386 /* Main.storyboard in Resources */,
@@ -1003,6 +1041,7 @@
 				679346292138433400B96BAA /* ResponseGetUserId.swift in Sources */,
 				67934613213842D300B96BAA /* RequestGetCreditCardsFromUser.swift in Sources */,
 				67F342E0212E1171008621BD /* DateFormats.swift in Sources */,
+				B1EA9AAB21A26785007270AC /* SignUpScreen.swift in Sources */,
 				67D32AFB2138463600DCE5C7 /* OutputGetUserInfo.swift in Sources */,
 				679D0843212C4F6F00824386 /* UITableView+Load.swift in Sources */,
 				67D32AF1213845FF00DCE5C7 /* OutputGetEvent.swift in Sources */,
@@ -1055,6 +1094,7 @@
 				67D32AF32138460A00DCE5C7 /* OutputGetCreditCardsFromUser.swift in Sources */,
 				679346212138430B00B96BAA /* ResponseGetEventsBuyedByUser.swift in Sources */,
 				6793460F213842C400B96BAA /* RequestGetEvent.swift in Sources */,
+				B1EA9AA621A26717007270AC /* LoginScreen.swift in Sources */,
 				67F342F0212E1832008621BD /* AvailableEventsScreen.swift in Sources */,
 				67934619213842EC00B96BAA /* ResponseBuyEvent.swift in Sources */,
 				67BF9149212F397C006E9F32 /* CreditCardsCell.swift in Sources */,
