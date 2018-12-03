@@ -85,6 +85,13 @@ extension EventDetailsScreen {
         buttonBuy.backgroundColor = .red
         
         //eventMap
+        let anno = MKPointAnnotation();
+        anno.coordinate = CLLocationCoordinate2D(
+            latitude: event.place.coordinates.latitude,
+            longitude: event.place.coordinates.longitude)
+        
+        eventMap.addAnnotations([anno])
+        eventMap.showAnnotations([anno], animated: true)
         
         guard let imageUrl: URL = URL(string: event.iconUrl) else {
             eventBanner.image = nil

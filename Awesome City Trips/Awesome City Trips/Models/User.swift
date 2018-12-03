@@ -17,7 +17,6 @@ struct User: Codable {
     let birthday: String
     let username: String
     let password: String
-    //let lastAccess: String
     
     // MARK: Decoding & Encoding to JSON
     enum CodingKeys: String, CodingKey {
@@ -29,6 +28,5 @@ struct User: Codable {
         case birthday
         case username
         case password
-        //case lastAccess
     }
 }
