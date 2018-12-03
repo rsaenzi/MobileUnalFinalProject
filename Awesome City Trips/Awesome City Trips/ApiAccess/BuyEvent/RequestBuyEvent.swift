@@ -14,7 +14,7 @@ class RequestBuyEvent {
     
     private init() {}
     
-    static func request(userId: Int64, creditCardId: Int64, eventId: Int64, completion callback: @escaping CompletionBuyEvent) {
+    static func request(userId: String, creditCardId: Int64, eventId: Int64, completion callback: @escaping CompletionBuyEvent) {
         
         let endpoint = ApiEndpoint.buyEvent(userId: userId, creditCardId: creditCardId, eventId: eventId)
         

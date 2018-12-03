@@ -72,6 +72,9 @@
                                                 <state key="normal" title="Login">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onTapLogin:forEvent:" destination="5SS-w0-gkx" eventType="touchUpInside" id="aKm-1M-5zQ"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVh-60-gln">
                                                 <rect key="frame" x="32" y="270" width="311" height="25"/>
@@ -148,6 +151,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jRi-cI-WRQ"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonLogin" destination="gan-iP-0Yt" id="Z0w-ta-ZuX"/>
+                        <outlet property="buttonSignIn" destination="hUY-v4-Aa7" id="XhE-gr-nNX"/>
+                        <outlet property="textfieldEmail" destination="zoJ-U2-XPM" id="jhu-tM-Z4P"/>
+                        <outlet property="textfieldPassword" destination="jLH-HJ-6Ol" id="VAR-Lz-gFB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9VW-Xd-zb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

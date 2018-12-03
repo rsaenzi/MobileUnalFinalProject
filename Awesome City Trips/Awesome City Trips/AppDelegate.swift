@@ -21,21 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use Firebase library to configure APIs
         FirebaseApp.configure()
         
-        // TODO: Temporal
-        Workspace.shared.currentUser = User(
-            id: 7571320,
-            lastName: "Saenz",
-            firstName: "Rigoberto",
-            pictureUrl: "https://avatars3.githubusercontent.com/u/2594928?s=460&v=4",
-            email: "beto456789@gmail.com",
-            birthday: "03/05/1988",
-            username: "rsaenzi",
-            password: "qwerty",
-            lastAccess: Date(),
-            creditCard: [],
-            buyedEvents: [])
-        // TODO: Temporal
-        
         return true
     }
 

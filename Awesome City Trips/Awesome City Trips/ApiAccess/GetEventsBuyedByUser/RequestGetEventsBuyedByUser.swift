@@ -14,7 +14,7 @@ class RequestGetEventsBuyedByUser {
     
     private init() {}
     
-    static func request(userId: Int64, completion callback: @escaping CompletionGetEventsBuyedByUser) {
+    static func request(userId: String, completion callback: @escaping CompletionGetEventsBuyedByUser) {
         
         let endpoint = ApiEndpoint.getEventsBuyedByUser(userId: userId)
         

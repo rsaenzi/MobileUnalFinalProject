@@ -9,30 +9,26 @@
 import Foundation
 
 struct User: Codable {
-    let id: Int64
-    let lastName: String
+    let token: String
     let firstName: String
-    let pictureUrl: String
+    let lastName: String
+    let picture: String
     let email: String
     let birthday: String
     let username: String
     let password: String
-    let lastAccess: Date
-    let creditCard: [CreditCard]
-    let buyedEvents: [Event]
+    //let lastAccess: String
     
     // MARK: Decoding & Encoding to JSON
     enum CodingKeys: String, CodingKey {
-        case id
-        case lastName = "last_name"
-        case firstName = "first_name"
-        case pictureUrl = "picture_url"
+        case token
+        case firstName
+        case lastName
+        case picture
         case email
         case birthday
         case username
         case password
-        case lastAccess = "last_access"
-        case creditCard = "credit_card"
-        case buyedEvents = "buyed_events"
+        //case lastAccess
     }
 }

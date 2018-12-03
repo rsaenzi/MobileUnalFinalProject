@@ -14,7 +14,7 @@ class RequestGetUserInfo {
     
     private init() {}
     
-    static func request(userId: Int64, completion callback: @escaping CompletionGetUserInfo) {
+    static func request(userId: String, completion callback: @escaping CompletionGetUserInfo) {
         
         let endpoint = ApiEndpoint.getUserInfo(userId: userId)
         

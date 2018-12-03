@@ -12,10 +12,10 @@ enum ApiEndpoint {
     case getCategories
     case getEventsFromCategory(categoryId: Int64)
     case getEvent(eventId: Int64)
-    case getCreditCardsFromUser(userId: Int64)
-    case buyEvent(userId: Int64, creditCardId: Int64, eventId: Int64)
+    case getCreditCardsFromUser(userId: String)
+    case buyEvent(userId: String, creditCardId: Int64, eventId: Int64)
     case getEventFromLocation(coordinates: Coordinates, numberofNearEvents: Int)
-    case getEventsBuyedByUser(userId: Int64)
-    case getUserInfo(userId: Int64)
-    case getUserId(username: String, password: String) // Oauth?
+    case getEventsBuyedByUser(userId: String)
+    case getUserInfo(userId: String)
+    case setUserInfo(input: InputSetUserInfo)
 }

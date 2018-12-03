@@ -17,4 +17,10 @@ enum LanguageKey: String {
     case errorNoSelectedEvent
     case errorNoLocationPermissionGranted
     case errorLocationError
+    case errorLoginNoData
+    case errorAtUserCreation
+    case errorAtLogin
+    
+    // Login
+    
 }

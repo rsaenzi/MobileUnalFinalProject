@@ -1,22 +1,34 @@
 //
-//  RequestGetUserId.swift
+//  RequestSetUserInfo.swift
 //  Awesome City Trips
 //
-//  Created by Rigoberto Saenz on 8/30/18.
+//  Created by Rigoberto Sáenz Imbacuán on 12/2/18.
 //  Copyright © 2018 Awesome City Team. All rights reserved.
 //
 
 import Moya
 
-typealias CompletionGetUserId = (_ response: ResponseGetUserId) -> Void
+typealias CompletionSetUserInfo = (_ response: ResponseSetUserInfo) -> Void
 
-class RequestGetUserId {
+class RequestSetUserInfo {
     
     private init() {}
     
-    static func request(username: String, password: String, completion callback: @escaping CompletionGetUserId) {
+    static func request(token: String, firstName: String, lastName: String, picture: String,
+                        email: String, birthday: String, username: String, password: String,
+                        completion callback: @escaping CompletionSetUserInfo) {
         
-        let endpoint = ApiEndpoint.getUserId(username: username, password: password)
+        let input = InputSetUserInfo(
+            token: token,
+            firstName: firstName,
+            lastName: lastName,
+            picture: picture,
+            email: email,
+            birthday: birthday,
+            username: username,
+            password: password)
+        
+        let endpoint = ApiEndpoint.setUserInfo(input: input)
         
         RequestApi.request(to: endpoint, authenticate: true) { response in
             switch response {
@@ -36,7 +48,7 @@ class RequestGetUserId {
         }
     }
     
-    private static func handleResponse(_ resultData: Response, _ callback: @escaping CompletionGetUserId) {
+    private static func handleResponse(_ resultData: Response, _ callback: @escaping CompletionSetUserInfo) {
         
         let code = resultData.statusCode
         
@@ -68,10 +80,10 @@ class RequestGetUserId {
         }
     }
     
-    private static func handleSuccess(_ jsonString: String, _ callback: @escaping CompletionGetUserId) {
+    private static func handleSuccess(_ jsonString: String, _ callback: @escaping CompletionSetUserInfo) {
         
         // Converts the jsonString into a valid Object
-        guard let output: OutputGetUserId = jsonString.decodeFrom() else {
+        guard let output: OutputSetUserInfo = jsonString.decodeFrom() else {
             call(callback, .jsonDecodingError(jsonString: jsonString))
             return
         }
@@ -80,7 +92,7 @@ class RequestGetUserId {
         call(callback, .success(output: output))
     }
     
-    private static func call(_ callback: @escaping CompletionGetUserId, _ result: ResponseGetUserId) {
+    private static func call(_ callback: @escaping CompletionSetUserInfo, _ result: ResponseSetUserInfo) {
         DispatchQueue.main.async {
             callback(result)
         }

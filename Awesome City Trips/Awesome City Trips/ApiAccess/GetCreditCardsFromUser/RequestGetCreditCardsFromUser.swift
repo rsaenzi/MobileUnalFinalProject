@@ -14,7 +14,7 @@ class RequestGetCreditCardsFromUser {
     
     private init() {}
     
-    static func request(userId: Int64, completion callback: @escaping CompletionGetCreditCardsFromUser) {
+    static func request(userId: String, completion callback: @escaping CompletionGetCreditCardsFromUser) {
         
         let endpoint = ApiEndpoint.getCreditCardsFromUser(userId: userId)
         

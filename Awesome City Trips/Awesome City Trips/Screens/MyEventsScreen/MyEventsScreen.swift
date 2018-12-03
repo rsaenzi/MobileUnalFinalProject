@@ -27,7 +27,7 @@ extension MyEventsScreen {
         
         KVNProgress.show()
         
-        RequestGetEventsBuyedByUser.request(userId: currentUser.id) { [weak self] response in
+        RequestGetEventsBuyedByUser.request(userId: currentUser.token) { [weak self] response in
             
             KVNProgress.dismiss()
             

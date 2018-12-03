@@ -39,16 +39,24 @@ extension ApiEndpoint: TargetType {
         case .getEventsBuyedByUser(let userId):
             return "/getEventsBuyedByUser/\(userId)"
             
-        case .getUserInfo:
-            return "/getUserInfo"
+        case .getUserInfo(let userId):
+            return "/getUserInfo/\(userId)"
             
-        case .getUserId:
-            return "/getUserId"
+        case .setUserInfo:
+            return "/autenticacion"
         }
     }
     
     var method: Method {
-        return .get
+        
+        switch self {
+            
+        case .setUserInfo:
+            return .post
+            
+        default:
+            return .get
+        }
     }
     
     var headers: [String: String]? {
@@ -63,7 +71,7 @@ extension ApiEndpoint: TargetType {
         switch self {
         
         case .getCategories:
-            return Task.requestPlain
+            return .requestPlain
             
         case .getEventsFromCategory:
             return .requestPlain
@@ -87,16 +95,11 @@ extension ApiEndpoint: TargetType {
         case .getEventsBuyedByUser:
             return .requestPlain
             
-        case .getUserInfo(let userId):
-            return .requestParameters(
-                parameters: ["userId": userId],
-                encoding: URLEncoding.queryString)
+        case .getUserInfo:
+            return .requestPlain
             
-        case .getUserId(let username, let password):
-            return .requestParameters(
-                parameters: ["username": username,
-                             "password": password],
-                encoding: URLEncoding.queryString)
+        case .setUserInfo(let input):
+            return .requestJSONEncodable(input)
         }
     }
     

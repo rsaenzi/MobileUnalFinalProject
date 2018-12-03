@@ -27,7 +27,7 @@ extension CreditCardsScreen {
         
         KVNProgress.show()
         
-        RequestGetCreditCardsFromUser.request(userId: currentUser.id) { [weak self] response in
+        RequestGetCreditCardsFromUser.request(userId: currentUser.token) { [weak self] response in
             
             KVNProgress.dismiss()
             

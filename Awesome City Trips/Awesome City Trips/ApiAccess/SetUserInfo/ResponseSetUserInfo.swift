@@ -1,17 +1,17 @@
 //
-//  ResponseGetUserId.swift
+//  ResponseSetUserInfo.swift
 //  Awesome City Trips
 //
-//  Created by Rigoberto Saenz on 8/30/18.
+//  Created by Rigoberto Sáenz Imbacuán on 12/2/18.
 //  Copyright © 2018 Awesome City Team. All rights reserved.
 //
 
 import Moya
 
-enum ResponseGetUserId {
+enum ResponseSetUserInfo {
     
     // Specific Responses
-    case success(output: OutputGetUserId)
+    case success(output: OutputSetUserInfo)
     case unauthorized(jsonString: String)
     
     // Response Errors
