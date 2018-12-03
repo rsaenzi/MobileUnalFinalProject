@@ -42,7 +42,6 @@
 		67934633213843CE00B96BAA /* ResponseBuyEvent.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934632213843CE00B96BAA /* ResponseBuyEvent.json */; };
 		67934635213843D400B96BAA /* ResponseGetEventFromLocation.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934634213843D300B96BAA /* ResponseGetEventFromLocation.json */; };
 		67934637213843D800B96BAA /* ResponseGetEventsBuyedByUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934636213843D800B96BAA /* ResponseGetEventsBuyedByUser.json */; };
-		67934639213843DD00B96BAA /* ResponseGetUserInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 67934638213843DD00B96BAA /* ResponseGetUserInfo.json */; };
 		679D080B212C476C00824386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679D080A212C476C00824386 /* AppDelegate.swift */; };
 		679D0812212C476C00824386 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679D0810212C476C00824386 /* MainTabBar.storyboard */; };
 		679D0817212C476D00824386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679D0815212C476D00824386 /* LaunchScreen.storyboard */; };
@@ -98,6 +97,12 @@
 		B137761521B4BA7A00317AC4 /* ResponseSetUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137761421B4BA7A00317AC4 /* ResponseSetUserInfo.swift */; };
 		B137761721B4BA9C00317AC4 /* OutputSetUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137761621B4BA9C00317AC4 /* OutputSetUserInfo.swift */; };
 		B137761A21B4C67300317AC4 /* InputSetUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137761921B4C67300317AC4 /* InputSetUserInfo.swift */; };
+		B137761D21B4E17F00317AC4 /* AddCardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137761C21B4E17F00317AC4 /* AddCardScreen.swift */; };
+		B137761F21B4E18900317AC4 /* AddCardScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B137761E21B4E18900317AC4 /* AddCardScreen.storyboard */; };
+		B137762321B4E7CD00317AC4 /* ResponseAddCardToUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137762221B4E7CD00317AC4 /* ResponseAddCardToUser.swift */; };
+		B137762521B4E7D600317AC4 /* RequestAddCardToUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137762421B4E7D600317AC4 /* RequestAddCardToUser.swift */; };
+		B137762721B4E7E600317AC4 /* OutputAddCardToUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137762621B4E7E600317AC4 /* OutputAddCardToUser.swift */; };
+		B137762921B4E8C600317AC4 /* InputAddCardToUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137762821B4E8C600317AC4 /* InputAddCardToUser.swift */; };
 		B1A220CA216CDF4F0091EF1B /* Bogota.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B1A220C9216CDF4F0091EF1B /* Bogota.gpx */; };
 		B1D3BD832147F88800C2D10B /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3BD822147F88800C2D10B /* Workspace.swift */; };
 		B1E2FC0A21B46BFC00C90752 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E2FC0921B46BFC00C90752 /* MainTabBar.swift */; };
@@ -166,7 +171,6 @@
 		67934632213843CE00B96BAA /* ResponseBuyEvent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseBuyEvent.json; sourceTree = "<group>"; };
 		67934634213843D300B96BAA /* ResponseGetEventFromLocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseGetEventFromLocation.json; sourceTree = "<group>"; };
 		67934636213843D800B96BAA /* ResponseGetEventsBuyedByUser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseGetEventsBuyedByUser.json; sourceTree = "<group>"; };
-		67934638213843DD00B96BAA /* ResponseGetUserInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResponseGetUserInfo.json; sourceTree = "<group>"; };
 		679D0807212C476B00824386 /* Awesome City Trips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome City Trips.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		679D080A212C476C00824386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		679D0811212C476C00824386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainTabBar.storyboard; sourceTree = "<group>"; };
@@ -229,6 +233,12 @@
 		B137761421B4BA7A00317AC4 /* ResponseSetUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSetUserInfo.swift; sourceTree = "<group>"; };
 		B137761621B4BA9C00317AC4 /* OutputSetUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputSetUserInfo.swift; sourceTree = "<group>"; };
 		B137761921B4C67300317AC4 /* InputSetUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSetUserInfo.swift; sourceTree = "<group>"; };
+		B137761C21B4E17F00317AC4 /* AddCardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardScreen.swift; sourceTree = "<group>"; };
+		B137761E21B4E18900317AC4 /* AddCardScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCardScreen.storyboard; sourceTree = "<group>"; };
+		B137762221B4E7CD00317AC4 /* ResponseAddCardToUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAddCardToUser.swift; sourceTree = "<group>"; };
+		B137762421B4E7D600317AC4 /* RequestAddCardToUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAddCardToUser.swift; sourceTree = "<group>"; };
+		B137762621B4E7E600317AC4 /* OutputAddCardToUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputAddCardToUser.swift; sourceTree = "<group>"; };
+		B137762821B4E8C600317AC4 /* InputAddCardToUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAddCardToUser.swift; sourceTree = "<group>"; };
 		B1A220C9216CDF4F0091EF1B /* Bogota.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Bogota.gpx; sourceTree = "<group>"; };
 		B1D3BD822147F88800C2D10B /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
 		B1E2FC0921B46BFC00C90752 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
@@ -281,6 +291,7 @@
 				6793460121383E9200B96BAA /* GetEventsBuyedByUser */,
 				6793460221383E9800B96BAA /* GetUserInfo */,
 				B137761121B4B9D800317AC4 /* SetUserInfo */,
+				B137762021B4E79200317AC4 /* AddCardToUser */,
 			);
 			path = ApiAccess;
 			sourceTree = "<group>";
@@ -468,7 +479,6 @@
 		679346432138441D00B96BAA /* InputOutput */ = {
 			isa = PBXGroup;
 			children = (
-				67934638213843DD00B96BAA /* ResponseGetUserInfo.json */,
 				67D32AFA2138463600DCE5C7 /* OutputGetUserInfo.swift */,
 			);
 			path = InputOutput;
@@ -546,8 +556,9 @@
 				B13528B421434A5200FDF092 /* MyEventsScreen */,
 				B13528B521434A5A00FDF092 /* ProfileScreen */,
 				67BF913E212F26B3006E9F32 /* EventDetails */,
-				67BF9143212F3854006E9F32 /* CreditCards */,
 				67F342EE212E1824008621BD /* AvailableEvents */,
+				67BF9143212F3854006E9F32 /* CreditCards */,
+				B137761B21B4E14300317AC4 /* AddCard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -710,6 +721,34 @@
 			children = (
 				B137761621B4BA9C00317AC4 /* OutputSetUserInfo.swift */,
 				B137761921B4C67300317AC4 /* InputSetUserInfo.swift */,
+			);
+			path = InputOutput;
+			sourceTree = "<group>";
+		};
+		B137761B21B4E14300317AC4 /* AddCard */ = {
+			isa = PBXGroup;
+			children = (
+				B137761C21B4E17F00317AC4 /* AddCardScreen.swift */,
+				B137761E21B4E18900317AC4 /* AddCardScreen.storyboard */,
+			);
+			path = AddCard;
+			sourceTree = "<group>";
+		};
+		B137762021B4E79200317AC4 /* AddCardToUser */ = {
+			isa = PBXGroup;
+			children = (
+				B137762121B4E7B800317AC4 /* InputOutput */,
+				B137762421B4E7D600317AC4 /* RequestAddCardToUser.swift */,
+				B137762221B4E7CD00317AC4 /* ResponseAddCardToUser.swift */,
+			);
+			path = AddCardToUser;
+			sourceTree = "<group>";
+		};
+		B137762121B4E7B800317AC4 /* InputOutput */ = {
+			isa = PBXGroup;
+			children = (
+				B137762621B4E7E600317AC4 /* OutputAddCardToUser.swift */,
+				B137762821B4E8C600317AC4 /* InputAddCardToUser.swift */,
 			);
 			path = InputOutput;
 			sourceTree = "<group>";
@@ -880,10 +919,10 @@
 			files = (
 				B13528B721434A8700FDF092 /* ProfileScreen.storyboard in Resources */,
 				B1EA9AA421A26703007270AC /* LoginScreen.storyboard in Resources */,
+				B137761F21B4E18900317AC4 /* AddCardScreen.storyboard in Resources */,
 				67BF9142212F26F3006E9F32 /* EventDetailsScreen.storyboard in Resources */,
 				679D0817212C476D00824386 /* LaunchScreen.storyboard in Resources */,
 				B13528BD21434AA000FDF092 /* CategoriesScreen.storyboard in Resources */,
-				67934639213843DD00B96BAA /* ResponseGetUserInfo.json in Resources */,
 				67F342F2212E183C008621BD /* AvailableEventsScreen.storyboard in Resources */,
 				B13528BB21434A9600FDF092 /* MapScreen.storyboard in Resources */,
 				6793462F213843C100B96BAA /* ResponseGetEvent.json in Resources */,
@@ -1039,15 +1078,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F342E4212E1539008621BD /* MyEventsScreen.swift in Sources */,
+				B137761D21B4E17F00317AC4 /* AddCardScreen.swift in Sources */,
 				6793460B213842B400B96BAA /* RequestGetEventsFromCategory.swift in Sources */,
 				67934613213842D300B96BAA /* RequestGetCreditCardsFromUser.swift in Sources */,
 				67F342E0212E1171008621BD /* DateFormats.swift in Sources */,
 				B1EA9AAB21A26785007270AC /* SignUpScreen.swift in Sources */,
 				67D32AFB2138463600DCE5C7 /* OutputGetUserInfo.swift in Sources */,
+				B137762721B4E7E600317AC4 /* OutputAddCardToUser.swift in Sources */,
 				679D0843212C4F6F00824386 /* UITableView+Load.swift in Sources */,
 				67D32AF1213845FF00DCE5C7 /* OutputGetEvent.swift in Sources */,
 				67291635213828E50047A515 /* ApiUtils.swift in Sources */,
 				B1D3BD832147F88800C2D10B /* Workspace.swift in Sources */,
+				B137762921B4E8C600317AC4 /* InputAddCardToUser.swift in Sources */,
 				B13528BF21435ABF00FDF092 /* Place.swift in Sources */,
 				67BF9140212F26CC006E9F32 /* EventDetailsScreen.swift in Sources */,
 				67F342EC212E1607008621BD /* ProfileCell.swift in Sources */,
@@ -1092,6 +1134,7 @@
 				67291631213822500047A515 /* ApiEndpoint.swift in Sources */,
 				67291633213822ED0047A515 /* ApiEndpoint+Manager.swift in Sources */,
 				676C4B9221396C1700EAFE9B /* PaymentResult.swift in Sources */,
+				B137762321B4E7CD00317AC4 /* ResponseAddCardToUser.swift in Sources */,
 				6729163921382AA60047A515 /* RequestApi.swift in Sources */,
 				679346252138431D00B96BAA /* ResponseGetUserInfo.swift in Sources */,
 				679D0841212C4F3B00824386 /* UIViewController+Load.swift in Sources */,
@@ -1101,6 +1144,7 @@
 				6793460F213842C400B96BAA /* RequestGetEvent.swift in Sources */,
 				B1EA9AA621A26717007270AC /* LoginScreen.swift in Sources */,
 				67F342F0212E1832008621BD /* AvailableEventsScreen.swift in Sources */,
+				B137762521B4E7D600317AC4 /* RequestAddCardToUser.swift in Sources */,
 				67934619213842EC00B96BAA /* ResponseBuyEvent.swift in Sources */,
 				67BF9149212F397C006E9F32 /* CreditCardsCell.swift in Sources */,
 				67F342D8212E0FF0008621BD /* UIViewController+Alert.swift in Sources */,

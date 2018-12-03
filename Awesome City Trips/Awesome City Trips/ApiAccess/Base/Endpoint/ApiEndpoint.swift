@@ -18,4 +18,5 @@ enum ApiEndpoint {
     case getEventsBuyedByUser(userId: String)
     case getUserInfo(userId: String)
     case setUserInfo(input: InputSetUserInfo)
+    case addCardToUser(input: InputAddCardToUser)
 }

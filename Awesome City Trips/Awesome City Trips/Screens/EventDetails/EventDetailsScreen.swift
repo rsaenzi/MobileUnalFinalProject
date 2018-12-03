@@ -84,7 +84,6 @@ extension EventDetailsScreen {
         buttonBuy.isEnabled = true
         buttonBuy.backgroundColor = .red
         
-        //eventMap
         let anno = MKPointAnnotation();
         anno.coordinate = CLLocationCoordinate2D(
             latitude: event.place.coordinates.latitude,
@@ -137,7 +136,7 @@ extension EventDetailsScreen {
         buttonBuy.isEnabled = false
         buttonBuy.backgroundColor = .gray
         
-        //eventMap
+        eventMap.removeAnnotations(eventMap.annotations)
     }
 }
 

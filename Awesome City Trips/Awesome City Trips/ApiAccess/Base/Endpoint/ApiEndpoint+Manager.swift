@@ -44,6 +44,9 @@ extension ApiEndpoint: TargetType {
             
         case .setUserInfo:
             return "/autenticacion"
+            
+        case .addCardToUser:
+            return "/postCreditCard"
         }
     }
     
@@ -99,6 +102,9 @@ extension ApiEndpoint: TargetType {
             return .requestPlain
             
         case .setUserInfo(let input):
+            return .requestJSONEncodable(input)
+            
+        case .addCardToUser(let input):
             return .requestJSONEncodable(input)
         }
     }

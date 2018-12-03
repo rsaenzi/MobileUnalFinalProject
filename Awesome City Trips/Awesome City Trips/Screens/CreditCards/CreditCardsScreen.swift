@@ -14,6 +14,11 @@ class CreditCardsScreen: UIViewController {
     @IBOutlet weak private var table: UITableView!
     
     private var allCreditCards: [CreditCard] = []
+    
+    @IBAction func onTapAddCard(_ sender: UIBarButtonItem) {
+        let screen: AddCardScreen = loadViewController()
+        navigationController?.pushViewController(screen, animated: true)
+    }
 }
 
 extension CreditCardsScreen {
@@ -43,7 +48,6 @@ extension CreditCardsScreen {
             }
             
             self.table.reloadData()
-            
         }
     }
 }
