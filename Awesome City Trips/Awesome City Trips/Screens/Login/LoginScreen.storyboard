@@ -13,7 +13,7 @@
         <!--LoginScreen-->
         <scene sceneID="bDi-HH-zsp">
             <objects>
-                <viewController storyboardIdentifier="LoginScreen" title="LoginScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5SS-w0-gkx" customClass="LoginScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginScreen" title="LoginScreen" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5SS-w0-gkx" customClass="LoginScreen" customModule="Awesome_City_Trips" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hfn-P3-YZr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="166.5" width="375" height="500.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZe-bL-k3B" userLabel="Content">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="367"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="447"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5K-U5-sxP">
                                                 <rect key="frame" x="32" y="24" width="311" height="25"/>
@@ -97,6 +97,19 @@
                                                     <segue destination="aoq-KU-Zef" kind="show" id="X1j-mU-1Su"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxH-F8-QHm">
+                                                <rect key="frame" x="32" y="391" width="311" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Tr2-RT-nyg"/>
+                                                </constraints>
+                                                <state key="normal" title="Be Awesome!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onTapVideo:forEvent:" destination="5SS-w0-gkx" eventType="touchUpInside" id="oZO-I5-8Xa"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -105,12 +118,12 @@
                                             <constraint firstItem="OMZ-5O-WrR" firstAttribute="leading" secondItem="MZe-bL-k3B" secondAttribute="leading" constant="32" id="Cth-27-5xF"/>
                                             <constraint firstItem="gan-iP-0Yt" firstAttribute="leading" secondItem="MZe-bL-k3B" secondAttribute="leading" constant="32" id="M9o-or-htc"/>
                                             <constraint firstItem="D5K-U5-sxP" firstAttribute="top" secondItem="MZe-bL-k3B" secondAttribute="top" constant="24" id="MUA-av-2SM"/>
-                                            <constraint firstAttribute="bottom" secondItem="hUY-v4-Aa7" secondAttribute="bottom" constant="16" id="Now-Hh-xbo"/>
                                             <constraint firstAttribute="trailing" secondItem="jLH-HJ-6Ol" secondAttribute="trailing" constant="32" id="QwG-g8-q0Y"/>
                                             <constraint firstItem="D5K-U5-sxP" firstAttribute="leading" secondItem="MZe-bL-k3B" secondAttribute="leading" constant="32" id="RGk-hL-QcE"/>
                                             <constraint firstItem="zoJ-U2-XPM" firstAttribute="leading" secondItem="MZe-bL-k3B" secondAttribute="leading" constant="32" id="RLz-dp-hSm"/>
                                             <constraint firstItem="zoJ-U2-XPM" firstAttribute="top" secondItem="D5K-U5-sxP" secondAttribute="bottom" constant="8" id="ScJ-t7-wh2"/>
                                             <constraint firstAttribute="trailing" secondItem="jVh-60-gln" secondAttribute="trailing" constant="32" id="Vis-tM-aI6"/>
+                                            <constraint firstAttribute="bottom" secondItem="dxH-F8-QHm" secondAttribute="bottom" constant="16" id="Vt3-ea-2yi"/>
                                             <constraint firstItem="gan-iP-0Yt" firstAttribute="top" secondItem="jLH-HJ-6Ol" secondAttribute="bottom" constant="24" id="g0r-Rc-xs8"/>
                                             <constraint firstAttribute="trailing" secondItem="hUY-v4-Aa7" secondAttribute="trailing" constant="32" id="jW6-AG-bfm"/>
                                             <constraint firstItem="jLH-HJ-6Ol" firstAttribute="top" secondItem="OMZ-5O-WrR" secondAttribute="bottom" constant="8" id="jmV-EK-leH"/>
@@ -120,8 +133,11 @@
                                             <constraint firstAttribute="trailing" secondItem="D5K-U5-sxP" secondAttribute="trailing" constant="32" id="ry4-8c-kWs"/>
                                             <constraint firstItem="jVh-60-gln" firstAttribute="top" secondItem="gan-iP-0Yt" secondAttribute="bottom" constant="40" id="sPg-ID-peG"/>
                                             <constraint firstAttribute="trailing" secondItem="gan-iP-0Yt" secondAttribute="trailing" constant="32" id="tLH-TM-kwD"/>
+                                            <constraint firstAttribute="trailing" secondItem="dxH-F8-QHm" secondAttribute="trailing" constant="32" id="vmy-uC-7os"/>
+                                            <constraint firstItem="dxH-F8-QHm" firstAttribute="top" secondItem="hUY-v4-Aa7" secondAttribute="bottom" constant="40" id="xLU-qR-lnY"/>
                                             <constraint firstAttribute="trailing" secondItem="zoJ-U2-XPM" secondAttribute="trailing" constant="32" id="xlg-GV-eJL"/>
                                             <constraint firstItem="jVh-60-gln" firstAttribute="leading" secondItem="MZe-bL-k3B" secondAttribute="leading" constant="32" id="y3w-xv-o2o"/>
+                                            <constraint firstItem="dxH-F8-QHm" firstAttribute="leading" secondItem="MZe-bL-k3B" secondAttribute="leading" constant="32" id="zvk-a3-1Us"/>
                                         </constraints>
                                     </view>
                                 </subviews>

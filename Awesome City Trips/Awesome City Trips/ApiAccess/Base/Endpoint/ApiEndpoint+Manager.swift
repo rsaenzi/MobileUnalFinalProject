@@ -54,7 +54,7 @@ extension ApiEndpoint: TargetType {
         
         switch self {
             
-        case .setUserInfo:
+        case .setUserInfo, .addCardToUser:
             return .post
             
         default:

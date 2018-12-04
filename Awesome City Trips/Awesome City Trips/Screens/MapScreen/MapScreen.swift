@@ -19,7 +19,10 @@ class MapScreen: UIViewController {
     private let regionRadius: CLLocationDistance = 2000
     private var eventsForLocationRequested = false
     private var firstAuthChangeDone = false
+    
     private var allEvents: [Event] = []
+    private var allPoints: [MapPoint] = []
+    private var pointUserLocation: MapPoint?
 }
 
 extension MapScreen {
@@ -41,15 +44,8 @@ extension MapScreen: CLLocationManagerDelegate {
         
         self.permissionStatus = status
         
-        // This prevent the first time to display the errorNoLocationPermissionGranted error by mistake
-//        if firstAuthChangeDone == false {
-//            firstAuthChangeDone = true
-//            return
-//        }
-        
         guard self.permissionStatus == .authorizedAlways || self.permissionStatus == .authorizedWhenInUse else {
             KVNProgress.dismiss()
-            //self.showSimpleAlert(message: .errorNoLocationPermissionGranted)
             return
         }
         
@@ -82,11 +78,15 @@ extension MapScreen: CLLocationManagerDelegate {
             // Zoom to user location
             centerMapOnLocation(location: userLocation)
             
-            let pointUserLocation = MapPoint(coordinate: userLocation.coordinate)
-            eventsMap.addAnnotation(pointUserLocation)
+            // Creates the annotation for user location
+            self.pointUserLocation = MapPoint(coordinate: userLocation.coordinate)
+            self.pointUserLocation!.title = "User Location"
+            self.pointUserLocation!.subtitle = "You are here"
+            eventsMap.addAnnotation(self.pointUserLocation!)
         
             let coordsUserLocation = Coordinates(longitude: userLocation.coordinate.longitude, latitude: userLocation.coordinate.latitude)
             
+            // Request the list of events for that location
             RequestGetEventFromLocation.request(coordinates: coordsUserLocation, numberofNearEvents: 10) { [weak self] response in
                 
                 KVNProgress.dismiss()
@@ -96,27 +96,41 @@ extension MapScreen: CLLocationManagerDelegate {
                 switch response {
                 case .success(let output):
                     
-                    if let fetchedEvents = output.event {
-                        self.allEvents = fetchedEvents
-                        self.addEventsToMap()
+                    guard let fetchedEvents = output.event else {
+                        self.allEvents = []
+                        self.allPoints = []
+                        
+                        self.showSimpleAlert(message: .errorOnFetchingData)
+                        return
                     }
+                    
+                    // Store all events
+                    self.allEvents = fetchedEvents
+                    
+                    // Now we create map points from all events
+                    self.allPoints = self.allEvents.map { event -> MapPoint in
+                        
+                        let location = CLLocation(latitude: event.place.coordinates.latitude,
+                                                  longitude: event.place.coordinates.longitude)
+                        
+                        let point = MapPoint(coordinate: location)
+                        point.title = event.name
+                        point.subtitle = ""
+                        
+                        return point
+                    }
+                    
+                    self.eventsMap.addAnnotations(self.allPoints)
+                    
                     
                 default:
                     self.allEvents = []
+                    self.allPoints = []
+                    
                     self.showSimpleAlert(message: .errorOnFetchingData)
                 }
             }
         }
-    }
-    
-    private func addEventsToMap() {
-        
-        let points: [MapPoint] = allEvents.map { event -> MapPoint in
-            let location = CLLocation(latitude: event.place.coordinates.latitude, longitude: event.place.coordinates.longitude)
-            return MapPoint(coordinate: location, title: event.name, subtitle: event.description)
-        }
-        
-        eventsMap.addAnnotations(points)
     }
     
     private func centerMapOnLocation(location: CLLocation) {
@@ -125,30 +139,56 @@ extension MapScreen: CLLocationManagerDelegate {
     }
 }
 
-
 extension MapScreen: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        print("Map Point Selected")
+        
+        guard let selectedPoint = view.annotation as? MapPoint,
+              let selectedIndex = self.allPoints.firstIndex(of: selectedPoint) else {
+            return
+        }
+        
+        let event = self.allEvents[selectedIndex]
+        
+        let screen: EventDetailsScreen = loadViewController()
+        screen.setup(using: event)
+        navigationController?.pushViewController(screen, animated: true)
     }
     
-//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//
-//        let identifier = "Annotation"
-//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-//
-//        if annotationView == nil {
-//            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-//            annotationView!.canShowCallout = true
-//        } else {
-//            annotationView!.annotation = annotation
-//        }
-//
-//        return annotationView
-//    }
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+
+        let identifier = "Annotation"
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+
+        // Creates the view id necessary
+        if annotationView == nil {
+            annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+        } else {
+            annotationView!.annotation = annotation
+        }
+        
+        // Cast to marker to customize UI
+        guard let marker = annotationView as? MKMarkerAnnotationView else {
+            return annotationView
+        }
+        
+        // Annotation for event
+        if let selectedPoint = annotation as? MapPoint,
+           let _ = self.allPoints.firstIndex(of: selectedPoint) {
+            
+            marker.canShowCallout = false
+            marker.markerTintColor = UIColor.orange
+            marker.animatesWhenAdded = false
+            
+        } else { // Annotation for User location
+            marker.canShowCallout = true
+            marker.markerTintColor = UIColor.magenta
+            marker.animatesWhenAdded = true
+        }
+        
+        return marker
+    }
 }
-
-
 
 
 class MapPoint: NSObject, MKAnnotation {
@@ -158,9 +198,9 @@ class MapPoint: NSObject, MKAnnotation {
     internal var coordinate: CLLocationCoordinate2D
     
     // Title and subtitle for use by selection UI.
-    private var title: String?
+    var title: String?
     
-    private var subtitle: String?
+    var subtitle: String?
     
     init(coordinate: CLLocationCoordinate2D, title: String? = nil, subtitle: String? = nil) {
         self.coordinate = coordinate

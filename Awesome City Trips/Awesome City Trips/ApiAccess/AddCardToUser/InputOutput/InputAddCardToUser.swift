@@ -14,6 +14,14 @@ struct InputAddCardToUser: Codable {
     var issuerIconUrl: String
     var lastFourDigits: String
     
+    // MARK: Decoding & Encoding to JSON
+    enum CodingKeys: String, CodingKey {
+        case token
+        case issuerIconUrl = "issuer_icon_url"
+        case firstSixDigits = "first_six_digits"
+        case lastFourDigits = "last_four_digits"
+    }
+    
     init(token: String, firstSixDigits: String, issuerIconUrl: String, lastFourDigits: String) {
         self.token = token
         self.firstSixDigits = firstSixDigits

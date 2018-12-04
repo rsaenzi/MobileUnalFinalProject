@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import AVKit
+import AVFoundation
 import KVNProgress
 
 class LoginScreen: UIViewController {
@@ -16,6 +18,18 @@ class LoginScreen: UIViewController {
     @IBOutlet weak var textfieldPassword: UITextField!
     @IBOutlet weak var buttonLogin: UIButton!
     @IBOutlet weak var buttonSignIn: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        textfieldEmail.text = "rigo@gmail.com"
+        textfieldPassword.text = "123456"
+    }
+    
+    
+    @IBAction func onTapVideo(_ sender: UIButton, forEvent event: UIEvent) {
+        playVideo()
+    }
     
     @IBAction func onTapLogin(_ sender: UIButton, forEvent event: UIEvent) {
         
@@ -71,6 +85,21 @@ class LoginScreen: UIViewController {
                 self.showSimpleAlert(message: .errorAtLogin)
                 return
             }
+        }
+    }
+    
+    private func playVideo() {
+        
+        guard let path = Bundle.main.path(forResource: "Awesome_City_Trips_Pitch", ofType:"mp4") else {
+            print("Video could not be found")
+            return
+        }
+        
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true) {
+            player.play()
         }
     }
 }

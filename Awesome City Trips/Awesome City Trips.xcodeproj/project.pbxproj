@@ -104,6 +104,7 @@
 		B137762721B4E7E600317AC4 /* OutputAddCardToUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137762621B4E7E600317AC4 /* OutputAddCardToUser.swift */; };
 		B137762921B4E8C600317AC4 /* InputAddCardToUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B137762821B4E8C600317AC4 /* InputAddCardToUser.swift */; };
 		B1A220CA216CDF4F0091EF1B /* Bogota.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B1A220C9216CDF4F0091EF1B /* Bogota.gpx */; };
+		B1CF56B221B6148A000517E9 /* Awesome_City_Trips_Pitch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B1CF56B121B6148A000517E9 /* Awesome_City_Trips_Pitch.mp4 */; };
 		B1D3BD832147F88800C2D10B /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3BD822147F88800C2D10B /* Workspace.swift */; };
 		B1E2FC0A21B46BFC00C90752 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E2FC0921B46BFC00C90752 /* MainTabBar.swift */; };
 		B1EA9AA421A26703007270AC /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1EA9AA321A26703007270AC /* LoginScreen.storyboard */; };
@@ -240,6 +241,7 @@
 		B137762621B4E7E600317AC4 /* OutputAddCardToUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputAddCardToUser.swift; sourceTree = "<group>"; };
 		B137762821B4E8C600317AC4 /* InputAddCardToUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAddCardToUser.swift; sourceTree = "<group>"; };
 		B1A220C9216CDF4F0091EF1B /* Bogota.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Bogota.gpx; sourceTree = "<group>"; };
+		B1CF56B121B6148A000517E9 /* Awesome_City_Trips_Pitch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Awesome_City_Trips_Pitch.mp4; sourceTree = "<group>"; };
 		B1D3BD822147F88800C2D10B /* Workspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workspace.swift; sourceTree = "<group>"; };
 		B1E2FC0921B46BFC00C90752 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		B1EA9AA321A26703007270AC /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
@@ -509,6 +511,7 @@
 		679D0809212C476B00824386 /* Awesome City Trips */ = {
 			isa = PBXGroup;
 			children = (
+				B1CF56B021B6146A000517E9 /* Video */,
 				B1A220C8216CDF430091EF1B /* Locations */,
 				6729162E213822350047A515 /* ApiAccess */,
 				67F342D0212E0F84008621BD /* Util */,
@@ -547,6 +550,7 @@
 		679D083A212C4C5200824386 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B1CF56B821B6179C000517E9 /* Intro */,
 				B1EA9AAC21A26DB4007270AC /* Launch */,
 				B1EA9AA021A26194007270AC /* Login */,
 				B1EA9AA721A2675D007270AC /* SignUp */,
@@ -761,6 +765,21 @@
 			path = Locations;
 			sourceTree = "<group>";
 		};
+		B1CF56B021B6146A000517E9 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				B1CF56B121B6148A000517E9 /* Awesome_City_Trips_Pitch.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		B1CF56B821B6179C000517E9 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
 		B1D3BD812147F85C00C2D10B /* Workspace */ = {
 			isa = PBXGroup;
 			children = (
@@ -928,6 +947,7 @@
 				6793462F213843C100B96BAA /* ResponseGetEvent.json in Resources */,
 				B1A220CA216CDF4F0091EF1B /* Bogota.gpx in Resources */,
 				67F342C6212E0EEE008621BD /* Localizable.strings in Resources */,
+				B1CF56B221B6148A000517E9 /* Awesome_City_Trips_Pitch.mp4 in Resources */,
 				B1EA9AA921A2677D007270AC /* SignUpScreen.storyboard in Resources */,
 				67934633213843CE00B96BAA /* ResponseBuyEvent.json in Resources */,
 				67F342C2212E0B05008621BD /* Assets.xcassets in Resources */,
