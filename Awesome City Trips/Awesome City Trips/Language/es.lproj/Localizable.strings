@@ -19,6 +19,4 @@
 "errorLoginNoData" = "Uno o mas campos esta vacio, porfavor intente nuevamente...";
 "errorAtUserCreation" = "No pudimos crear tu usuario, porfavor intente nuevamente...";
 "errorAtLogin" = "We could not log in into your account, please try again...";
-
-// Login
-
+"paymentSuccess" = "Ticket de entrada al evento comprado exitosamente";

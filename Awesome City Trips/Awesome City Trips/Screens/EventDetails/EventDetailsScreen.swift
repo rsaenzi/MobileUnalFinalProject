@@ -65,6 +65,7 @@ extension EventDetailsScreen {
     @IBAction func onTapBuy(_ sender: UIButton, forEvent event: UIEvent) {
         
         let screen: CreditCardsScreen = loadViewController()
+        screen.selectedEvent = self.selectedEvent
         navigationController?.pushViewController(screen, animated: true)
     }
     

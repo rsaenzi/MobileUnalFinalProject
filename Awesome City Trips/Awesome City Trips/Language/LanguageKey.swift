@@ -20,7 +20,5 @@ enum LanguageKey: String {
     case errorLoginNoData
     case errorAtUserCreation
     case errorAtLogin
-    
-    // Login
-    
+    case paymentSuccess
 }

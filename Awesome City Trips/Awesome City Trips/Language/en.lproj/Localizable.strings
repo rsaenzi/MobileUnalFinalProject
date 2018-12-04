@@ -19,6 +19,4 @@
 "errorLoginNoData" = "One or more fields are missing, please try again...";
 "errorAtUserCreation" = "We could not create your user, please try again...";
 "errorAtLogin" = "We could not log in into your account, please try again...";
-
-// Login
-
+"paymentSuccess" = "Event entrance ticket purchased successfully";

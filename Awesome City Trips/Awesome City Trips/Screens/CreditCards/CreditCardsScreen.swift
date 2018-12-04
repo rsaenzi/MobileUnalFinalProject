@@ -14,6 +14,7 @@ class CreditCardsScreen: UIViewController {
     @IBOutlet weak private var table: UITableView!
     
     private var allCreditCards: [CreditCard] = []
+    var selectedEvent: Event?
     
     @IBAction func onTapAddCard(_ sender: UIBarButtonItem) {
         let screen: AddCardScreen = loadViewController()
@@ -23,7 +24,8 @@ class CreditCardsScreen: UIViewController {
 
 extension CreditCardsScreen {
     
-    override func viewDidLoad() {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         guard let currentUser = Workspace.shared.currentUser else {
             self.showSimpleAlert(message: .errorNoCurrentUser)
@@ -68,15 +70,38 @@ extension CreditCardsScreen: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return 80
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let creditCard = allCreditCards[indexPath.row]
+        //let creditCard = allCreditCards[indexPath.row]
         
-        // TODO: Continuar el proceso de pago...
+        // Starts the payment process
+        let input = InputBuyEvent(token: Workspace.shared.currentUser!.token, eventId: selectedEvent!.id, eventDateId: "")
+        
+        KVNProgress.show()
+        RequestBuyEvent.request(input: input) { [weak self] response in
+            
+            KVNProgress.dismiss()
+            
+            guard let `self` = self else { return }
+            
+            switch response {
+                
+            case .success(let output):
+                
+                self.showSimpleAlert(title: .appName, message: .paymentSuccess, onClose: { action in
+                    self.navigationController?.popToRootViewController {}
+                })
+                return
+                
+            default:
+                self.showSimpleAlert(message: .errorOnFetchingData)
+                return
+            }
+        }
     }
 }

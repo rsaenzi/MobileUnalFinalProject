@@ -40,7 +40,9 @@ class CreditCardsCell: UITableViewCell {
             }
         }
         
-        let image = ImageResource(downloadURL: imageUrl, cacheKey: "card\(creditCard.id)")
+        //let image = ImageResource(downloadURL: imageUrl, cacheKey: "card\(creditCard.id)")
+        
+        let image = ImageResource(downloadURL: imageUrl)
         cardIcon.kf.indicatorType = .activity
         cardIcon.kf.setImage(
             with: image,

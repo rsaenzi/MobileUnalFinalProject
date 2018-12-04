@@ -15,7 +15,8 @@ class AddCardScreen: UIViewController {
     @IBOutlet weak var textfieldExpirationDate: UITextField!
     @IBOutlet weak var textfieldCVV: UITextField!
     
-    let creditCardIcon = "http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Master-Card-Blue-icon.png"
+    let creditCardIcon = "https://cdn.iconscout.com/icon/free/png-256/payment-visa-card-pay-checkout-transaction-bank-51303.png" // Visa
+    //let creditCardIcon = "http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Master-Card-Blue-icon.png" // Master Card
     
     @IBAction func onTapCreate(_ sender: UIButton, forEvent event: UIEvent) {
         

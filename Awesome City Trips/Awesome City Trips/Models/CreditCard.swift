@@ -9,7 +9,7 @@
 import Foundation
 
 struct CreditCard: Codable {
-    let id: Int64
+    //let id: Int64
     let token: String
     let issuerIconUrl: String
     let firstSixDigits: String
@@ -17,7 +17,7 @@ struct CreditCard: Codable {
     
     // MARK: Decoding & Encoding to JSON
     enum CodingKeys: String, CodingKey {
-        case id
+        //case id
         case token
         case issuerIconUrl = "issuer_icon_url"
         case firstSixDigits = "first_six_digits"

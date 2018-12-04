@@ -13,7 +13,7 @@ enum ApiEndpoint {
     case getEventsFromCategory(categoryId: Int64)
     case getEvent(eventId: Int64)
     case getCreditCardsFromUser(userId: String)
-    case buyEvent(userId: String, creditCardId: Int64, eventId: Int64)
+    case buyEvent(input: InputBuyEvent)
     case getEventFromLocation(coordinates: Coordinates, numberofNearEvents: Int)
     case getEventsBuyedByUser(userId: String)
     case getUserInfo(userId: String)

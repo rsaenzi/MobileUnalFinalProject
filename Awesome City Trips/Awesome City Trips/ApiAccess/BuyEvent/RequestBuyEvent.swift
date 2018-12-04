@@ -14,9 +14,9 @@ class RequestBuyEvent {
     
     private init() {}
     
-    static func request(userId: String, creditCardId: Int64, eventId: Int64, completion callback: @escaping CompletionBuyEvent) {
+    static func request(input: InputBuyEvent, completion callback: @escaping CompletionBuyEvent) {
         
-        let endpoint = ApiEndpoint.buyEvent(userId: userId, creditCardId: creditCardId, eventId: eventId)
+        let endpoint = ApiEndpoint.buyEvent(input: input)
         
         RequestApi.request(to: endpoint, authenticate: true) { response in
             switch response {

@@ -54,7 +54,7 @@ extension ApiEndpoint: TargetType {
         
         switch self {
             
-        case .setUserInfo, .addCardToUser:
+        case .setUserInfo, .addCardToUser, .buyEvent:
             return .post
             
         default:
@@ -85,12 +85,8 @@ extension ApiEndpoint: TargetType {
         case .getCreditCardsFromUser:
             return .requestPlain
             
-        case .buyEvent(let userId, let creditCardId, let eventId):
-            return .requestParameters(
-                parameters: ["userId": userId,
-                             "creditCardId": creditCardId,
-                             "eventId": eventId],
-                encoding: URLEncoding.queryString)
+        case .buyEvent(let input):
+            return .requestJSONEncodable(input)
             
         case .getEventFromLocation:
             return .requestPlain
